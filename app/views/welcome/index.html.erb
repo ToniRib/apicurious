@@ -1,0 +1,14 @@
+<h2>Hello!</h2>
+
+<button id="unhide">Unhide!</button>
+
+<div id="hidden">
+  This is hidden
+</div>
+
+<%= javascript_tag do %>
+  $("#hidden").hide();
+  $("#unhide").click(function() {
+    $("#hidden").toggle();
+  });
+<% end %>
