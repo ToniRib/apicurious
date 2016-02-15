@@ -18,3 +18,9 @@
 
 # Ignore file for API keys
 config/application.yml
+
+# Ignore tree listing
+NetrwTreeListing 2
+
+# Ignore byebug history
+.byebug_history
