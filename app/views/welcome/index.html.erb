@@ -1,25 +1,8 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-7">
-      First column
-    </div>
-    <div class="col-md-5">
-      Second column
+    <div class="col-sm-12">
+      <h1>Welcome to Fitness Tracker</h1>
+      <%= link_to "Log In With FitBit", "/auth/fitbit" %>
     </div>
   </div>
 </div>
-
-<h2>Hello!</h2>
-
-<button id="unhide">Unhide!</button>
-
-<div id="hidden">
-  This is hidden
-</div>
-
-<%= javascript_tag do %>
-  $("#hidden").hide();
-  $("#unhide").click(function() {
-    $("#hidden").toggle();
-  });
-<% end %>
