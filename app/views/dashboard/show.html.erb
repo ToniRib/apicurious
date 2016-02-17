@@ -30,9 +30,9 @@
         <h4>Resting Heart Rate</h4>
         <%= image_tag Gchart.line(size: "500x300",
                                   bg: "fff",
-                                  data: @rates,
+                                  data: @user_data.all_heartrates,
                                   axis_with_labels: 'y',
-                                  min_value: @rates.min - 2) %>
+                                  min_value: @user_data.minimum_heartrate - 2) %>
       </div>
     </div>
   </div>

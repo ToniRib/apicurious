@@ -6,4 +6,12 @@ class UserData
     @sleep = sleep
     @heartrate = heartrate
   end
+
+  def all_heartrates
+    heartrate.map { |h| h.rate }
+  end
+
+  def minimum_heartrate
+    all_heartrates.min
+  end
 end
