@@ -53,7 +53,7 @@ class LastNightsSleep
   end
 
   def sleep_points
-    data = minute_data.map do |point|
+    minute_data.map do |point|
       {
         y: 1,
         name: value_name(point["value"]),
