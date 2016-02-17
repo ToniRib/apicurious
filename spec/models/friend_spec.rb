@@ -2,10 +2,7 @@ require "spec_helper"
 
 RSpec.describe Friend, type: :model do
   it "has valid attributes" do
-    friend = Friend.new(rank: 1,
-                        total_steps: 45000,
-                        name: "Selby",
-                        avatar: img)
+    friend = build(:friend)
 
     expect(friend.rank).to eq(1)
     expect(friend.total_steps).to eq(45000)
@@ -14,19 +11,13 @@ RSpec.describe Friend, type: :model do
   end
 
   it "#active? returns true if user has more than 0 total steps" do
-    friend = Friend.new(rank: 1,
-                        total_steps: 45000,
-                        name: "Selby",
-                        avatar: img)
+    friend = build(:friend)
 
     expect(friend.active?).to be true
   end
 
   it "#active? returns false if user has 0 total steps" do
-    friend = Friend.new(rank: 10,
-                        total_steps: 0,
-                        name: "Selby",
-                        avatar: img)
+    friend = build(:friend, total_steps: 0)
 
     expect(friend.active?).to be false
   end

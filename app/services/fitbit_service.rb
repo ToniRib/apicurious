@@ -11,14 +11,13 @@ class FitbitService
   end
 
   def get_user_data
-    user_data = UserData.new
     asleep, awake, awakenings = get_sleep
-    user_data.load(friends:   create_friends(get("friends/leaderboard.json")),
-                   sleep:     create_sleep(asleep, awake, awakenings),
-                   heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
-                   last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json"))
+
+    UserData.new(friends:   create_friends(get("friends/leaderboard.json")),
+                             sleep:     create_sleep(asleep, awake, awakenings),
+                             heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
+                             last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json"))
     )
-    user_data
   end
 
   def get(path)

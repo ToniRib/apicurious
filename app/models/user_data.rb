@@ -1,7 +1,7 @@
 class UserData
   attr_reader :friends, :sleep, :heartrate, :last_nights_sleep
 
-  def load(friends:, sleep:, heartrate:, last_nights_sleep:)
+  def initialize(friends:, sleep:, heartrate:, last_nights_sleep:)
     @friends = friends
     @sleep = sleep
     @heartrate = heartrate
