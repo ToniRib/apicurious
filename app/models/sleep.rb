@@ -12,6 +12,16 @@ class Sleep
     time_asleep > 0
   end
 
+  def time_asleep_in_hours
+    in_hours(time_asleep)
+  end
+
+  def time_awake_in_hours
+    in_hours(time_awake)
+  end
+
+  private
+
   def in_hours(time)
     hours = time / 60
     minutes = time - (hours * 60)
