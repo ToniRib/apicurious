@@ -1,4 +1,7 @@
+// ----IMPORT NECESSARY PARTIALS----
+
 @import "colors";
+
 // -----FONTS-----
 
 @import url(https://fonts.googleapis.com/css?family=Khula:400,300);
@@ -13,6 +16,7 @@ body {
 .welcome-title {
   color: $base-green;
   font-size: 55px;
+  letter-spacing: 0.1em;
   margin-top: 35vh;
   margin-bottom: 40px;
 }
@@ -30,6 +34,20 @@ body {
     text-decoration: none;
   }
 
+}
+
+// -----DASHBOARD: GENERAL-----
+
+h4 {
+  letter-spacing: 0.1em;
+}
+
+.panel {
+  padding: 10px;
+}
+
+.dashboard-banner {
+  color: $base-green;
 }
 
 // -----DASHBOARD: FRIENDS-----

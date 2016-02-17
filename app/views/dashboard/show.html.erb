@@ -1,30 +1,36 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1>Welcome, <%= current_user.full_name %></h1>
+      <h1 class="dashboard-banner">Welcome, <%= current_user.full_name %></h1>
     </div>
   </div>
   <div class="row">
     <div class="col-sm-12 col-md-3">
-      <h4>Friends Leaderboard</h4>
-      <% @friends.each do |friend| %>
-        <% if friend.active? %>
-          <%= render partial: "friend", locals: { friend: friend } %>
+      <div class="panel">
+        <h4>Friends Leaderboard</h4>
+        <% @friends.each do |friend| %>
+          <% if friend.active? %>
+            <%= render partial: "friend", locals: { friend: friend } %>
+          <% end %>
         <% end %>
-      <% end %>
+      </div>
     </div>
     <div class="col-sm-12 col-md-3">
-      <h4>Recent Sleep Patterns</h4>
-      <% @sleep.each do |day| %>
+      <div class="panel">
+        <h4>Recent Sleep Patterns</h4>
+        <% @sleep.each do |day| %>
         <% if day.logged? %>
-          <%= render partial: "sleep", locals: { sleep: day } %>
+        <%= render partial: "sleep", locals: { sleep: day } %>
         <% end %>
-      <% end %>
+        <% end %>
+      </div>
     </div>
     <div class="col-sm-12 col-md-6">
-      <h4>Resting Heart Rate</h4>
-      <%= image_tag Gchart.line( size: "300x300", title: "Resting Heart Rate",
-                                 bg: "fff", data: @heartrate_data) %>
+      <div class="panel">
+        <h4>Resting Heart Rate</h4>
+        <%= image_tag Gchart.line(size: "300x300", bg: "fff", data: @heartrate_data,
+                                  axis_with_labels: 'y') %>
+      </div>
     </div>
   </div>
 </div>
