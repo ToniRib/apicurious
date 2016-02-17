@@ -1,11 +1,12 @@
 class UserData
-  attr_reader :friends, :sleep, :heartrate, :last_nights_sleep
+  attr_reader :friends, :sleep, :heartrate, :last_nights_sleep, :badges
 
-  def initialize(friends:, sleep:, heartrate:, last_nights_sleep:)
+  def initialize(friends:, sleep:, heartrate:, last_nights_sleep:, badges:)
     @friends = friends
     @sleep = sleep
     @heartrate = heartrate
     @last_nights_sleep = last_nights_sleep
+    @badges = badges
   end
 
   def all_heartrates
@@ -22,6 +23,19 @@ class UserData
 
   def todays_heartrate
     all_heartrates.last
+  end
+
+  def latest_badges
+    grouped = badges.group_by { |b| b.type }
+    grouped.map { |name, group| max_of(group) }
+  end
+
+  def max_of(group)
+    if group.size > 1
+      group.max { |a, b| a.value <=> b.value }
+    else
+      group.first
+    end
   end
 
   def heartrate_chart

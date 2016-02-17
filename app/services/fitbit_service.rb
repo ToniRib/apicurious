@@ -14,9 +14,10 @@ class FitbitService
     asleep, awake, awakenings = get_sleep
 
     UserData.new(friends:   create_friends(get("friends/leaderboard.json")),
-                             sleep:     create_sleep(asleep, awake, awakenings),
-                             heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
-                             last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json"))
+                 sleep:     create_sleep(asleep, awake, awakenings),
+                 heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
+                 last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json")),
+                 badges:    create_badges(get("badges.json"))
     )
   end
 
@@ -79,5 +80,15 @@ class FitbitService
                         time_in_bed:    response["timeInBed"],
                         minute_data:    response["minuteData"]
     )
+  end
+
+  def create_badges(response)
+    response["badges"].map do |badge|
+      Badge.new(type:        badge["badgeType"],
+                date:        badge["dateTime"],
+                description: badge["description"],
+                image:       badge["image125px"],
+                value:       badge["value"])
+    end
   end
 end
