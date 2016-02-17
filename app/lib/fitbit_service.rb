@@ -29,6 +29,15 @@ class FitbitService
                  awakenings_count["sleep-awakeningsCount"])
   end
 
+  def get_resting_heartrate
+    response = @connection.get do |request|
+      request.url("activities/heart/date/#{Date.today.to_s}/30d.json")
+      request.headers["Authorization"] = "Bearer #{user.token}"
+    end
+    response = JSON.parse(response.body)
+    resting_heartrate_only(response)
+  end
+
   private
 
   def create_friends(response)
@@ -68,6 +77,16 @@ class FitbitService
                 time_awake:  awake[index]["value"],
                 awakenings:  awakenings[index]["value"],
                 date:        entry["dateTime"])
+    end
+  end
+
+  def resting_heartrate_only(response)
+    heart_rates = response["activities-heart"].select do |entry|
+      entry["value"]["restingHeartRate"]
+    end
+
+    heart_rates.map do |entry|
+      { date: entry["dateTime"], heart_rate: entry["value"]["restingHeartRate"] }
     end
   end
 end

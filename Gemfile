@@ -13,6 +13,7 @@ gem "figaro"
 gem "pg"
 gem "omniauth-fitbit"
 gem "faraday"
+gem "googlecharts"
 
 group :development, :test do
   gem "byebug"
