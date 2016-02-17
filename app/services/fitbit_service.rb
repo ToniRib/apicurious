@@ -15,7 +15,8 @@ class FitbitService
     asleep, awake, awakenings = get_sleep
     user_data.load(friends:   create_friends(get("friends/leaderboard.json")),
                    sleep:     create_sleep(asleep, awake, awakenings),
-                   heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json"))
+                   heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
+                   last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json"))
     )
     user_data
   end
@@ -67,5 +68,17 @@ class FitbitService
       Heartrate.new(date: entry["dateTime"],
                     rate: entry["value"]["restingHeartRate"])
     end
+  end
+
+  def create_last_nights_sleep(response)
+    response = response["sleep"].first
+    LastNightsSleep.new(restless_count: response["restlessCount"],
+                        awake_count:    response["awakeCount"],
+                        minutes_asleep: response["minutesAsleep"],
+                        start_time:     response["startTime"],
+                        date:           response["dateOfSleep"],
+                        time_in_bed:    response["timeInBed"],
+                        minute_data:    response["minuteData"]
+    )
   end
 end

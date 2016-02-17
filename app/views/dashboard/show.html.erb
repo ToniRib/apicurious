@@ -39,7 +39,22 @@
   <div class="row">
     <div class="col-sm-12 col-md-3">
       <div class="panel text-center">
+        <div>
 
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h3><%= @user_data.last_nights_sleep.asleep_time_in_hours %></h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            awake <%= @user_data.last_nights_sleep.awake_count %>x
+          </div>
+          <div class="col-sm-6">
+            restless <%= @user_data.last_nights_sleep.restless_count %>x
+          </div>
+        </div>
       </div>
     </div>
   </div>

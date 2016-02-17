@@ -1,10 +1,11 @@
 class UserData
-  attr_reader :friends, :sleep, :heartrate
+  attr_reader :friends, :sleep, :heartrate, :last_nights_sleep
 
-  def load(friends:, sleep:, heartrate:)
+  def load(friends:, sleep:, heartrate:, last_nights_sleep:)
     @friends = friends
     @sleep = sleep
     @heartrate = heartrate
+    @last_nights_sleep = last_nights_sleep
   end
 
   def all_heartrates
