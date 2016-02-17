@@ -12,6 +12,7 @@ gem "bcrypt", "~> 3.1.7"
 gem "figaro"
 gem "pg"
 gem "omniauth-fitbit"
+gem "faraday"
 
 group :development, :test do
   gem "byebug"

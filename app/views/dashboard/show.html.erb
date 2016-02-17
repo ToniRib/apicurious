@@ -4,4 +4,14 @@
       <h1>Welcome, <%= current_user.full_name %></h1>
     </div>
   </div>
+  <div class="row">
+    <div class="col-sm-12 col-md-3">
+      <h4>Friends Leaderboard</h4>
+      <% @friends.each do |friend| %>
+        <% if friend.active? %>
+          <%= render partial: "friend", locals: { friend: friend } %>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
 </div>

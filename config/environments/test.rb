@@ -41,4 +41,10 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 end
 
-OmniAuth.config.test_mode = true
+# OmniAuth.config.test_mode = true
+#
+# OmniAuth.config.mock_auth[:fitbit] = OmniAuth::AuthHash.new({
+#   :provider => 'fitbit',
+#   :uid => '123545'
+#   # etc.
+# })
