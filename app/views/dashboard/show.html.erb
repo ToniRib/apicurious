@@ -26,13 +26,14 @@
       </div>
     </div>
     <div class="col-sm-12 col-md-6">
-      <div class="panel">
+      <div class="panel text-center">
         <h4>Resting Heart Rate</h4>
         <%= image_tag Gchart.line(size: "500x300",
                                   bg: "fff",
                                   data: @user_data.all_heartrates,
                                   axis_with_labels: 'y',
                                   min_value: @user_data.minimum_heartrate - 2) %>
+        <h3>Today: <%= @user_data.todays_heartrate %>bpm</h3>
       </div>
     </div>
   </div>

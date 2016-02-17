@@ -14,4 +14,8 @@ class UserData
   def minimum_heartrate
     all_heartrates.min
   end
+
+  def todays_heartrate
+    all_heartrates.last
+  end
 end
