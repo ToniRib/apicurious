@@ -8,7 +8,7 @@
     <div class="col-sm-12 col-md-3">
       <div class="panel">
         <h4>Friends Leaderboard</h4>
-        <% @friends.each do |friend| %>
+        <% @user_data.friends.each do |friend| %>
           <% if friend.active? %>
             <%= render partial: "friend", locals: { friend: friend } %>
           <% end %>
@@ -18,19 +18,15 @@
     <div class="col-sm-12 col-md-3">
       <div class="panel">
         <h4>Recent Sleep Patterns</h4>
-        <% @sleep.each do |day| %>
-        <% if day.logged? %>
-        <%= render partial: "sleep", locals: { sleep: day } %>
-        <% end %>
+        <% @user_data.sleep.each do |day| %>
+          <% if day.logged? %>
+            <%= render partial: "sleep", locals: { sleep: day } %>
+          <% end %>
         <% end %>
       </div>
     </div>
     <div class="col-sm-12 col-md-6">
-      <div class="panel">
-        <h4>Resting Heart Rate</h4>
-        <%= image_tag Gchart.line(size: "300x300", bg: "fff", data: @heartrate_data,
-                                  axis_with_labels: 'y') %>
-      </div>
+
     </div>
   </div>
 </div>

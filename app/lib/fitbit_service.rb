@@ -10,33 +10,52 @@ class FitbitService
     end
   end
 
-  def get_friends
+  def get_user_data
+    user_data = UserData.new
+    asleep, awake, awakenings = get_sleep
+    user_data.load(friends:   create_friends(get("friends/leaderboard.json")),
+                   sleep:     create_sleep(asleep, awake, awakenings),
+                   heartrate: resting_heartrate_only(get("activities/heart/date/#{Date.today.to_s}/30d.json"))
+    )
+    user_data
+  end
+
+  def get(path)
     response = @connection.get do |request|
-      request.url("friends/leaderboard.json")
+      request.url(path)
       request.headers["Authorization"] = "Bearer #{user.token}"
     end
-    response = JSON.parse(response.body)
-    create_friends(response)
+
+    JSON.parse(response.body)
   end
+
+  # def get_friends
+  #   response = @connection.get do |request|
+  #     request.url("friends/leaderboard.json")
+  #     request.headers["Authorization"] = "Bearer #{user.token}"
+  #   end
+  #   response = JSON.parse(response.body)
+  #   create_friends(response)
+  # end
 
   def get_sleep
-    minutes_asleep = get_minutes_asleep
-    minutes_awake = get_minutes_awake
-    awakenings_count = get_awakenings_count
+    minutes_asleep = get("sleep/minutesAsleep/date/#{Date.today.to_s}/7d.json")
+    minutes_awake = get("sleep/minutesAwake/date/#{Date.today.to_s}/7d.json")
+    awakenings_count = get("sleep/awakeningsCount/date/#{Date.today.to_s}/7d.json")
 
-    create_sleep(minutes_asleep["sleep-minutesAsleep"],
-                 minutes_awake["sleep-minutesAwake"],
-                 awakenings_count["sleep-awakeningsCount"])
+    [minutes_asleep["sleep-minutesAsleep"],
+     minutes_awake["sleep-minutesAwake"],
+     awakenings_count["sleep-awakeningsCount"]]
   end
-
-  def get_resting_heartrate
-    response = @connection.get do |request|
-      request.url("activities/heart/date/#{Date.today.to_s}/30d.json")
-      request.headers["Authorization"] = "Bearer #{user.token}"
-    end
-    response = JSON.parse(response.body)
-    resting_heartrate_only(response)
-  end
+  #
+  # def get_resting_heartrate
+  #   response = @connection.get do |request|
+  #     request.url("activities/heart/date/#{Date.today.to_s}/30d.json")
+  #     request.headers["Authorization"] = "Bearer #{user.token}"
+  #   end
+  #   response = JSON.parse(response.body)
+  #   resting_heartrate_only(response)
+  # end
 
   private
 
@@ -46,30 +65,30 @@ class FitbitService
                                                 name: info["user"]["displayName"],
                                                 avatar: info["user"]["avatar"]) }
   end
-
-  def get_minutes_asleep
-    response = @connection.get do |request|
-      request.url("sleep/minutesAsleep/date/#{Date.today.to_s}/7d.json")
-      request.headers["Authorization"] = "Bearer #{user.token}"
-    end
-    JSON.parse(response.body)
-  end
-
-  def get_minutes_awake
-    response = @connection.get do |request|
-      request.url("sleep/minutesAwake/date/#{Date.today.to_s}/7d.json")
-      request.headers["Authorization"] = "Bearer #{user.token}"
-    end
-    JSON.parse(response.body)
-  end
-
-  def get_awakenings_count
-    response = @connection.get do |request|
-      request.url("sleep/awakeningsCount/date/#{Date.today.to_s}/7d.json")
-      request.headers["Authorization"] = "Bearer #{user.token}"
-    end
-    JSON.parse(response.body)
-  end
+  #
+  # def get_minutes_asleep
+  #   response = @connection.get do |request|
+  #     request.url("sleep/minutesAsleep/date/#{Date.today.to_s}/7d.json")
+  #     request.headers["Authorization"] = "Bearer #{user.token}"
+  #   end
+  #   JSON.parse(response.body)
+  # end
+  #
+  # def get_minutes_awake
+  #   response = @connection.get do |request|
+  #     request.url("sleep/minutesAwake/date/#{Date.today.to_s}/7d.json")
+  #     request.headers["Authorization"] = "Bearer #{user.token}"
+  #   end
+  #   JSON.parse(response.body)
+  # end
+  #
+  # def get_awakenings_count
+  #   response = @connection.get do |request|
+  #     request.url("sleep/awakeningsCount/date/#{Date.today.to_s}/7d.json")
+  #     request.headers["Authorization"] = "Bearer #{user.token}"
+  #   end
+  #   JSON.parse(response.body)
+  # end
 
   def create_sleep(asleep, awake, awakenings)
     asleep.map.with_index do |entry, index|
