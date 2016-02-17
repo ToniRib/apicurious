@@ -49,7 +49,7 @@ class FitbitService
 
   def get_minutes_asleep
     response = @connection.get do |request|
-      request.url("sleep/minutesAsleep/date/#{Date.today.to_s}/30d.json")
+      request.url("sleep/minutesAsleep/date/#{Date.today.to_s}/7d.json")
       request.headers["Authorization"] = "Bearer #{user.token}"
     end
     JSON.parse(response.body)
@@ -57,7 +57,7 @@ class FitbitService
 
   def get_minutes_awake
     response = @connection.get do |request|
-      request.url("sleep/minutesAwake/date/#{Date.today.to_s}/30d.json")
+      request.url("sleep/minutesAwake/date/#{Date.today.to_s}/7d.json")
       request.headers["Authorization"] = "Bearer #{user.token}"
     end
     JSON.parse(response.body)
@@ -65,7 +65,7 @@ class FitbitService
 
   def get_awakenings_count
     response = @connection.get do |request|
-      request.url("sleep/awakeningsCount/date/#{Date.today.to_s}/30d.json")
+      request.url("sleep/awakeningsCount/date/#{Date.today.to_s}/7d.json")
       request.headers["Authorization"] = "Bearer #{user.token}"
     end
     JSON.parse(response.body)
