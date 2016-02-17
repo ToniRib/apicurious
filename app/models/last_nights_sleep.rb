@@ -13,10 +13,12 @@ class LastNightsSleep
     @minute_data = minute_data
   end
 
-  def asleep_time_in_hours
-    hours = minutes_asleep / 60
-    minutes = minutes_asleep - (hours * 60)
-    "#{hours} hrs #{minutes} mins"
+  def asleep_time_hours
+    minutes_asleep / 60
+  end
+
+  def asleep_time_minutes
+    minutes_asleep - (asleep_time_hours * 60)
   end
 
   def chart
