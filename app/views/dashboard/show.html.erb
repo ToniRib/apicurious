@@ -13,5 +13,13 @@
         <% end %>
       <% end %>
     </div>
+    <div class="col-sm-12 col-md-3">
+      <h4>Recent Sleep Patterns</h4>
+      <% @sleep.each do |day| %>
+        <% if day.logged? %>
+          <%= render partial: "sleep", locals: { sleep: day } %>
+        <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
