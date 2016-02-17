@@ -27,7 +27,8 @@ class LastNightsSleep
       f.plotOptions( pie: { startAngle: -90,
                             endAngle: 90,
                             center: ["50%", "75%"],
-                            dataLabels: { enabled: false } })
+                            dataLabels: { enabled: false },
+                            borderColor: "null" })
     end
   end
 
@@ -50,9 +51,9 @@ class LastNightsSleep
   end
 
   def sleep_points
-    minute_data.map do |point|
+    data = minute_data.map do |point|
       {
-        y: point["value"].to_i,
+        y: 1,
         name: value_name(point["value"]),
         color:value_color(point["value"])
       }
