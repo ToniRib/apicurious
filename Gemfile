@@ -13,7 +13,7 @@ gem "figaro"
 gem "pg"
 gem "omniauth-fitbit"
 gem "faraday"
-gem "googlecharts"
+gem "lazy_high_charts"
 
 group :development, :test do
   gem "byebug"
