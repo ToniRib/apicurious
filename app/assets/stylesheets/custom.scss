@@ -71,6 +71,21 @@ h4 {
   margin: 0;
 }
 
+// -----DASHBOARD: SLEEP-----
+
+.sleep-panel {
+  height: 631px;
+  overflow: auto;
+}
+
+p {
+  margin: 0 0 5px;
+}
+
+.sleep-date {
+  color: #c400b1;
+}
+
 // -----DASHBOARD: LAST NIGHT'S SLEEP-----
 
 .big-time {
@@ -78,7 +93,7 @@ h4 {
 }
 
 .sleep-row-column {
-  height: 300px;
+  height: 105px;
 }
 
 .awake-text,

@@ -1,10 +1,13 @@
 <div class="container">
+  <!-- TITLE ROW -->
   <div class="row">
     <div class="col-sm-12">
       <h1 class="dashboard-banner">Welcome, <%= current_user.full_name %></h1>
     </div>
   </div>
+  <!-- FIRST ROW -->
   <div class="row">
+    <!-- FRIEND LEADERBOARD -->
     <div class="col-sm-12 col-md-3">
       <div class="panel">
         <h4>Friends Leaderboard</h4>
@@ -15,8 +18,9 @@
         <% end %>
       </div>
     </div>
+    <!-- SLEEP PATTERNS -->
     <div class="col-sm-12 col-md-3">
-      <div class="panel">
+      <div class="panel sleep-panel">
         <h4>Recent Sleep Patterns</h4>
         <% @user_data.sleep.each do |day| %>
           <% if day.logged? %>
@@ -25,49 +29,57 @@
         <% end %>
       </div>
     </div>
+    <!-- CHARTS -->
     <div class="col-sm-12 col-md-6">
-      <div class="panel text-center">
-        <h4>Resting Heart Rate</h4>
-        <div>
-          <%= high_chart("heart-rate-chart", @user_data.heartrate_chart)  %>
+      <!-- HEART RATE CHART -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel text-center">
+            <h4>Resting Heart Rate</h4>
+            <div>
+              <%= high_chart("heart-rate-chart", @user_data.heartrate_chart)  %>
+            </div>
+            <h3>Today: <%= @user_data.todays_heartrate %> bpm</h3>
+          </div>
         </div>
-        <h3>Today: <%= @user_data.todays_heartrate %> bpm</h3>
+      </div>
+      <!-- SLEEP CHART -->
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="panel text-center">
+            <div class="row">
+              <div class="col-sm-12">
+                <h4>Last Night's Sleep</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12 sleep-row-column">
+                <%= high_chart("sleep-chart", @user_data.last_nights_sleep.chart)  %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <h3>
+                  <span class="big-time"><%= @user_data.last_nights_sleep.asleep_time_hours %></span>hr
+                  <span class="big-time"><%= @user_data.last_nights_sleep.asleep_time_minutes %></span>min
+                </h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 pull-right">
+                <h5 class="awake-text">awake <%= @user_data.last_nights_sleep.awake_count %>x</h5>
+              </div>
+              <div class="col-sm-6 pull-left">
+                <h5 class="restless-text">restless <%= @user_data.last_nights_sleep.restless_count %>x</h5>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-
   <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <div class="panel text-center">
-        <div class="row">
-          <div class="col-sm-12">
-            <h4>Last Night's Sleep</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 sleep-row-column">
-            <%= high_chart("sleep-chart", @user_data.last_nights_sleep.chart)  %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h3>
-              <span class="big-time"><%= @user_data.last_nights_sleep.asleep_time_hours %></span>hr
-              <span class="big-time"><%= @user_data.last_nights_sleep.asleep_time_minutes %></span>min
-            </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 pull-right">
-            <h5 class="awake-text">awake <%= @user_data.last_nights_sleep.awake_count %>x</h5>
-          </div>
-          <div class="col-sm-6 pull-left">
-            <h5 class="restless-text">restless <%= @user_data.last_nights_sleep.restless_count %>x</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <!-- BADGES -->
     <div class="col-sm-12 col-md-4">
       <div class="panel text-center">
         <div class="row">
@@ -90,6 +102,14 @@
             </li>
             <% end %>
           </ul>
+        </div>
+      </div>
+    </div>
+    <!-- THIS WEEK'S ACTIVITY -->
+    <div class="col-sm-12 col-md-8">
+      <div class="panel">
+        <div class="row">
+          <h4>This Week's Activity</h4>
         </div>
       </div>
     </div>

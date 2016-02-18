@@ -23,7 +23,7 @@ class LastNightsSleep
 
   def chart
     LazyHighCharts::HighChart.new("pie") do |f|
-      f.chart(type: "pie")
+      f.chart(type: "pie", height: 200)
       f.legend(enabled: false)
       f.series(innerSize: "50%", data: sleep_points)
       f.plotOptions( pie: { startAngle: -90,
