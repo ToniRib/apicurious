@@ -4,10 +4,10 @@
 
 // -----FONTS-----
 
-@import url(https://fonts.googleapis.com/css?family=Khula:400,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
 
 body {
-  font-family: 'Khula', sans-serif;
+  font-family: 'Lato', sans-serif;
   background: $background-color;
 }
 
@@ -48,6 +48,7 @@ h4 {
 
 .dashboard-banner {
   color: $base-green;
+  margin-bottom: 20px;
 }
 
 // -----DASHBOARD: FRIENDS-----
@@ -58,6 +59,16 @@ h4 {
 
 .friend-avatar {
   max-height: 60px;
+}
+
+.friend-steps {
+  margin-top: 2px;
+  font-size: 24px;
+  letter-spacing: 0em;
+}
+
+.friend-name {
+  margin: 0;
 }
 
 // -----DASHBOARD: LAST NIGHT'S SLEEP-----
@@ -73,4 +84,31 @@ h4 {
 .awake-text,
 .restless-text {
   font-size: 20px;
+}
+
+// -----DASHBOARD: BADGES-----
+
+.badge-gallery {
+  font-size: 0;
+  margin: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0;
+  width: 90%;
+  white-space: nowrap;
+}
+
+.badge {
+  background-color: white;
+  color: black;
+  padding: 10px 10px;
+	width: 100%;
+}
+
+.badge-image {
+  margin-bottom: 10px;
+}
+
+.badge-description {
+  font-size: 26px;
 }
