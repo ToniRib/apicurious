@@ -41,7 +41,6 @@ class UserData
   def heartrate_chart
     LazyHighCharts::HighChart.new("basic_line") do |f|
       f.chart(type: "line",
-              marginRight: 130,
               marginBottom: 25,
               height: 200 )
       f.yAxis(title: { text: "Beats per Minute" })

@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :friend, aliases: [:friends] do
+  factory :friend do
     skip_create
 
     rank 1
@@ -48,6 +48,19 @@ FactoryGirl.define do
 
     date "2016-02-16"
     rate 84
+
+    initialize_with { new(attributes) }
+  end
+
+  factory :badge do
+    skip_create
+
+    type "DAILY_STEPS"
+    date "2016-02-16"
+    image "http://static0.fitbit.com/images/badges_new/" \
+          "125px/badge_daily_steps30k.png"
+    value 30000
+    description "30000 steps in a day"
 
     initialize_with { new(attributes) }
   end
