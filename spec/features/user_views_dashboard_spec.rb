@@ -22,21 +22,21 @@ RSpec.describe "User Views Dashboard", type: :feature do
     end
 
     within ".sleep-patterns-panel" do
-      expect(page).to have_content("Time Asleep: 4 hours 20 minutes")
-      expect(page).to have_content("Time Awake: 3 hours 10 minutes")
-      expect(page).to have_content("Number of Awakenings: 20")
+      expect(page).to have_content("Time Asleep: 4 hours 4 minutes")
+      expect(page).to have_content("Time Awake: 3 hours 1 minutes")
+      expect(page).to have_content("Number of Awakenings: 15")
     end
 
     within ".heart-rate-panel" do
       expect(page).to have_css("#heart-rate-chart")
-      expect(page).to have_content("Today: 83 bpm")
+      expect(page).to have_content("Today: 82 bpm")
     end
 
     within ".sleep-panel" do
       expect(page).to have_css("#sleep-chart")
-      expect(page).to have_content("3hr 39min")
-      expect(page).to have_content("awake 0x")
-      expect(page).to have_content("restless 7x")
+      expect(page).to have_content("2hr 51min")
+      expect(page).to have_content("awake 1x")
+      expect(page).to have_content("restless 16x")
     end
 
     within ".badge-gallery" do

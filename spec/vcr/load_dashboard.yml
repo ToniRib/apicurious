@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/minutesAsleep/date/2016-02-18/7d.json
+    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/minutesAsleep/date/2016-02-19/7d.json
     body:
       encoding: US-ASCII
       string: ''
@@ -10,7 +10,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:27 GMT
+      - Fri, 19 Feb 2016 15:01:12 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -35,11 +35,11 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '92'
+      - '133'
       Fitbit-Rate-Limit-Reset:
-      - '573'
+      - '3528'
       Etag:
-      - '39872989'
+      - 2c970c8a
       Content-Language:
       - en
       Vary:
@@ -47,15 +47,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f01f7faa71ee9-SJC
+      - 2772d87e1a202507-ORD
     body:
       encoding: ASCII-8BIT
-      string: '{"sleep-minutesAsleep":[{"dateTime":"2016-02-12","value":"260"},{"dateTime":"2016-02-13","value":"244"},{"dateTime":"2016-02-14","value":"243"},{"dateTime":"2016-02-15","value":"280"},{"dateTime":"2016-02-16","value":"224"},{"dateTime":"2016-02-17","value":"209"},{"dateTime":"2016-02-18","value":"219"}]}'
+      string: '{"sleep-minutesAsleep":[{"dateTime":"2016-02-13","value":"244"},{"dateTime":"2016-02-14","value":"243"},{"dateTime":"2016-02-15","value":"280"},{"dateTime":"2016-02-16","value":"224"},{"dateTime":"2016-02-17","value":"209"},{"dateTime":"2016-02-18","value":"219"},{"dateTime":"2016-02-19","value":"171"}]}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:27 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:11 GMT
 - request:
     method: get
-    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/minutesAwake/date/2016-02-18/7d.json
+    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/minutesAwake/date/2016-02-19/7d.json
     body:
       encoding: US-ASCII
       string: ''
@@ -63,7 +63,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -76,7 +76,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:28 GMT
+      - Fri, 19 Feb 2016 15:01:12 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -88,11 +88,11 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '91'
+      - '132'
       Fitbit-Rate-Limit-Reset:
-      - '572'
+      - '3528'
       Etag:
-      - 65ecea70
+      - 1bab18fe
       Content-Language:
       - en
       Vary:
@@ -100,15 +100,15 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f01f9eaee1e9b-SJC
+      - 2772d87f33942573-ORD
     body:
       encoding: ASCII-8BIT
-      string: '{"sleep-minutesAwake":[{"dateTime":"2016-02-12","value":"190"},{"dateTime":"2016-02-13","value":"181"},{"dateTime":"2016-02-14","value":"213"},{"dateTime":"2016-02-15","value":"276"},{"dateTime":"2016-02-16","value":"234"},{"dateTime":"2016-02-17","value":"200"},{"dateTime":"2016-02-18","value":"59"}]}'
+      string: '{"sleep-minutesAwake":[{"dateTime":"2016-02-13","value":"181"},{"dateTime":"2016-02-14","value":"213"},{"dateTime":"2016-02-15","value":"276"},{"dateTime":"2016-02-16","value":"234"},{"dateTime":"2016-02-17","value":"200"},{"dateTime":"2016-02-18","value":"59"},{"dateTime":"2016-02-19","value":"239"}]}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:28 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:12 GMT
 - request:
     method: get
-    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/awakeningsCount/date/2016-02-18/7d.json
+    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/awakeningsCount/date/2016-02-19/7d.json
     body:
       encoding: US-ASCII
       string: ''
@@ -116,7 +116,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -129,7 +129,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:28 GMT
+      - Fri, 19 Feb 2016 15:01:12 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -141,11 +141,11 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '90'
+      - '131'
       Fitbit-Rate-Limit-Reset:
-      - '572'
+      - '3528'
       Etag:
-      - b596cdcb
+      - a6b859f1
       Content-Language:
       - en
       Vary:
@@ -153,12 +153,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f01fbf6961ec5-SJC
+      - 2772d880abbf2525-ORD
     body:
       encoding: ASCII-8BIT
-      string: '{"sleep-awakeningsCount":[{"dateTime":"2016-02-12","value":"20"},{"dateTime":"2016-02-13","value":"15"},{"dateTime":"2016-02-14","value":"20"},{"dateTime":"2016-02-15","value":"21"},{"dateTime":"2016-02-16","value":"18"},{"dateTime":"2016-02-17","value":"20"},{"dateTime":"2016-02-18","value":"7"}]}'
+      string: '{"sleep-awakeningsCount":[{"dateTime":"2016-02-13","value":"15"},{"dateTime":"2016-02-14","value":"20"},{"dateTime":"2016-02-15","value":"21"},{"dateTime":"2016-02-16","value":"18"},{"dateTime":"2016-02-17","value":"20"},{"dateTime":"2016-02-18","value":"7"},{"dateTime":"2016-02-19","value":"17"}]}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:28 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:12 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/friends/leaderboard.json
@@ -169,7 +169,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -182,7 +182,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:29 GMT
+      - Fri, 19 Feb 2016 15:01:13 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -194,11 +194,11 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '89'
+      - '130'
       Fitbit-Rate-Limit-Reset:
-      - '571'
+      - '3528'
       Etag:
-      - bd3ad53e
+      - 08934332
       Content-Language:
       - en
       Vary:
@@ -206,10 +206,10 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f02008d561ecb-SJC
+      - 2772d881ef98042a-ORD
     body:
       encoding: ASCII-8BIT
-      string: '{"friends":[{"average":{"steps":18029},"lastUpdateTime":"2016-02-18T11:46:33","lifetime":{"steps":1024432},"rank":{"steps":1},"summary":{"steps":120032},"user":{"age":29,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/A0B4000B-B1F9-C8DF-5766-2B0E1FDAD5E8_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/A0B4000B-B1F9-C8DF-5766-2B0E1FDAD5E8_profile_150_square.jpg","averageDailySteps":18029,"city":"","country":"","dateOfBirth":"","displayName":"Carlos
+      string: '{"friends":[{"average":{"steps":17147},"lastUpdateTime":"2016-02-18T11:46:33","lifetime":{"steps":1024432},"rank":{"steps":1},"summary":{"steps":109974},"user":{"age":29,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/A0B4000B-B1F9-C8DF-5766-2B0E1FDAD5E8_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/A0B4000B-B1F9-C8DF-5766-2B0E1FDAD5E8_profile_150_square.jpg","averageDailySteps":17147,"city":"","country":"","dateOfBirth":"","displayName":"Carlos
         N.","encodedId":"3W492N","features":{},"friend":true,"fullName":"","gender":"MALE","height":175,"locale":"en_US","memberSince":"2015-11-29","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
         Steps","cheers":[],"dateTime":"2016-02-14","description":"70,000 steps in
         a day","earnedMessage":"Congrats on earning your first Spring Loaders badge!","encodedId":"229845","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps70k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps70k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps70k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps70k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps70k.png","marketingDescription":"You''ve
@@ -239,36 +239,7 @@ http_interactions:
         as high as you''d go to skydive! Cross another one off the ol'' fitness bucket
         list.","name":"Skydiver (1,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors1k.png","shareText":"I
         climbed 1,000 floors with my #Fitbit and earned the Skydiver badge.","shortDescription":"1,000
-        floors","shortName":"Skydiver","timesAchieved":1,"value":1000}],"weight":0}},{"average":{"steps":14367},"lastUpdateTime":"2016-02-18T20:11:07","lifetime":{"steps":2962910},"rank":{"steps":2},"summary":{"steps":104747},"user":{"age":58,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/62A2112C-2E8E-757E-504E-6989DB9B44C8_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/62A2112C-2E8E-757E-504E-6989DB9B44C8_profile_150_square.jpg","averageDailySteps":14367,"city":"","country":"","dateOfBirth":"","displayName":"Sharon
-        R.","encodedId":"3H5SBQ","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":168,"locale":"en_US","memberSince":"2015-05-31","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"A489E8","badgeGradientStartColor":"38216E","badgeType":"DAILY_STEPS","category":"Daily
-        Steps","cheers":[],"dateTime":"2016-02-13","description":"20,000 steps in
-        a day","earnedMessage":"Congrats on earning your first High Tops badge!","encodedId":"228TPP","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps20k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps20k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps20k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps20k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps20k.png","marketingDescription":"You''ve
-        walked 20,000 steps  And earned the High Tops badge!","mobileDescription":"When
-        it comes to steps, it looks like you''re not playing around. This achievement
-        was a slam dunk.","name":"High Tops (20,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps20k.png","shareText":"I
-        took 20,000 steps and earned the High Tops badge! #Fitbit","shortDescription":"20,000
-        steps","shortName":"High Tops","timesAchieved":16,"value":20000},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
-        Distance","cheers":[],"dateTime":"2015-12-17","description":"990 lifetime
-        miles","earnedMessage":"Whoa! You''ve earned the New Zealand badge!","encodedId":"22B8MD","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles990.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles990.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles990.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles990.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles990.png","marketingDescription":"By
-        reaching 990 lifetime miles, you''ve earned the New Zealand badge!","mobileDescription":"You''ve
-        walked the entire length of New Zealand.","name":"New Zealand (990 lifetime
-        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles990.png","shareText":"I
-        covered 990 miles with my #Fitbit and earned the New Zealand badge.","shortDescription":"990
-        miles","shortName":"New Zealand","timesAchieved":1,"unit":"MILES","value":990},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"DAILY_FLOORS","category":"Daily
-        Climb","cheers":[],"dateTime":"2015-06-06","description":"125 floors in a
-        day","earnedMessage":"Congrats on earning your first Rollercoaster badge!","encodedId":"229844","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors125.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors125.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors125.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors125.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors125.png","marketingDescription":"You''ve
-        climbed 125 floors to earn the Rollercoaster badge!","mobileDescription":"That''s
-        hair-raising, jaw-dropping, mind-blowing floor count!","name":"Rollercoaster
-        (125 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors125.png","shareText":"I
-        climbed 125 flights of stairs and earned the Rollercoaster badge! #Fitbit","shortDescription":"125
-        floors","shortName":"Rollercoaster","timesAchieved":1,"value":125},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
-        Climb","cheers":[],"dateTime":"2015-12-05","description":"4,000 lifetime floors","earnedMessage":"Yipee!
-        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
-        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
-        lifetime badges are really taking flight, because you just jetsetted your
-        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
-        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
-        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":15035},"lastUpdateTime":"2016-02-18T05:57:59","lifetime":{"steps":5624528},"rank":{"steps":3},"summary":{"steps":96080},"user":{"age":27,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/99B584FA-F8CE-A17E-A909-E845D110973B_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/99B584FA-F8CE-A17E-A909-E845D110973B_profile_150_square.jpg","averageDailySteps":15034,"city":"","country":"","dateOfBirth":"","displayName":"selby
+        floors","shortName":"Skydiver","timesAchieved":1,"value":1000}],"weight":0}},{"average":{"steps":15298},"lastUpdateTime":"2016-02-19T07:00:56","lifetime":{"steps":5635561},"rank":{"steps":2},"summary":{"steps":97347},"user":{"age":27,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/99B584FA-F8CE-A17E-A909-E845D110973B_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/99B584FA-F8CE-A17E-A909-E845D110973B_profile_150_square.jpg","averageDailySteps":15298,"city":"","country":"","dateOfBirth":"","displayName":"selby
         s.","encodedId":"364SGR","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":165,"locale":"en_US","memberSince":"2015-01-26","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
         Steps","cheers":[],"dateTime":"2015-09-12","description":"60,000 steps in
         a day","earnedMessage":"Congrats on earning your first Blue Suede Shoes badge!","encodedId":"22983X","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps60k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps60k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps60k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps60k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps60k.png","marketingDescription":"You''ve
@@ -298,21 +269,36 @@ http_interactions:
         With that many floors, it''s clear you''re no alien to fitness. You little
         climbing phenomenon, you.","name":"Spaceship (14,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors14k.png","shareText":"I
         climbed 14,000 floors with my #Fitbit and earned the Spaceship badge.","shortDescription":"14,000
-        floors","shortName":"Spaceship","timesAchieved":1,"value":14000}],"weight":0}},{"average":{"steps":8093},"lastUpdateTime":"2016-02-18T20:34:24","lifetime":{"steps":6956746},"rank":{"steps":4},"summary":{"steps":58187},"user":{"age":28,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/4039B9C0-F009-F721-B485-A445593A249D_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/4039B9C0-F009-F721-B485-A445593A249D_profile_150_square.jpg","averageDailySteps":8093,"city":"","country":"","dateOfBirth":"","displayName":"Natasha","encodedId":"2942RK","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":162.5,"locale":"en_US","memberSince":"2013-12-22","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
-        Steps","cheers":[],"dateTime":"2015-04-26","description":"25,000 steps in
-        a day","earnedMessage":"Congrats on earning your first Classics badge!","encodedId":"228TLX","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps25k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps25k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps25k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps25k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps25k.png","marketingDescription":"You''ve
-        walked 25,000 steps  And earned the Classics badge!","mobileDescription":"With
-        this impressive fitness feat, you''ve added a badge to your growing collection.
-        Nice job, you stepping all-star!","name":"Classics (25,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps25k.png","shareText":"I
-        took 25,000 steps and earned the Classics badge! #Fitbit","shortDescription":"25,000
-        steps","shortName":"Classics","timesAchieved":1,"value":25000},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
-        Distance","cheers":[],"dateTime":"2015-09-24","description":"2,500 lifetime
-        miles","earnedMessage":"Whoa! You''ve earned the Monarch Migration badge!","encodedId":"22B8MJ","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles2500.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles2500.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles2500.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles2500.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles2500.png","marketingDescription":"By
-        reaching 2,500 lifetime miles, you''ve earned the Monarch Migration badge!","mobileDescription":"Every
-        year the monarch butterfly migrates that same number of miles to warmer climates.","name":"Monarch
-        Migration (2,500 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles2500.png","shareText":"I
-        covered 2,500 miles with my #Fitbit and earned the Monarch Migration badge.","shortDescription":"2,500
-        miles","shortName":"Monarch Migration","timesAchieved":1,"unit":"MILES","value":2500}],"weight":0}},{"average":{"steps":9309},"lastUpdateTime":"2016-02-18T20:00:25","lifetime":{"steps":2005465},"rank":{"steps":5},"summary":{"steps":54737},"user":{"age":32,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/5B7AD8B3-3AA7-9E8A-DBC0-670457DF515B_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/5B7AD8B3-3AA7-9E8A-DBC0-670457DF515B_profile_150_square.jpg","averageDailySteps":9309,"city":"","country":"","dateOfBirth":"","displayName":"Emma
+        floors","shortName":"Spaceship","timesAchieved":1,"value":14000}],"weight":0}},{"average":{"steps":15037},"lastUpdateTime":"2016-02-19T07:41:32","lifetime":{"steps":2963433},"rank":{"steps":3},"summary":{"steps":86616},"user":{"age":58,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/62A2112C-2E8E-757E-504E-6989DB9B44C8_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/62A2112C-2E8E-757E-504E-6989DB9B44C8_profile_150_square.jpg","averageDailySteps":15036,"city":"","country":"","dateOfBirth":"","displayName":"Sharon
+        R.","encodedId":"3H5SBQ","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":168,"locale":"en_US","memberSince":"2015-05-31","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"A489E8","badgeGradientStartColor":"38216E","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2016-02-13","description":"20,000 steps in
+        a day","earnedMessage":"Congrats on earning your first High Tops badge!","encodedId":"228TPP","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps20k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps20k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps20k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps20k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps20k.png","marketingDescription":"You''ve
+        walked 20,000 steps  And earned the High Tops badge!","mobileDescription":"When
+        it comes to steps, it looks like you''re not playing around. This achievement
+        was a slam dunk.","name":"High Tops (20,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps20k.png","shareText":"I
+        took 20,000 steps and earned the High Tops badge! #Fitbit","shortDescription":"20,000
+        steps","shortName":"High Tops","timesAchieved":16,"value":20000},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-12-17","description":"990 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the New Zealand badge!","encodedId":"22B8MD","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles990.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles990.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles990.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles990.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles990.png","marketingDescription":"By
+        reaching 990 lifetime miles, you''ve earned the New Zealand badge!","mobileDescription":"You''ve
+        walked the entire length of New Zealand.","name":"New Zealand (990 lifetime
+        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles990.png","shareText":"I
+        covered 990 miles with my #Fitbit and earned the New Zealand badge.","shortDescription":"990
+        miles","shortName":"New Zealand","timesAchieved":1,"unit":"MILES","value":990},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-06-06","description":"125 floors in a
+        day","earnedMessage":"Congrats on earning your first Rollercoaster badge!","encodedId":"229844","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors125.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors125.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors125.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors125.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors125.png","marketingDescription":"You''ve
+        climbed 125 floors to earn the Rollercoaster badge!","mobileDescription":"That''s
+        hair-raising, jaw-dropping, mind-blowing floor count!","name":"Rollercoaster
+        (125 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors125.png","shareText":"I
+        climbed 125 flights of stairs and earned the Rollercoaster badge! #Fitbit","shortDescription":"125
+        floors","shortName":"Rollercoaster","timesAchieved":1,"value":125},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-12-05","description":"4,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
+        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
+        lifetime badges are really taking flight, because you just jetsetted your
+        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
+        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":10947},"lastUpdateTime":"2016-02-18T20:00:25","lifetime":{"steps":2005465},"rank":{"steps":4},"summary":{"steps":54737},"user":{"age":32,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/5B7AD8B3-3AA7-9E8A-DBC0-670457DF515B_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/5B7AD8B3-3AA7-9E8A-DBC0-670457DF515B_profile_150_square.jpg","averageDailySteps":10947,"city":"","country":"","dateOfBirth":"","displayName":"Emma
         W.","encodedId":"3CMMPD","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":172.70000000000002,"locale":"en_US","memberSince":"2015-04-20","nickname":"","offsetFromUTCMillis":-25200000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Denver","topBadges":[{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
         Steps","cheers":[],"dateTime":"2015-09-26","description":"30,000 steps in
         a day","earnedMessage":"Congrats on earning your first Trail Shoe badge!","encodedId":"228TM5","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps30k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps30k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps30k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps30k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps30k.png","marketingDescription":"You''ve
@@ -341,7 +327,21 @@ http_interactions:
         lifetime badges are really taking flight, because you just jetsetted your
         way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
         climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
-        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":7548},"lastUpdateTime":"2016-02-18T20:08:00","lifetime":{"steps":3514290},"rank":{"steps":6},"summary":{"steps":45802},"user":{"age":27,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/38056F54-AF8E-F890-D53A-C7EAC631101A_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/38056F54-AF8E-F890-D53A-C7EAC631101A_profile_150_square.jpg","averageDailySteps":7547,"dateOfBirth":"1989-01-10","displayName":"Toni","distanceUnit":"en_US","encodedId":"35FPZ5","features":{"exerciseGoal":true},"fullName":"Toni
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":8418},"lastUpdateTime":"2016-02-19T07:43:45","lifetime":{"steps":6957671},"rank":{"steps":5},"summary":{"steps":53658},"user":{"age":28,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/4039B9C0-F009-F721-B485-A445593A249D_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/4039B9C0-F009-F721-B485-A445593A249D_profile_150_square.jpg","averageDailySteps":8418,"city":"","country":"","dateOfBirth":"","displayName":"Natasha","encodedId":"2942RK","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":162.5,"locale":"en_US","memberSince":"2013-12-22","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-04-26","description":"25,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Classics badge!","encodedId":"228TLX","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps25k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps25k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps25k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps25k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps25k.png","marketingDescription":"You''ve
+        walked 25,000 steps  And earned the Classics badge!","mobileDescription":"With
+        this impressive fitness feat, you''ve added a badge to your growing collection.
+        Nice job, you stepping all-star!","name":"Classics (25,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps25k.png","shareText":"I
+        took 25,000 steps and earned the Classics badge! #Fitbit","shortDescription":"25,000
+        steps","shortName":"Classics","timesAchieved":1,"value":25000},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-09-24","description":"2,500 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Monarch Migration badge!","encodedId":"22B8MJ","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles2500.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles2500.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles2500.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles2500.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles2500.png","marketingDescription":"By
+        reaching 2,500 lifetime miles, you''ve earned the Monarch Migration badge!","mobileDescription":"Every
+        year the monarch butterfly migrates that same number of miles to warmer climates.","name":"Monarch
+        Migration (2,500 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles2500.png","shareText":"I
+        covered 2,500 miles with my #Fitbit and earned the Monarch Migration badge.","shortDescription":"2,500
+        miles","shortName":"Monarch Migration","timesAchieved":1,"unit":"MILES","value":2500}],"weight":0}},{"average":{"steps":6592},"lastUpdateTime":"2016-02-19T07:37:40","lifetime":{"steps":3515929},"rank":{"steps":6},"summary":{"steps":45146},"user":{"age":27,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/38056F54-AF8E-F890-D53A-C7EAC631101A_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/38056F54-AF8E-F890-D53A-C7EAC631101A_profile_150_square.jpg","averageDailySteps":6591,"dateOfBirth":"1989-01-10","displayName":"Toni","distanceUnit":"en_US","encodedId":"35FPZ5","features":{"exerciseGoal":true},"fullName":"Toni
         Rib","gender":"FEMALE","glucoseUnit":"en_US","height":177,"heightUnit":"en_US","locale":"en_US","memberSince":"2015-01-16","offsetFromUTCMillis":-25200000,"startDayOfWeek":"SUNDAY","strideLengthRunning":94.30000000000001,"strideLengthRunningType":"default","strideLengthWalking":73.10000000000001,"strideLengthWalkingType":"default","timezone":"America/Denver","topBadges":[{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
         Steps","cheers":[],"dateTime":"2015-07-11","description":"30,000 steps in
         a day","earnedMessage":"Congrats on earning your first Trail Shoe badge!","encodedId":"228TM5","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps30k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps30k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps30k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps30k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps30k.png","marketingDescription":"You''ve
@@ -371,7 +371,7 @@ http_interactions:
         lifetime badges are really taking flight, because you just jetsetted your
         way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
         climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
-        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0,"weightUnit":"en_US"}},{"average":{"steps":4833},"lastUpdateTime":"2016-02-18T00:38:59","lifetime":{"steps":6160164},"rank":{"steps":7},"summary":{"steps":9665},"user":{"age":35,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/DF3F713A-593D-190C-2B2E-C393170E1E73_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/DF3F713A-593D-190C-2B2E-C393170E1E73_profile_150_square.jpg","averageDailySteps":4832,"city":"","country":"","dateOfBirth":"","displayName":"Monique","encodedId":"2DVGFP","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":157.5,"locale":"en_US","memberSince":"2014-03-05","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"DAILY_STEPS","category":"Daily
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0,"weightUnit":"en_US"}},{"average":{"steps":7524},"lastUpdateTime":"2016-02-19T05:30:58","lifetime":{"steps":6175098},"rank":{"steps":7},"summary":{"steps":24599},"user":{"age":35,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/DF3F713A-593D-190C-2B2E-C393170E1E73_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/DF3F713A-593D-190C-2B2E-C393170E1E73_profile_150_square.jpg","averageDailySteps":7524,"city":"","country":"","dateOfBirth":"","displayName":"Monique","encodedId":"2DVGFP","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":157.5,"locale":"en_US","memberSince":"2014-03-05","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"DAILY_STEPS","category":"Daily
         Steps","cheers":[],"dateTime":"2015-11-07","description":"35,000 steps in
         a day","earnedMessage":"Congrats on earning your first Hiking Boot badge!","encodedId":"228TPW","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps35k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps35k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps35k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps35k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps35k.png","marketingDescription":"You''ve
         walked 35,000 steps  And earned the Hiking Boot badge!","mobileDescription":"Woot,
@@ -545,10 +545,10 @@ http_interactions:
         climbed 1,000 floors with my #Fitbit and earned the Skydiver badge.","shortDescription":"1,000
         floors","shortName":"Skydiver","timesAchieved":1,"value":1000}],"weight":0}}],"hideMeFromLeaderboard":"false"}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:29 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:12 GMT
 - request:
     method: get
-    uri: https://api.fitbit.com/1/user/35FPZ5/activities/heart/date/2016-02-18/30d.json
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/heart/date/2016-02-19/30d.json
     body:
       encoding: US-ASCII
       string: ''
@@ -556,7 +556,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -569,7 +569,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:29 GMT
+      - Fri, 19 Feb 2016 15:01:13 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -581,11 +581,11 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '88'
+      - '129'
       Fitbit-Rate-Limit-Reset:
-      - '571'
+      - '3527'
       Etag:
-      - 783caed1
+      - 93e43a29
       Content-Language:
       - en
       Vary:
@@ -593,11 +593,10 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f0204493541c3-SJC
+      - 2772d88606ff099a-ORD
     body:
       encoding: ASCII-8BIT
-      string: '{"activities-heart":[{"dateTime":"2016-01-20","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
-        of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-21","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
+      string: '{"activities-heart":[{"dateTime":"2016-01-21","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
         of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-22","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
         of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-23","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
         of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-24","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
@@ -649,14 +648,16 @@ http_interactions:
         of Range"},{"caloriesOut":811.69382,"max":135,"min":96,"minutes":342,"name":"Fat
         Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":84}},{"dateTime":"2016-02-17","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":894.96582,"max":96,"min":30,"minutes":784,"name":"Out
         of Range"},{"caloriesOut":1545.00787,"max":135,"min":96,"minutes":616,"name":"Fat
-        Burn"},{"caloriesOut":18.94438,"max":164,"min":135,"minutes":3,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":82}},{"dateTime":"2016-02-18","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":873.41919,"max":96,"min":30,"minutes":767,"name":"Out
-        of Range"},{"caloriesOut":858.95068,"max":135,"min":96,"minutes":338,"name":"Fat
-        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":83}}]}'
+        Burn"},{"caloriesOut":18.94438,"max":164,"min":135,"minutes":3,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":82}},{"dateTime":"2016-02-18","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1122.71474,"max":96,"min":30,"minutes":974,"name":"Out
+        of Range"},{"caloriesOut":900.27441,"max":135,"min":96,"minutes":360,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":83}},{"dateTime":"2016-02-19","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":399.80969,"max":96,"min":30,"minutes":371,"name":"Out
+        of Range"},{"caloriesOut":184.34339,"max":135,"min":96,"minutes":73,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":82}}]}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:29 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:13 GMT
 - request:
     method: get
-    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/date/2016-02-18.json
+    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/date/2016-02-19.json
     body:
       encoding: US-ASCII
       string: ''
@@ -664,7 +665,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -677,7 +678,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:30 GMT
+      - Fri, 19 Feb 2016 15:01:13 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -689,11 +690,11 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '87'
+      - '128'
       Fitbit-Rate-Limit-Reset:
-      - '570'
+      - '3527'
       Etag:
-      - 581c207e
+      - 10e5b369
       Content-Language:
       - en
       Vary:
@@ -701,12 +702,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f0206173e1ea1-SJC
+      - 2772d887309f2525-ORD
     body:
       encoding: ASCII-8BIT
-      string: '{"sleep":[{"awakeCount":0,"awakeDuration":0,"awakeningsCount":7,"dateOfSleep":"2016-02-18","duration":17640000,"efficiency":79,"isMainSleep":true,"logId":10914145207,"minuteData":[{"dateTime":"01:03:00","value":"2"},{"dateTime":"01:04:00","value":"2"},{"dateTime":"01:05:00","value":"2"},{"dateTime":"01:06:00","value":"2"},{"dateTime":"01:07:00","value":"2"},{"dateTime":"01:08:00","value":"2"},{"dateTime":"01:09:00","value":"2"},{"dateTime":"01:10:00","value":"2"},{"dateTime":"01:11:00","value":"2"},{"dateTime":"01:12:00","value":"2"},{"dateTime":"01:13:00","value":"2"},{"dateTime":"01:14:00","value":"1"},{"dateTime":"01:15:00","value":"1"},{"dateTime":"01:16:00","value":"1"},{"dateTime":"01:17:00","value":"1"},{"dateTime":"01:18:00","value":"1"},{"dateTime":"01:19:00","value":"1"},{"dateTime":"01:20:00","value":"1"},{"dateTime":"01:21:00","value":"1"},{"dateTime":"01:22:00","value":"1"},{"dateTime":"01:23:00","value":"1"},{"dateTime":"01:24:00","value":"1"},{"dateTime":"01:25:00","value":"1"},{"dateTime":"01:26:00","value":"1"},{"dateTime":"01:27:00","value":"1"},{"dateTime":"01:28:00","value":"1"},{"dateTime":"01:29:00","value":"1"},{"dateTime":"01:30:00","value":"1"},{"dateTime":"01:31:00","value":"1"},{"dateTime":"01:32:00","value":"1"},{"dateTime":"01:33:00","value":"1"},{"dateTime":"01:34:00","value":"1"},{"dateTime":"01:35:00","value":"1"},{"dateTime":"01:36:00","value":"1"},{"dateTime":"01:37:00","value":"1"},{"dateTime":"01:38:00","value":"1"},{"dateTime":"01:39:00","value":"1"},{"dateTime":"01:40:00","value":"1"},{"dateTime":"01:41:00","value":"1"},{"dateTime":"01:42:00","value":"1"},{"dateTime":"01:43:00","value":"1"},{"dateTime":"01:44:00","value":"1"},{"dateTime":"01:45:00","value":"1"},{"dateTime":"01:46:00","value":"1"},{"dateTime":"01:47:00","value":"1"},{"dateTime":"01:48:00","value":"1"},{"dateTime":"01:49:00","value":"1"},{"dateTime":"01:50:00","value":"1"},{"dateTime":"01:51:00","value":"1"},{"dateTime":"01:52:00","value":"1"},{"dateTime":"01:53:00","value":"1"},{"dateTime":"01:54:00","value":"1"},{"dateTime":"01:55:00","value":"1"},{"dateTime":"01:56:00","value":"1"},{"dateTime":"01:57:00","value":"1"},{"dateTime":"01:58:00","value":"1"},{"dateTime":"01:59:00","value":"1"},{"dateTime":"02:00:00","value":"1"},{"dateTime":"02:01:00","value":"1"},{"dateTime":"02:02:00","value":"1"},{"dateTime":"02:03:00","value":"1"},{"dateTime":"02:04:00","value":"1"},{"dateTime":"02:05:00","value":"1"},{"dateTime":"02:06:00","value":"1"},{"dateTime":"02:07:00","value":"1"},{"dateTime":"02:08:00","value":"1"},{"dateTime":"02:09:00","value":"1"},{"dateTime":"02:10:00","value":"1"},{"dateTime":"02:11:00","value":"1"},{"dateTime":"02:12:00","value":"1"},{"dateTime":"02:13:00","value":"1"},{"dateTime":"02:14:00","value":"1"},{"dateTime":"02:15:00","value":"1"},{"dateTime":"02:16:00","value":"1"},{"dateTime":"02:17:00","value":"1"},{"dateTime":"02:18:00","value":"1"},{"dateTime":"02:19:00","value":"1"},{"dateTime":"02:20:00","value":"1"},{"dateTime":"02:21:00","value":"1"},{"dateTime":"02:22:00","value":"1"},{"dateTime":"02:23:00","value":"1"},{"dateTime":"02:24:00","value":"1"},{"dateTime":"02:25:00","value":"1"},{"dateTime":"02:26:00","value":"1"},{"dateTime":"02:27:00","value":"1"},{"dateTime":"02:28:00","value":"1"},{"dateTime":"02:29:00","value":"1"},{"dateTime":"02:30:00","value":"1"},{"dateTime":"02:31:00","value":"1"},{"dateTime":"02:32:00","value":"1"},{"dateTime":"02:33:00","value":"1"},{"dateTime":"02:34:00","value":"1"},{"dateTime":"02:35:00","value":"1"},{"dateTime":"02:36:00","value":"1"},{"dateTime":"02:37:00","value":"1"},{"dateTime":"02:38:00","value":"1"},{"dateTime":"02:39:00","value":"1"},{"dateTime":"02:40:00","value":"1"},{"dateTime":"02:41:00","value":"2"},{"dateTime":"02:42:00","value":"1"},{"dateTime":"02:43:00","value":"1"},{"dateTime":"02:44:00","value":"1"},{"dateTime":"02:45:00","value":"1"},{"dateTime":"02:46:00","value":"2"},{"dateTime":"02:47:00","value":"2"},{"dateTime":"02:48:00","value":"2"},{"dateTime":"02:49:00","value":"2"},{"dateTime":"02:50:00","value":"2"},{"dateTime":"02:51:00","value":"2"},{"dateTime":"02:52:00","value":"1"},{"dateTime":"02:53:00","value":"2"},{"dateTime":"02:54:00","value":"2"},{"dateTime":"02:55:00","value":"2"},{"dateTime":"02:56:00","value":"2"},{"dateTime":"02:57:00","value":"1"},{"dateTime":"02:58:00","value":"1"},{"dateTime":"02:59:00","value":"1"},{"dateTime":"03:00:00","value":"1"},{"dateTime":"03:01:00","value":"1"},{"dateTime":"03:02:00","value":"1"},{"dateTime":"03:03:00","value":"1"},{"dateTime":"03:04:00","value":"1"},{"dateTime":"03:05:00","value":"1"},{"dateTime":"03:06:00","value":"1"},{"dateTime":"03:07:00","value":"1"},{"dateTime":"03:08:00","value":"1"},{"dateTime":"03:09:00","value":"1"},{"dateTime":"03:10:00","value":"1"},{"dateTime":"03:11:00","value":"1"},{"dateTime":"03:12:00","value":"1"},{"dateTime":"03:13:00","value":"1"},{"dateTime":"03:14:00","value":"1"},{"dateTime":"03:15:00","value":"1"},{"dateTime":"03:16:00","value":"1"},{"dateTime":"03:17:00","value":"1"},{"dateTime":"03:18:00","value":"2"},{"dateTime":"03:19:00","value":"2"},{"dateTime":"03:20:00","value":"2"},{"dateTime":"03:21:00","value":"2"},{"dateTime":"03:22:00","value":"2"},{"dateTime":"03:23:00","value":"2"},{"dateTime":"03:24:00","value":"2"},{"dateTime":"03:25:00","value":"2"},{"dateTime":"03:26:00","value":"2"},{"dateTime":"03:27:00","value":"2"},{"dateTime":"03:28:00","value":"2"},{"dateTime":"03:29:00","value":"2"},{"dateTime":"03:30:00","value":"2"},{"dateTime":"03:31:00","value":"2"},{"dateTime":"03:32:00","value":"2"},{"dateTime":"03:33:00","value":"1"},{"dateTime":"03:34:00","value":"1"},{"dateTime":"03:35:00","value":"1"},{"dateTime":"03:36:00","value":"1"},{"dateTime":"03:37:00","value":"1"},{"dateTime":"03:38:00","value":"1"},{"dateTime":"03:39:00","value":"1"},{"dateTime":"03:40:00","value":"1"},{"dateTime":"03:41:00","value":"1"},{"dateTime":"03:42:00","value":"1"},{"dateTime":"03:43:00","value":"1"},{"dateTime":"03:44:00","value":"1"},{"dateTime":"03:45:00","value":"1"},{"dateTime":"03:46:00","value":"1"},{"dateTime":"03:47:00","value":"1"},{"dateTime":"03:48:00","value":"1"},{"dateTime":"03:49:00","value":"1"},{"dateTime":"03:50:00","value":"1"},{"dateTime":"03:51:00","value":"1"},{"dateTime":"03:52:00","value":"1"},{"dateTime":"03:53:00","value":"1"},{"dateTime":"03:54:00","value":"1"},{"dateTime":"03:55:00","value":"1"},{"dateTime":"03:56:00","value":"1"},{"dateTime":"03:57:00","value":"1"},{"dateTime":"03:58:00","value":"1"},{"dateTime":"03:59:00","value":"1"},{"dateTime":"04:00:00","value":"1"},{"dateTime":"04:01:00","value":"1"},{"dateTime":"04:02:00","value":"1"},{"dateTime":"04:03:00","value":"1"},{"dateTime":"04:04:00","value":"1"},{"dateTime":"04:05:00","value":"1"},{"dateTime":"04:06:00","value":"1"},{"dateTime":"04:07:00","value":"1"},{"dateTime":"04:08:00","value":"1"},{"dateTime":"04:09:00","value":"1"},{"dateTime":"04:10:00","value":"1"},{"dateTime":"04:11:00","value":"1"},{"dateTime":"04:12:00","value":"1"},{"dateTime":"04:13:00","value":"1"},{"dateTime":"04:14:00","value":"1"},{"dateTime":"04:15:00","value":"1"},{"dateTime":"04:16:00","value":"1"},{"dateTime":"04:17:00","value":"1"},{"dateTime":"04:18:00","value":"1"},{"dateTime":"04:19:00","value":"1"},{"dateTime":"04:20:00","value":"1"},{"dateTime":"04:21:00","value":"2"},{"dateTime":"04:22:00","value":"2"},{"dateTime":"04:23:00","value":"2"},{"dateTime":"04:24:00","value":"2"},{"dateTime":"04:25:00","value":"2"},{"dateTime":"04:26:00","value":"2"},{"dateTime":"04:27:00","value":"2"},{"dateTime":"04:28:00","value":"2"},{"dateTime":"04:29:00","value":"2"},{"dateTime":"04:30:00","value":"2"},{"dateTime":"04:31:00","value":"2"},{"dateTime":"04:32:00","value":"2"},{"dateTime":"04:33:00","value":"2"},{"dateTime":"04:34:00","value":"2"},{"dateTime":"04:35:00","value":"2"},{"dateTime":"04:36:00","value":"2"},{"dateTime":"04:37:00","value":"2"},{"dateTime":"04:38:00","value":"2"},{"dateTime":"04:39:00","value":"2"},{"dateTime":"04:40:00","value":"2"},{"dateTime":"04:41:00","value":"2"},{"dateTime":"04:42:00","value":"2"},{"dateTime":"04:43:00","value":"1"},{"dateTime":"04:44:00","value":"1"},{"dateTime":"04:45:00","value":"1"},{"dateTime":"04:46:00","value":"1"},{"dateTime":"04:47:00","value":"1"},{"dateTime":"04:48:00","value":"1"},{"dateTime":"04:49:00","value":"1"},{"dateTime":"04:50:00","value":"1"},{"dateTime":"04:51:00","value":"1"},{"dateTime":"04:52:00","value":"1"},{"dateTime":"04:53:00","value":"1"},{"dateTime":"04:54:00","value":"1"},{"dateTime":"04:55:00","value":"1"},{"dateTime":"04:56:00","value":"1"},{"dateTime":"04:57:00","value":"1"},{"dateTime":"04:58:00","value":"1"},{"dateTime":"04:59:00","value":"1"},{"dateTime":"05:00:00","value":"1"},{"dateTime":"05:01:00","value":"1"},{"dateTime":"05:02:00","value":"1"},{"dateTime":"05:03:00","value":"1"},{"dateTime":"05:04:00","value":"1"},{"dateTime":"05:05:00","value":"1"},{"dateTime":"05:06:00","value":"1"},{"dateTime":"05:07:00","value":"1"},{"dateTime":"05:08:00","value":"1"},{"dateTime":"05:09:00","value":"1"},{"dateTime":"05:10:00","value":"1"},{"dateTime":"05:11:00","value":"1"},{"dateTime":"05:12:00","value":"1"},{"dateTime":"05:13:00","value":"1"},{"dateTime":"05:14:00","value":"1"},{"dateTime":"05:15:00","value":"1"},{"dateTime":"05:16:00","value":"1"},{"dateTime":"05:17:00","value":"1"},{"dateTime":"05:18:00","value":"1"},{"dateTime":"05:19:00","value":"1"},{"dateTime":"05:20:00","value":"1"},{"dateTime":"05:21:00","value":"1"},{"dateTime":"05:22:00","value":"1"},{"dateTime":"05:23:00","value":"1"},{"dateTime":"05:24:00","value":"1"},{"dateTime":"05:25:00","value":"1"},{"dateTime":"05:26:00","value":"1"},{"dateTime":"05:27:00","value":"1"},{"dateTime":"05:28:00","value":"1"},{"dateTime":"05:29:00","value":"1"},{"dateTime":"05:30:00","value":"1"},{"dateTime":"05:31:00","value":"1"},{"dateTime":"05:32:00","value":"1"},{"dateTime":"05:33:00","value":"1"},{"dateTime":"05:34:00","value":"1"},{"dateTime":"05:35:00","value":"1"},{"dateTime":"05:36:00","value":"1"},{"dateTime":"05:37:00","value":"1"},{"dateTime":"05:38:00","value":"1"},{"dateTime":"05:39:00","value":"1"},{"dateTime":"05:40:00","value":"1"},{"dateTime":"05:41:00","value":"2"},{"dateTime":"05:42:00","value":"2"},{"dateTime":"05:43:00","value":"2"},{"dateTime":"05:44:00","value":"2"},{"dateTime":"05:45:00","value":"2"},{"dateTime":"05:46:00","value":"2"},{"dateTime":"05:47:00","value":"2"},{"dateTime":"05:48:00","value":"2"},{"dateTime":"05:49:00","value":"2"},{"dateTime":"05:50:00","value":"2"},{"dateTime":"05:51:00","value":"2"},{"dateTime":"05:52:00","value":"2"},{"dateTime":"05:53:00","value":"2"},{"dateTime":"05:54:00","value":"2"},{"dateTime":"05:55:00","value":"2"},{"dateTime":"05:56:00","value":"2"}],"minutesAfterWakeup":16,"minutesAsleep":219,"minutesAwake":59,"minutesToFallAsleep":0,"restlessCount":7,"restlessDuration":75,"startTime":"2016-02-18T01:03:00.000","timeInBed":294},{"awakeCount":1,"awakeDuration":2,"awakeningsCount":10,"dateOfSleep":"2016-02-18","duration":11520000,"efficiency":47,"isMainSleep":false,"logId":10918394097,"minuteData":[{"dateTime":"12:53:00","value":"2"},{"dateTime":"12:54:00","value":"2"},{"dateTime":"12:55:00","value":"2"},{"dateTime":"12:56:00","value":"2"},{"dateTime":"12:57:00","value":"2"},{"dateTime":"12:58:00","value":"2"},{"dateTime":"12:59:00","value":"2"},{"dateTime":"13:00:00","value":"2"},{"dateTime":"13:01:00","value":"2"},{"dateTime":"13:02:00","value":"2"},{"dateTime":"13:03:00","value":"2"},{"dateTime":"13:04:00","value":"2"},{"dateTime":"13:05:00","value":"2"},{"dateTime":"13:06:00","value":"2"},{"dateTime":"13:07:00","value":"1"},{"dateTime":"13:08:00","value":"1"},{"dateTime":"13:09:00","value":"1"},{"dateTime":"13:10:00","value":"1"},{"dateTime":"13:11:00","value":"1"},{"dateTime":"13:12:00","value":"1"},{"dateTime":"13:13:00","value":"1"},{"dateTime":"13:14:00","value":"1"},{"dateTime":"13:15:00","value":"1"},{"dateTime":"13:16:00","value":"1"},{"dateTime":"13:17:00","value":"1"},{"dateTime":"13:18:00","value":"1"},{"dateTime":"13:19:00","value":"1"},{"dateTime":"13:20:00","value":"1"},{"dateTime":"13:21:00","value":"1"},{"dateTime":"13:22:00","value":"1"},{"dateTime":"13:23:00","value":"1"},{"dateTime":"13:24:00","value":"1"},{"dateTime":"13:25:00","value":"1"},{"dateTime":"13:26:00","value":"2"},{"dateTime":"13:27:00","value":"2"},{"dateTime":"13:28:00","value":"2"},{"dateTime":"13:29:00","value":"2"},{"dateTime":"13:30:00","value":"2"},{"dateTime":"13:31:00","value":"2"},{"dateTime":"13:32:00","value":"2"},{"dateTime":"13:33:00","value":"2"},{"dateTime":"13:34:00","value":"2"},{"dateTime":"13:35:00","value":"2"},{"dateTime":"13:36:00","value":"2"},{"dateTime":"13:37:00","value":"2"},{"dateTime":"13:38:00","value":"1"},{"dateTime":"13:39:00","value":"1"},{"dateTime":"13:40:00","value":"1"},{"dateTime":"13:41:00","value":"1"},{"dateTime":"13:42:00","value":"1"},{"dateTime":"13:43:00","value":"1"},{"dateTime":"13:44:00","value":"1"},{"dateTime":"13:45:00","value":"1"},{"dateTime":"13:46:00","value":"1"},{"dateTime":"13:47:00","value":"1"},{"dateTime":"13:48:00","value":"2"},{"dateTime":"13:49:00","value":"2"},{"dateTime":"13:50:00","value":"2"},{"dateTime":"13:51:00","value":"2"},{"dateTime":"13:52:00","value":"2"},{"dateTime":"13:53:00","value":"2"},{"dateTime":"13:54:00","value":"2"},{"dateTime":"13:55:00","value":"2"},{"dateTime":"13:56:00","value":"2"},{"dateTime":"13:57:00","value":"2"},{"dateTime":"13:58:00","value":"2"},{"dateTime":"13:59:00","value":"1"},{"dateTime":"14:00:00","value":"1"},{"dateTime":"14:01:00","value":"1"},{"dateTime":"14:02:00","value":"1"},{"dateTime":"14:03:00","value":"1"},{"dateTime":"14:04:00","value":"1"},{"dateTime":"14:05:00","value":"1"},{"dateTime":"14:06:00","value":"1"},{"dateTime":"14:07:00","value":"1"},{"dateTime":"14:08:00","value":"1"},{"dateTime":"14:09:00","value":"1"},{"dateTime":"14:10:00","value":"1"},{"dateTime":"14:11:00","value":"1"},{"dateTime":"14:12:00","value":"2"},{"dateTime":"14:13:00","value":"2"},{"dateTime":"14:14:00","value":"2"},{"dateTime":"14:15:00","value":"2"},{"dateTime":"14:16:00","value":"2"},{"dateTime":"14:17:00","value":"2"},{"dateTime":"14:18:00","value":"2"},{"dateTime":"14:19:00","value":"2"},{"dateTime":"14:20:00","value":"2"},{"dateTime":"14:21:00","value":"2"},{"dateTime":"14:22:00","value":"2"},{"dateTime":"14:23:00","value":"1"},{"dateTime":"14:24:00","value":"1"},{"dateTime":"14:25:00","value":"1"},{"dateTime":"14:26:00","value":"1"},{"dateTime":"14:27:00","value":"1"},{"dateTime":"14:28:00","value":"1"},{"dateTime":"14:29:00","value":"1"},{"dateTime":"14:30:00","value":"1"},{"dateTime":"14:31:00","value":"1"},{"dateTime":"14:32:00","value":"1"},{"dateTime":"14:33:00","value":"1"},{"dateTime":"14:34:00","value":"1"},{"dateTime":"14:35:00","value":"1"},{"dateTime":"14:36:00","value":"1"},{"dateTime":"14:37:00","value":"2"},{"dateTime":"14:38:00","value":"2"},{"dateTime":"14:39:00","value":"2"},{"dateTime":"14:40:00","value":"2"},{"dateTime":"14:41:00","value":"2"},{"dateTime":"14:42:00","value":"2"},{"dateTime":"14:43:00","value":"2"},{"dateTime":"14:44:00","value":"2"},{"dateTime":"14:45:00","value":"2"},{"dateTime":"14:46:00","value":"2"},{"dateTime":"14:47:00","value":"3"},{"dateTime":"14:48:00","value":"3"},{"dateTime":"14:49:00","value":"2"},{"dateTime":"14:50:00","value":"2"},{"dateTime":"14:51:00","value":"2"},{"dateTime":"14:52:00","value":"2"},{"dateTime":"14:53:00","value":"2"},{"dateTime":"14:54:00","value":"2"},{"dateTime":"14:55:00","value":"2"},{"dateTime":"14:56:00","value":"1"},{"dateTime":"14:57:00","value":"1"},{"dateTime":"14:58:00","value":"1"},{"dateTime":"14:59:00","value":"1"},{"dateTime":"15:00:00","value":"1"},{"dateTime":"15:01:00","value":"1"},{"dateTime":"15:02:00","value":"1"},{"dateTime":"15:03:00","value":"1"},{"dateTime":"15:04:00","value":"1"},{"dateTime":"15:05:00","value":"1"},{"dateTime":"15:06:00","value":"1"},{"dateTime":"15:07:00","value":"1"},{"dateTime":"15:08:00","value":"2"},{"dateTime":"15:09:00","value":"2"},{"dateTime":"15:10:00","value":"2"},{"dateTime":"15:11:00","value":"2"},{"dateTime":"15:12:00","value":"2"},{"dateTime":"15:13:00","value":"2"},{"dateTime":"15:14:00","value":"2"},{"dateTime":"15:15:00","value":"2"},{"dateTime":"15:16:00","value":"2"},{"dateTime":"15:17:00","value":"2"},{"dateTime":"15:18:00","value":"2"},{"dateTime":"15:19:00","value":"1"},{"dateTime":"15:20:00","value":"1"},{"dateTime":"15:21:00","value":"1"},{"dateTime":"15:22:00","value":"1"},{"dateTime":"15:23:00","value":"1"},{"dateTime":"15:24:00","value":"1"},{"dateTime":"15:25:00","value":"1"},{"dateTime":"15:26:00","value":"1"},{"dateTime":"15:27:00","value":"1"},{"dateTime":"15:28:00","value":"1"},{"dateTime":"15:29:00","value":"1"},{"dateTime":"15:30:00","value":"1"},{"dateTime":"15:31:00","value":"1"},{"dateTime":"15:32:00","value":"2"},{"dateTime":"15:33:00","value":"2"},{"dateTime":"15:34:00","value":"2"},{"dateTime":"15:35:00","value":"2"},{"dateTime":"15:36:00","value":"2"},{"dateTime":"15:37:00","value":"2"},{"dateTime":"15:38:00","value":"2"},{"dateTime":"15:39:00","value":"2"},{"dateTime":"15:40:00","value":"2"},{"dateTime":"15:41:00","value":"2"},{"dateTime":"15:42:00","value":"2"},{"dateTime":"15:43:00","value":"1"},{"dateTime":"15:44:00","value":"1"},{"dateTime":"15:45:00","value":"1"},{"dateTime":"15:46:00","value":"1"},{"dateTime":"15:47:00","value":"1"},{"dateTime":"15:48:00","value":"1"},{"dateTime":"15:49:00","value":"2"},{"dateTime":"15:50:00","value":"2"},{"dateTime":"15:51:00","value":"2"},{"dateTime":"15:52:00","value":"2"},{"dateTime":"15:53:00","value":"2"},{"dateTime":"15:54:00","value":"2"},{"dateTime":"15:55:00","value":"2"},{"dateTime":"15:56:00","value":"2"},{"dateTime":"15:57:00","value":"2"},{"dateTime":"15:58:00","value":"2"},{"dateTime":"15:59:00","value":"2"},{"dateTime":"16:00:00","value":"2"},{"dateTime":"16:01:00","value":"1"},{"dateTime":"16:02:00","value":"1"},{"dateTime":"16:03:00","value":"1"},{"dateTime":"16:04:00","value":"1"}],"minutesAfterWakeup":0,"minutesAsleep":91,"minutesAwake":101,"minutesToFallAsleep":0,"restlessCount":9,"restlessDuration":99,"startTime":"2016-02-18T12:53:00.000","timeInBed":192}],"summary":{"totalMinutesAsleep":310,"totalSleepRecords":2,"totalTimeInBed":486}}'
+      string: '{"sleep":[{"awakeCount":1,"awakeDuration":1,"awakeningsCount":17,"dateOfSleep":"2016-02-19","duration":24600000,"efficiency":42,"isMainSleep":true,"logId":10922384955,"minuteData":[{"dateTime":"23:22:00","value":"2"},{"dateTime":"23:23:00","value":"2"},{"dateTime":"23:24:00","value":"2"},{"dateTime":"23:25:00","value":"2"},{"dateTime":"23:26:00","value":"2"},{"dateTime":"23:27:00","value":"3"},{"dateTime":"23:28:00","value":"2"},{"dateTime":"23:29:00","value":"2"},{"dateTime":"23:30:00","value":"2"},{"dateTime":"23:31:00","value":"2"},{"dateTime":"23:32:00","value":"2"},{"dateTime":"23:33:00","value":"2"},{"dateTime":"23:34:00","value":"1"},{"dateTime":"23:35:00","value":"1"},{"dateTime":"23:36:00","value":"1"},{"dateTime":"23:37:00","value":"1"},{"dateTime":"23:38:00","value":"1"},{"dateTime":"23:39:00","value":"1"},{"dateTime":"23:40:00","value":"1"},{"dateTime":"23:41:00","value":"1"},{"dateTime":"23:42:00","value":"1"},{"dateTime":"23:43:00","value":"1"},{"dateTime":"23:44:00","value":"1"},{"dateTime":"23:45:00","value":"1"},{"dateTime":"23:46:00","value":"1"},{"dateTime":"23:47:00","value":"1"},{"dateTime":"23:48:00","value":"1"},{"dateTime":"23:49:00","value":"1"},{"dateTime":"23:50:00","value":"1"},{"dateTime":"23:51:00","value":"1"},{"dateTime":"23:52:00","value":"1"},{"dateTime":"23:53:00","value":"1"},{"dateTime":"23:54:00","value":"1"},{"dateTime":"23:55:00","value":"1"},{"dateTime":"23:56:00","value":"1"},{"dateTime":"23:57:00","value":"1"},{"dateTime":"23:58:00","value":"1"},{"dateTime":"23:59:00","value":"1"},{"dateTime":"00:00:00","value":"1"},{"dateTime":"00:01:00","value":"1"},{"dateTime":"00:02:00","value":"1"},{"dateTime":"00:03:00","value":"1"},{"dateTime":"00:04:00","value":"2"},{"dateTime":"00:05:00","value":"2"},{"dateTime":"00:06:00","value":"2"},{"dateTime":"00:07:00","value":"2"},{"dateTime":"00:08:00","value":"2"},{"dateTime":"00:09:00","value":"2"},{"dateTime":"00:10:00","value":"2"},{"dateTime":"00:11:00","value":"2"},{"dateTime":"00:12:00","value":"2"},{"dateTime":"00:13:00","value":"2"},{"dateTime":"00:14:00","value":"2"},{"dateTime":"00:15:00","value":"2"},{"dateTime":"00:16:00","value":"2"},{"dateTime":"00:17:00","value":"2"},{"dateTime":"00:18:00","value":"2"},{"dateTime":"00:19:00","value":"2"},{"dateTime":"00:20:00","value":"2"},{"dateTime":"00:21:00","value":"2"},{"dateTime":"00:22:00","value":"2"},{"dateTime":"00:23:00","value":"2"},{"dateTime":"00:24:00","value":"2"},{"dateTime":"00:25:00","value":"2"},{"dateTime":"00:26:00","value":"2"},{"dateTime":"00:27:00","value":"2"},{"dateTime":"00:28:00","value":"2"},{"dateTime":"00:29:00","value":"1"},{"dateTime":"00:30:00","value":"1"},{"dateTime":"00:31:00","value":"1"},{"dateTime":"00:32:00","value":"1"},{"dateTime":"00:33:00","value":"1"},{"dateTime":"00:34:00","value":"1"},{"dateTime":"00:35:00","value":"1"},{"dateTime":"00:36:00","value":"1"},{"dateTime":"00:37:00","value":"2"},{"dateTime":"00:38:00","value":"2"},{"dateTime":"00:39:00","value":"2"},{"dateTime":"00:40:00","value":"2"},{"dateTime":"00:41:00","value":"2"},{"dateTime":"00:42:00","value":"2"},{"dateTime":"00:43:00","value":"2"},{"dateTime":"00:44:00","value":"2"},{"dateTime":"00:45:00","value":"2"},{"dateTime":"00:46:00","value":"2"},{"dateTime":"00:47:00","value":"2"},{"dateTime":"00:48:00","value":"1"},{"dateTime":"00:49:00","value":"1"},{"dateTime":"00:50:00","value":"1"},{"dateTime":"00:51:00","value":"2"},{"dateTime":"00:52:00","value":"2"},{"dateTime":"00:53:00","value":"2"},{"dateTime":"00:54:00","value":"2"},{"dateTime":"00:55:00","value":"2"},{"dateTime":"00:56:00","value":"2"},{"dateTime":"00:57:00","value":"2"},{"dateTime":"00:58:00","value":"2"},{"dateTime":"00:59:00","value":"2"},{"dateTime":"01:00:00","value":"2"},{"dateTime":"01:01:00","value":"2"},{"dateTime":"01:02:00","value":"1"},{"dateTime":"01:03:00","value":"1"},{"dateTime":"01:04:00","value":"1"},{"dateTime":"01:05:00","value":"1"},{"dateTime":"01:06:00","value":"1"},{"dateTime":"01:07:00","value":"1"},{"dateTime":"01:08:00","value":"1"},{"dateTime":"01:09:00","value":"1"},{"dateTime":"01:10:00","value":"1"},{"dateTime":"01:11:00","value":"1"},{"dateTime":"01:12:00","value":"1"},{"dateTime":"01:13:00","value":"1"},{"dateTime":"01:14:00","value":"1"},{"dateTime":"01:15:00","value":"1"},{"dateTime":"01:16:00","value":"1"},{"dateTime":"01:17:00","value":"1"},{"dateTime":"01:18:00","value":"1"},{"dateTime":"01:19:00","value":"1"},{"dateTime":"01:20:00","value":"1"},{"dateTime":"01:21:00","value":"1"},{"dateTime":"01:22:00","value":"1"},{"dateTime":"01:23:00","value":"1"},{"dateTime":"01:24:00","value":"1"},{"dateTime":"01:25:00","value":"1"},{"dateTime":"01:26:00","value":"1"},{"dateTime":"01:27:00","value":"1"},{"dateTime":"01:28:00","value":"1"},{"dateTime":"01:29:00","value":"2"},{"dateTime":"01:30:00","value":"2"},{"dateTime":"01:31:00","value":"2"},{"dateTime":"01:32:00","value":"2"},{"dateTime":"01:33:00","value":"2"},{"dateTime":"01:34:00","value":"2"},{"dateTime":"01:35:00","value":"2"},{"dateTime":"01:36:00","value":"2"},{"dateTime":"01:37:00","value":"2"},{"dateTime":"01:38:00","value":"2"},{"dateTime":"01:39:00","value":"2"},{"dateTime":"01:40:00","value":"1"},{"dateTime":"01:41:00","value":"1"},{"dateTime":"01:42:00","value":"1"},{"dateTime":"01:43:00","value":"1"},{"dateTime":"01:44:00","value":"1"},{"dateTime":"01:45:00","value":"1"},{"dateTime":"01:46:00","value":"1"},{"dateTime":"01:47:00","value":"1"},{"dateTime":"01:48:00","value":"1"},{"dateTime":"01:49:00","value":"1"},{"dateTime":"01:50:00","value":"1"},{"dateTime":"01:51:00","value":"2"},{"dateTime":"01:52:00","value":"2"},{"dateTime":"01:53:00","value":"2"},{"dateTime":"01:54:00","value":"2"},{"dateTime":"01:55:00","value":"2"},{"dateTime":"01:56:00","value":"2"},{"dateTime":"01:57:00","value":"2"},{"dateTime":"01:58:00","value":"2"},{"dateTime":"01:59:00","value":"2"},{"dateTime":"02:00:00","value":"2"},{"dateTime":"02:01:00","value":"2"},{"dateTime":"02:02:00","value":"2"},{"dateTime":"02:03:00","value":"2"},{"dateTime":"02:04:00","value":"2"},{"dateTime":"02:05:00","value":"2"},{"dateTime":"02:06:00","value":"2"},{"dateTime":"02:07:00","value":"2"},{"dateTime":"02:08:00","value":"2"},{"dateTime":"02:09:00","value":"2"},{"dateTime":"02:10:00","value":"2"},{"dateTime":"02:11:00","value":"2"},{"dateTime":"02:12:00","value":"2"},{"dateTime":"02:13:00","value":"2"},{"dateTime":"02:14:00","value":"2"},{"dateTime":"02:15:00","value":"2"},{"dateTime":"02:16:00","value":"2"},{"dateTime":"02:17:00","value":"2"},{"dateTime":"02:18:00","value":"2"},{"dateTime":"02:19:00","value":"2"},{"dateTime":"02:20:00","value":"2"},{"dateTime":"02:21:00","value":"2"},{"dateTime":"02:22:00","value":"2"},{"dateTime":"02:23:00","value":"2"},{"dateTime":"02:24:00","value":"2"},{"dateTime":"02:25:00","value":"2"},{"dateTime":"02:26:00","value":"1"},{"dateTime":"02:27:00","value":"1"},{"dateTime":"02:28:00","value":"1"},{"dateTime":"02:29:00","value":"1"},{"dateTime":"02:30:00","value":"1"},{"dateTime":"02:31:00","value":"2"},{"dateTime":"02:32:00","value":"2"},{"dateTime":"02:33:00","value":"2"},{"dateTime":"02:34:00","value":"2"},{"dateTime":"02:35:00","value":"2"},{"dateTime":"02:36:00","value":"1"},{"dateTime":"02:37:00","value":"1"},{"dateTime":"02:38:00","value":"1"},{"dateTime":"02:39:00","value":"1"},{"dateTime":"02:40:00","value":"2"},{"dateTime":"02:41:00","value":"2"},{"dateTime":"02:42:00","value":"2"},{"dateTime":"02:43:00","value":"2"},{"dateTime":"02:44:00","value":"2"},{"dateTime":"02:45:00","value":"2"},{"dateTime":"02:46:00","value":"2"},{"dateTime":"02:47:00","value":"2"},{"dateTime":"02:48:00","value":"2"},{"dateTime":"02:49:00","value":"2"},{"dateTime":"02:50:00","value":"2"},{"dateTime":"02:51:00","value":"2"},{"dateTime":"02:52:00","value":"2"},{"dateTime":"02:53:00","value":"2"},{"dateTime":"02:54:00","value":"2"},{"dateTime":"02:55:00","value":"2"},{"dateTime":"02:56:00","value":"2"},{"dateTime":"02:57:00","value":"2"},{"dateTime":"02:58:00","value":"2"},{"dateTime":"02:59:00","value":"2"},{"dateTime":"03:00:00","value":"2"},{"dateTime":"03:01:00","value":"2"},{"dateTime":"03:02:00","value":"2"},{"dateTime":"03:03:00","value":"2"},{"dateTime":"03:04:00","value":"2"},{"dateTime":"03:05:00","value":"2"},{"dateTime":"03:06:00","value":"2"},{"dateTime":"03:07:00","value":"2"},{"dateTime":"03:08:00","value":"2"},{"dateTime":"03:09:00","value":"2"},{"dateTime":"03:10:00","value":"1"},{"dateTime":"03:11:00","value":"1"},{"dateTime":"03:12:00","value":"1"},{"dateTime":"03:13:00","value":"1"},{"dateTime":"03:14:00","value":"1"},{"dateTime":"03:15:00","value":"1"},{"dateTime":"03:16:00","value":"1"},{"dateTime":"03:17:00","value":"1"},{"dateTime":"03:18:00","value":"1"},{"dateTime":"03:19:00","value":"1"},{"dateTime":"03:20:00","value":"1"},{"dateTime":"03:21:00","value":"1"},{"dateTime":"03:22:00","value":"1"},{"dateTime":"03:23:00","value":"1"},{"dateTime":"03:24:00","value":"1"},{"dateTime":"03:25:00","value":"1"},{"dateTime":"03:26:00","value":"1"},{"dateTime":"03:27:00","value":"1"},{"dateTime":"03:28:00","value":"1"},{"dateTime":"03:29:00","value":"1"},{"dateTime":"03:30:00","value":"2"},{"dateTime":"03:31:00","value":"2"},{"dateTime":"03:32:00","value":"2"},{"dateTime":"03:33:00","value":"2"},{"dateTime":"03:34:00","value":"2"},{"dateTime":"03:35:00","value":"2"},{"dateTime":"03:36:00","value":"2"},{"dateTime":"03:37:00","value":"2"},{"dateTime":"03:38:00","value":"2"},{"dateTime":"03:39:00","value":"2"},{"dateTime":"03:40:00","value":"2"},{"dateTime":"03:41:00","value":"2"},{"dateTime":"03:42:00","value":"2"},{"dateTime":"03:43:00","value":"2"},{"dateTime":"03:44:00","value":"1"},{"dateTime":"03:45:00","value":"1"},{"dateTime":"03:46:00","value":"1"},{"dateTime":"03:47:00","value":"2"},{"dateTime":"03:48:00","value":"2"},{"dateTime":"03:49:00","value":"2"},{"dateTime":"03:50:00","value":"2"},{"dateTime":"03:51:00","value":"2"},{"dateTime":"03:52:00","value":"2"},{"dateTime":"03:53:00","value":"2"},{"dateTime":"03:54:00","value":"2"},{"dateTime":"03:55:00","value":"2"},{"dateTime":"03:56:00","value":"2"},{"dateTime":"03:57:00","value":"2"},{"dateTime":"03:58:00","value":"1"},{"dateTime":"03:59:00","value":"1"},{"dateTime":"04:00:00","value":"1"},{"dateTime":"04:01:00","value":"1"},{"dateTime":"04:02:00","value":"1"},{"dateTime":"04:03:00","value":"1"},{"dateTime":"04:04:00","value":"1"},{"dateTime":"04:05:00","value":"1"},{"dateTime":"04:06:00","value":"1"},{"dateTime":"04:07:00","value":"1"},{"dateTime":"04:08:00","value":"1"},{"dateTime":"04:09:00","value":"1"},{"dateTime":"04:10:00","value":"1"},{"dateTime":"04:11:00","value":"1"},{"dateTime":"04:12:00","value":"1"},{"dateTime":"04:13:00","value":"1"},{"dateTime":"04:14:00","value":"1"},{"dateTime":"04:15:00","value":"1"},{"dateTime":"04:16:00","value":"1"},{"dateTime":"04:17:00","value":"1"},{"dateTime":"04:18:00","value":"1"},{"dateTime":"04:19:00","value":"1"},{"dateTime":"04:20:00","value":"2"},{"dateTime":"04:21:00","value":"2"},{"dateTime":"04:22:00","value":"2"},{"dateTime":"04:23:00","value":"2"},{"dateTime":"04:24:00","value":"2"},{"dateTime":"04:25:00","value":"2"},{"dateTime":"04:26:00","value":"2"},{"dateTime":"04:27:00","value":"2"},{"dateTime":"04:28:00","value":"2"},{"dateTime":"04:29:00","value":"2"},{"dateTime":"04:30:00","value":"2"},{"dateTime":"04:31:00","value":"1"},{"dateTime":"04:32:00","value":"1"},{"dateTime":"04:33:00","value":"1"},{"dateTime":"04:34:00","value":"1"},{"dateTime":"04:35:00","value":"1"},{"dateTime":"04:36:00","value":"1"},{"dateTime":"04:37:00","value":"1"},{"dateTime":"04:38:00","value":"1"},{"dateTime":"04:39:00","value":"1"},{"dateTime":"04:40:00","value":"1"},{"dateTime":"04:41:00","value":"1"},{"dateTime":"04:42:00","value":"2"},{"dateTime":"04:43:00","value":"2"},{"dateTime":"04:44:00","value":"2"},{"dateTime":"04:45:00","value":"2"},{"dateTime":"04:46:00","value":"2"},{"dateTime":"04:47:00","value":"2"},{"dateTime":"04:48:00","value":"2"},{"dateTime":"04:49:00","value":"1"},{"dateTime":"04:50:00","value":"1"},{"dateTime":"04:51:00","value":"2"},{"dateTime":"04:52:00","value":"2"},{"dateTime":"04:53:00","value":"2"},{"dateTime":"04:54:00","value":"2"},{"dateTime":"04:55:00","value":"2"},{"dateTime":"04:56:00","value":"2"},{"dateTime":"04:57:00","value":"2"},{"dateTime":"04:58:00","value":"2"},{"dateTime":"04:59:00","value":"2"},{"dateTime":"05:00:00","value":"2"},{"dateTime":"05:01:00","value":"2"},{"dateTime":"05:02:00","value":"2"},{"dateTime":"05:03:00","value":"2"},{"dateTime":"05:04:00","value":"2"},{"dateTime":"05:05:00","value":"2"},{"dateTime":"05:06:00","value":"2"},{"dateTime":"05:07:00","value":"2"},{"dateTime":"05:08:00","value":"2"},{"dateTime":"05:09:00","value":"2"},{"dateTime":"05:10:00","value":"1"},{"dateTime":"05:11:00","value":"1"},{"dateTime":"05:12:00","value":"1"},{"dateTime":"05:13:00","value":"1"},{"dateTime":"05:14:00","value":"1"},{"dateTime":"05:15:00","value":"1"},{"dateTime":"05:16:00","value":"1"},{"dateTime":"05:17:00","value":"1"},{"dateTime":"05:18:00","value":"1"},{"dateTime":"05:19:00","value":"1"},{"dateTime":"05:20:00","value":"1"},{"dateTime":"05:21:00","value":"1"},{"dateTime":"05:22:00","value":"1"},{"dateTime":"05:23:00","value":"1"},{"dateTime":"05:24:00","value":"1"},{"dateTime":"05:25:00","value":"1"},{"dateTime":"05:26:00","value":"1"},{"dateTime":"05:27:00","value":"1"},{"dateTime":"05:28:00","value":"1"},{"dateTime":"05:29:00","value":"2"},{"dateTime":"05:30:00","value":"2"},{"dateTime":"05:31:00","value":"2"},{"dateTime":"05:32:00","value":"2"},{"dateTime":"05:33:00","value":"2"},{"dateTime":"05:34:00","value":"2"},{"dateTime":"05:35:00","value":"2"},{"dateTime":"05:36:00","value":"2"},{"dateTime":"05:37:00","value":"2"},{"dateTime":"05:38:00","value":"2"},{"dateTime":"05:39:00","value":"2"},{"dateTime":"05:40:00","value":"2"},{"dateTime":"05:41:00","value":"2"},{"dateTime":"05:42:00","value":"2"},{"dateTime":"05:43:00","value":"2"},{"dateTime":"05:44:00","value":"2"},{"dateTime":"05:45:00","value":"2"},{"dateTime":"05:46:00","value":"2"},{"dateTime":"05:47:00","value":"2"},{"dateTime":"05:48:00","value":"2"},{"dateTime":"05:49:00","value":"2"},{"dateTime":"05:50:00","value":"2"},{"dateTime":"05:51:00","value":"2"},{"dateTime":"05:52:00","value":"1"},{"dateTime":"05:53:00","value":"1"},{"dateTime":"05:54:00","value":"2"},{"dateTime":"05:55:00","value":"2"},{"dateTime":"05:56:00","value":"2"},{"dateTime":"05:57:00","value":"2"},{"dateTime":"05:58:00","value":"2"},{"dateTime":"05:59:00","value":"2"},{"dateTime":"06:00:00","value":"2"},{"dateTime":"06:01:00","value":"2"},{"dateTime":"06:02:00","value":"2"},{"dateTime":"06:03:00","value":"2"},{"dateTime":"06:04:00","value":"2"},{"dateTime":"06:05:00","value":"2"},{"dateTime":"06:06:00","value":"2"},{"dateTime":"06:07:00","value":"2"},{"dateTime":"06:08:00","value":"1"},{"dateTime":"06:09:00","value":"1"},{"dateTime":"06:10:00","value":"1"},{"dateTime":"06:11:00","value":"1"}],"minutesAfterWakeup":0,"minutesAsleep":171,"minutesAwake":239,"minutesToFallAsleep":0,"restlessCount":16,"restlessDuration":238,"startTime":"2016-02-18T23:22:00.000","timeInBed":410}],"summary":{"totalMinutesAsleep":171,"totalSleepRecords":1,"totalTimeInBed":410}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:30 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:13 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/badges.json
@@ -717,7 +718,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -730,7 +731,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:30 GMT
+      - Fri, 19 Feb 2016 15:01:13 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -742,9 +743,9 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '86'
+      - '127'
       Fitbit-Rate-Limit-Reset:
-      - '570'
+      - '3527'
       Etag:
       - a66d5167
       Content-Language:
@@ -754,7 +755,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f020808db2834-SJC
+      - 2772d88895932573-ORD
     body:
       encoding: ASCII-8BIT
       string: '{"badges":[{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
@@ -937,7 +938,60 @@ http_interactions:
         lost 5 pounds on #Fitbit.","shortDescription":"-5 pounds","shortName":"-5
         lb Weight Loss","timesAchieved":1,"unit":"POUNDS","value":5}]}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:30 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:13 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-19.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 15:01:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '126'
+      Fitbit-Rate-Limit-Reset:
+      - '3527'
+      Etag:
+      - 1ff5ecb5
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 2772d889bf4d255b-ORD
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":170,"caloriesBMR":500,"caloriesOut":627,"distances":[{"activity":"total","distance":0.95},{"activity":"tracker","distance":0.95},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0},{"activity":"moderatelyActive","distance":0},{"activity":"lightlyActive","distance":0.95},{"activity":"sedentaryActive","distance":0}],"elevation":3.05,"fairlyActiveMinutes":0,"floors":1,"lightlyActiveMinutes":51,"marginalCalories":82,"sedentaryMinutes":58,"steps":1299,"veryActiveMinutes":0}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 15:01:13 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-18.json
@@ -948,7 +1002,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -961,7 +1015,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:30 GMT
+      - Fri, 19 Feb 2016 15:01:14 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -973,11 +1027,11 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '85'
+      - '125'
       Fitbit-Rate-Limit-Reset:
-      - '570'
+      - '3526'
       Etag:
-      - 891efc98
+      - f7265d7b
       Content-Language:
       - en
       Vary:
@@ -985,12 +1039,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f0209d2800713-SJC
+      - 2772d88b3ead255b-ORD
     body:
       encoding: ASCII-8BIT
-      string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":752,"caloriesBMR":1301,"caloriesOut":1885,"distances":[{"activity":"total","distance":4.72},{"activity":"tracker","distance":4.72},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0.42},{"activity":"moderatelyActive","distance":0.44},{"activity":"lightlyActive","distance":3.86},{"activity":"sedentaryActive","distance":0}],"elevation":42.67,"fairlyActiveMinutes":6,"floors":14,"lightlyActiveMinutes":202,"marginalCalories":376,"sedentaryMinutes":551,"steps":6459,"veryActiveMinutes":5}}'
+      string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":820,"caloriesBMR":1498,"caloriesOut":2135,"distances":[{"activity":"total","distance":4.97},{"activity":"tracker","distance":4.97},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0.42},{"activity":"moderatelyActive","distance":0.44},{"activity":"lightlyActive","distance":4.11},{"activity":"sedentaryActive","distance":0}],"elevation":45.72,"fairlyActiveMinutes":6,"floors":15,"lightlyActiveMinutes":227,"marginalCalories":400,"sedentaryMinutes":678,"steps":6799,"veryActiveMinutes":5}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:30 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:14 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-17.json
@@ -1001,7 +1055,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -1014,7 +1068,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:31 GMT
+      - Fri, 19 Feb 2016 15:01:14 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -1026,9 +1080,9 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '84'
+      - '124'
       Fitbit-Rate-Limit-Reset:
-      - '569'
+      - '3526'
       Etag:
       - fe420af3
       Content-Language:
@@ -1038,12 +1092,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f020c01c30d91-SJC
+      - 2772d88cf9b0099a-ORD
     body:
       encoding: ASCII-8BIT
       string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":1290,"caloriesBMR":1498,"caloriesOut":2515,"distances":[{"activity":"total","distance":8.03},{"activity":"tracker","distance":8.03},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0.36},{"activity":"moderatelyActive","distance":0.45},{"activity":"lightlyActive","distance":7.2},{"activity":"sedentaryActive","distance":0}],"elevation":57.91,"fairlyActiveMinutes":7,"floors":19,"lightlyActiveMinutes":346,"marginalCalories":659,"sedentaryMinutes":706,"steps":10988,"veryActiveMinutes":5}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:31 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:14 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-16.json
@@ -1054,7 +1108,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -1067,7 +1121,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:31 GMT
+      - Fri, 19 Feb 2016 15:01:14 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -1079,9 +1133,9 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '83'
+      - '123'
       Fitbit-Rate-Limit-Reset:
-      - '569'
+      - '3526'
       Etag:
       - 69c9b9a4
       Content-Language:
@@ -1091,12 +1145,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f020fb56911e9-SJC
+      - 2772d88ed70009d0-ORD
     body:
       encoding: ASCII-8BIT
       string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":778,"caloriesBMR":1498,"caloriesOut":2097,"distances":[{"activity":"total","distance":4.52},{"activity":"tracker","distance":4.52},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0.25},{"activity":"moderatelyActive","distance":0.55},{"activity":"lightlyActive","distance":3.72},{"activity":"sedentaryActive","distance":0}],"elevation":27.43,"fairlyActiveMinutes":8,"floors":9,"lightlyActiveMinutes":230,"marginalCalories":352,"sedentaryMinutes":801,"steps":6186,"veryActiveMinutes":3}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:31 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:14 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-15.json
@@ -1107,7 +1161,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -1120,7 +1174,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:32 GMT
+      - Fri, 19 Feb 2016 15:01:15 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -1132,9 +1186,9 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '82'
+      - '122'
       Fitbit-Rate-Limit-Reset:
-      - '568'
+      - '3525'
       Etag:
       - 3fcf2b0f
       Content-Language:
@@ -1144,12 +1198,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f02121a2227fe-SJC
+      - 2772d890b89d09d0-ORD
     body:
       encoding: ASCII-8BIT
       string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":607,"caloriesBMR":1498,"caloriesOut":1943,"distances":[{"activity":"total","distance":2.94},{"activity":"tracker","distance":2.94},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0},{"activity":"moderatelyActive","distance":0},{"activity":"lightlyActive","distance":2.94},{"activity":"sedentaryActive","distance":0}],"elevation":12.19,"fairlyActiveMinutes":0,"floors":4,"lightlyActiveMinutes":200,"marginalCalories":252,"sedentaryMinutes":600,"steps":4026,"veryActiveMinutes":0}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:32 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:15 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-14.json
@@ -1160,7 +1214,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -1173,7 +1227,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:32 GMT
+      - Fri, 19 Feb 2016 15:01:15 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -1185,9 +1239,9 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '81'
+      - '121'
       Fitbit-Rate-Limit-Reset:
-      - '568'
+      - '3525'
       Etag:
       - 7d454e4c
       Content-Language:
@@ -1197,12 +1251,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f0214a8602870-SJC
+      - 2772d89388ca0418-ORD
     body:
       encoding: ASCII-8BIT
       string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":773,"caloriesBMR":1498,"caloriesOut":2051,"distances":[{"activity":"total","distance":3.99},{"activity":"tracker","distance":3.99},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0},{"activity":"moderatelyActive","distance":0},{"activity":"lightlyActive","distance":3.99},{"activity":"sedentaryActive","distance":0}],"elevation":9.14,"fairlyActiveMinutes":0,"floors":3,"lightlyActiveMinutes":250,"marginalCalories":347,"sedentaryMinutes":708,"steps":5460,"veryActiveMinutes":0}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:32 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:15 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/activities/goals/daily.json
@@ -1213,7 +1267,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -1226,7 +1280,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:32 GMT
+      - Fri, 19 Feb 2016 15:01:15 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -1238,9 +1292,9 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '80'
+      - '120'
       Fitbit-Rate-Limit-Reset:
-      - '568'
+      - '3525'
       Etag:
       - 3807a989
       Content-Language:
@@ -1250,12 +1304,12 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f0216dd2741c3-SJC
+      - 2772d895735d042a-ORD
     body:
       encoding: ASCII-8BIT
       string: '{"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:32 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:15 GMT
 - request:
     method: get
     uri: https://api.fitbit.com/1/user/35FPZ5/activities/goals/weekly.json
@@ -1266,7 +1320,7 @@ http_interactions:
       User-Agent:
       - Faraday v0.9.2
       Authorization:
-      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4OTc2MzYsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4OTQwMzZ9.DMzymOl3bIhqxQaCE-JIs-6Hguyn1YWWOp0wGxP0Res
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -1279,7 +1333,7 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 19 Feb 2016 03:50:33 GMT
+      - Fri, 19 Feb 2016 15:01:16 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Transfer-Encoding:
@@ -1291,9 +1345,9 @@ http_interactions:
       Fitbit-Rate-Limit-Limit:
       - '150'
       Fitbit-Rate-Limit-Remaining:
-      - '79'
+      - '119'
       Fitbit-Rate-Limit-Reset:
-      - '567'
+      - '3524'
       Etag:
       - cc164653
       Content-Language:
@@ -1303,10 +1357,10 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Cf-Ray:
-      - 276f0218a8c22870-SJC
+      - 2772d89701702525-ORD
     body:
       encoding: ASCII-8BIT
       string: '{"goals":{"distance":56.33,"floors":105,"steps":84000}}'
     http_version: 
-  recorded_at: Fri, 19 Feb 2016 03:50:32 GMT
+  recorded_at: Fri, 19 Feb 2016 15:01:15 GMT
 recorded_with: VCR 3.0.1
