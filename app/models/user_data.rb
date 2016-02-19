@@ -35,49 +35,6 @@ class UserData
     grouped.map { |name, group| max_of(group) }
   end
 
-  def max_of(group)
-    if group.size > 1
-      group.max { |a, b| a.value <=> b.value }
-    else
-      group.first
-    end
-  end
-
-  def padright!(array, length, number)
-    array.fill(number, array.length...length)
-  end
-
-  def daily_steps
-    steps = daily_activity.map { |da| da.steps }.reverse
-    padright!(steps, 7, 0) if steps.length < 7
-  end
-
-  def daily_step_goal
-    Array.new(7, daily_goals.steps)
-  end
-
-  def daily_floors
-    floors = daily_activity.map { |da| da.floors }
-    padright!(floors, 7, 0) if floors.length < 7
-  end
-
-  def daily_floor_goal
-    Array.new(7, daily_goals.floors)
-  end
-
-  def daily_calories
-    calories = daily_activity.map { |da| da.calories }
-    padright!(calories, 7, 0) if calories.length < 7
-  end
-
-  def daily_calorie_goal
-    Array.new(7, daily_goals.calories)
-  end
-
-  def days_of_the_week
-    Date::DAYNAMES
-  end
-
   def step_chart
     LazyHighCharts::HighChart.new("column") do |f|
       f.chart(height: 200)
@@ -129,6 +86,51 @@ class UserData
       f.tooltip(valueSuffix: "bpm")
       f.legend(enabled: false)
       f.series(name: "Resting Heart Rate", data: heartrate_points)
+    end
+  end
+
+  private
+
+  def padright!(array, length, number)
+    array.fill(number, array.length...length)
+  end
+
+  def daily_steps
+    steps = daily_activity.map { |da| da.steps }.reverse
+    padright!(steps, 7, 0) if steps.length < 7
+  end
+
+  def daily_step_goal
+    Array.new(7, daily_goals.steps)
+  end
+
+  def daily_floors
+    floors = daily_activity.map { |da| da.floors }
+    padright!(floors, 7, 0) if floors.length < 7
+  end
+
+  def daily_floor_goal
+    Array.new(7, daily_goals.floors)
+  end
+
+  def daily_calories
+    calories = daily_activity.map { |da| da.calories }
+    padright!(calories, 7, 0) if calories.length < 7
+  end
+
+  def daily_calorie_goal
+    Array.new(7, daily_goals.calories)
+  end
+
+  def days_of_the_week
+    Date::DAYNAMES
+  end
+
+  def max_of(group)
+    if group.size > 1
+      group.max { |a, b| a.value <=> b.value }
+    else
+      group.first
     end
   end
 end
