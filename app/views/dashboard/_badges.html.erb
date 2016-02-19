@@ -1,0 +1,25 @@
+<div class="col-sm-12 col-md-4">
+  <div class="panel text-center badge-row">
+    <div class="row">
+      <h4>Badges</h4>
+    </div>
+    <div class="row">
+      <ul class="badge-gallery">
+        <% @user_data.latest_badges.each do |badge| %>
+        <li class="badge">
+          <div class="row badge-image">
+            <div class="col-sm-12">
+              <%= image_tag badge.image %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h5 class="badge-description"><%= badge.description %></h5>
+            </div>
+          </div>
+        </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

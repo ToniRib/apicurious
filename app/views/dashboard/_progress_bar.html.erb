@@ -1,0 +1,17 @@
+<%= javascript_tag do %>
+  $(document).ready(function() {
+    $("#progress").width("<%= @user_data.weekly_step_goal_progress %>");
+
+    $("#steps-icon").click(function() {
+      $("#progress").width("<%= @user_data.weekly_step_goal_progress %>");
+    });
+
+    $("#stairs-icon").click(function() {
+      $("#progress").width("<%= @user_data.weekly_floor_goal_progress %>");
+    });
+
+    $("#calories-icon").click(function() {
+      $("#progress").width("<%= @user_data.weekly_calorie_goal_progress %>");
+    });
+  });
+<% end %>

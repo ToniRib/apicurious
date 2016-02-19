@@ -1,0 +1,31 @@
+<div class="col-sm-12 col-md-8">
+  <div class="panel activity-panel">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4>This Week's Activity</h4>
+      </div>
+      <div class="col-sm-6 pull-right">
+        <ul class="daily-activity-icon-list">
+          <li id="steps-icon"><%= image_tag "https://upload.wikimedia.org/wikipedia/commons/1/17/Footsteps_icon2.svg", size: "16x16" %></li>
+          <li id="stairs-icon"><%= image_tag "http://freeflaticons.com/wp-content/uploads/2014/10/staircase-copy-1412171110kn84g.png", size: "16x16" %></li>
+          <li id="calories-icon"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <%= high_chart("daily-steps-chart", @user_data.step_chart)  %>
+        <%= high_chart("daily-floors-chart", @user_data.floor_chart)  %>
+        <%= high_chart("daily-calories-chart", @user_data.calorie_chart)  %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>Weekly Goal Progress</h5>
+        <div class="meter">
+          <span id="progress"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

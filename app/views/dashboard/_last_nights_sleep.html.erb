@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div class="panel text-center sleep-panel">
+      <div class="row">
+        <div class="col-sm-12">
+          <h4>Last Night's Sleep</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 sleep-row-column">
+          <%= high_chart("sleep-chart", @user_data.last_nights_sleep.chart)  %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>
+            <span class="big-time"><%= @user_data.last_nights_sleep.asleep_time_hours %></span>hr
+            <span class="big-time"><%= @user_data.last_nights_sleep.asleep_time_minutes %></span>min
+          </h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 pull-right">
+          <h5 class="awake-text">awake <%= @user_data.last_nights_sleep.awake_count %>x</h5>
+        </div>
+        <div class="col-sm-6 pull-left">
+          <h5 class="restless-text">restless <%= @user_data.last_nights_sleep.restless_count %>x</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

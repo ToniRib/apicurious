@@ -32,129 +32,17 @@
     <!-- CHARTS -->
     <div class="col-sm-12 col-md-6">
       <!-- HEART RATE CHART -->
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="panel text-center heart-rate-panel">
-            <h4>Resting Heart Rate</h4>
-            <div>
-              <%= high_chart("heart-rate-chart", @user_data.heartrate_chart)  %>
-            </div>
-            <h3>Today: <%= @user_data.todays_heartrate %> bpm</h3>
-          </div>
-        </div>
-      </div>
+      <%= render partial: "resting_heart_rate" %>
       <!-- SLEEP CHART -->
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="panel text-center sleep-panel">
-            <div class="row">
-              <div class="col-sm-12">
-                <h4>Last Night's Sleep</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12 sleep-row-column">
-                <%= high_chart("sleep-chart", @user_data.last_nights_sleep.chart)  %>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <h3>
-                  <span class="big-time"><%= @user_data.last_nights_sleep.asleep_time_hours %></span>hr
-                  <span class="big-time"><%= @user_data.last_nights_sleep.asleep_time_minutes %></span>min
-                </h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 pull-right">
-                <h5 class="awake-text">awake <%= @user_data.last_nights_sleep.awake_count %>x</h5>
-              </div>
-              <div class="col-sm-6 pull-left">
-                <h5 class="restless-text">restless <%= @user_data.last_nights_sleep.restless_count %>x</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%= render partial: "last_nights_sleep" %>
     </div>
   </div>
   <div class="row">
     <!-- BADGES -->
-    <div class="col-sm-12 col-md-4">
-      <div class="panel text-center badge-row">
-        <div class="row">
-          <h4>Badges</h4>
-        </div>
-        <div class="row">
-          <ul class="badge-gallery">
-            <% @user_data.latest_badges.each do |badge| %>
-            <li class="badge">
-              <div class="row badge-image">
-                <div class="col-sm-12">
-                  <%= image_tag badge.image %>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <h5 class="badge-description"><%= badge.description %></h5>
-                </div>
-              </div>
-            </li>
-            <% end %>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <%= render partial: "badges" %>
     <!-- THIS WEEK'S ACTIVITY -->
-    <div class="col-sm-12 col-md-8">
-      <div class="panel activity-panel">
-        <div class="row">
-          <div class="col-sm-6">
-            <h4>This Week's Activity</h4>
-          </div>
-          <div class="col-sm-6 pull-right">
-            <ul class="daily-activity-icon-list">
-              <li id="steps-icon"><%= image_tag "https://upload.wikimedia.org/wikipedia/commons/1/17/Footsteps_icon2.svg", size: "16x16" %></li>
-              <li id="stairs-icon"><%= image_tag "http://freeflaticons.com/wp-content/uploads/2014/10/staircase-copy-1412171110kn84g.png", size: "16x16" %></li>
-              <li id="calories-icon"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <%= high_chart("daily-steps-chart", @user_data.step_chart)  %>
-            <%= high_chart("daily-floors-chart", @user_data.floor_chart)  %>
-            <%= high_chart("daily-calories-chart", @user_data.calorie_chart)  %>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <h5>Weekly Goal Progress</h5>
-            <div class="meter">
-              <span id="progress"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <%= render partial: "activity" %>
   </div>
 </div>
 
-
-<%= javascript_tag do %>
-  $(document).ready(function() {
-    $("#progress").width("<%= @user_data.weekly_step_goal_progress %>");
-
-    $("#steps-icon").click(function() {
-      $("#progress").width("<%= @user_data.weekly_step_goal_progress %>");
-    });
-
-    $("#stairs-icon").click(function() {
-      $("#progress").width("<%= @user_data.weekly_floor_goal_progress %>");
-    });
-
-    $("#calories-icon").click(function() {
-      $("#progress").width("<%= @user_data.weekly_calorie_goal_progress %>");
-    });
-  });
-<% end %>
+<%= render partial: "progress_bar" %>
