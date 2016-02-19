@@ -24,3 +24,6 @@ NetrwTreeListing 2
 
 # Ignore byebug history
 .byebug_history
+
+# Ignore coverage
+/coverage
