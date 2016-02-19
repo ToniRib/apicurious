@@ -9,8 +9,11 @@ RSpec.describe "User Logs In", type: :feature do
       click_on "Log In With FitBit"
     end
 
-    expect(current_path).to eq(dashboard_path)
     expect(User.last.full_name).to eq("Toni Rib")
+    expect(User.last.provider).to eq("fitbit")
+    expect(User.count).to eq(1)
+
+    expect(current_path).to eq(dashboard_path)
     expect(page).to have_content("Log Out")
   end
 end
