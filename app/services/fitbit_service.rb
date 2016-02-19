@@ -4,6 +4,7 @@ class FitbitService
   def initialize(user)
     @user = user
     @connection = Faraday.new(:url => "https://api.fitbit.com/1/user/#{user.uid}/") do |faraday|
+      faraday.response :logger
       faraday.adapter  Faraday.default_adapter
     end
   end
@@ -16,7 +17,9 @@ class FitbitService
                  heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
                  last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json")),
                  badges:    create_badges(get("badges.json")),
-                 daily_activity:  create_daily_activities
+                 daily_activity:  create_daily_activities,
+                 daily_goals: create_daily_goals(get("activities/goals/daily.json")),
+                 weekly_goals: create_weekly_goals(get("activities/goals/weekly.json"))
     )
   end
 
@@ -39,6 +42,18 @@ class FitbitService
                         floors:   activity["summary"]["floors"],
                         calories: activity["summary"]["caloriesOut"])
     end
+  end
+
+  def create_daily_goals(response)
+    DailyGoals.new(steps:    response["goals"]["steps"],
+                   floors:   response["goals"]["floors"],
+                   calories: response["goals"]["caloriesOut"])
+  end
+
+  def create_weekly_goals(response)
+    WeeklyGoals.new(steps:    response["goals"]["steps"],
+                   floors:    response["goals"]["floors"],
+                   calories:  response["goals"]["caloriesOut"])
   end
 
   def dates_from_sunday_until_now

@@ -1,13 +1,17 @@
 class UserData
-  attr_reader :friends, :sleep, :heartrate, :last_nights_sleep, :badges, :daily_activity
+  attr_reader :friends, :sleep, :heartrate, :last_nights_sleep,
+              :badges, :daily_activity, :daily_goals, :weekly_goals
 
-  def initialize(friends:, sleep:, heartrate:, last_nights_sleep:, badges:, daily_activity:)
+  def initialize(friends:, sleep:, heartrate:, last_nights_sleep:,
+                 badges:, daily_activity:, daily_goals:, weekly_goals:)
     @friends = friends
     @sleep = sleep
     @heartrate = heartrate
     @last_nights_sleep = last_nights_sleep
     @badges = badges
     @daily_activity = daily_activity
+    @daily_goals = daily_goals
+    @weekly_goals = weekly_goals
   end
 
   def all_heartrates
@@ -48,12 +52,26 @@ class UserData
     padright!(steps, 7, 0) if steps.length < 7
   end
 
+  def daily_step_goal
+    Array.new(7, daily_goals.steps)
+  end
+
   def daily_floors
-    daily_activity.map { |da| da.floors }
+    floors = daily_activity.map { |da| da.floors }
+    padright!(floors, 7, 0) if floors.length < 7
+  end
+
+  def daily_floor_goal
+    Array.new(7, daily_goals.floors)
   end
 
   def daily_calories
-    daily_activity.map { |da| da.calories }
+    calories = daily_activity.map { |da| da.calories }
+    padright!(calories, 7, 0) if calories.length < 7
+  end
+
+  def daily_calorie_goal
+    Array.new(7, daily_goals.calories)
   end
 
   def days_of_the_week
@@ -62,12 +80,40 @@ class UserData
 
   def step_chart
     LazyHighCharts::HighChart.new("column") do |f|
-      f.chart(type: "column", height: 200)
+      f.chart(height: 200)
       f.yAxis(title: { text: "Steps" })
       f.xAxis(categories: days_of_the_week)
-      f.tooltip(valueSuffix: "steps")
+      f.tooltip(valueSuffix: " steps")
       f.legend(enabled: false)
-      f.series(name: "Daily Steps", data: daily_steps)
+      f.series(name: "Daily Steps", data: daily_steps, type: "column")
+      f.series(name: "Step Goal", data: daily_step_goal, type: "line",
+               marker: { enabled: false }, color: "#30ee00")
+    end
+  end
+
+  def calorie_chart
+    LazyHighCharts::HighChart.new("column") do |f|
+      f.chart(type: "column", height: 200, width: 728)
+      f.yAxis(title: { text: "Calories Burned" })
+      f.xAxis(categories: days_of_the_week)
+      f.tooltip(valueSuffix: " calories")
+      f.legend(enabled: false)
+      f.series(name: "Daily Calories Burned", data: daily_calories)
+      f.series(name: "Calorie Goal", data: daily_calorie_goal, type: "line",
+               marker: { enabled: false }, color: "#30ee00")
+    end
+  end
+
+  def floor_chart
+    LazyHighCharts::HighChart.new("column") do |f|
+      f.chart(type: "column", height: 200, width: 728)
+      f.yAxis(title: { text: "Floors" })
+      f.xAxis(categories: days_of_the_week)
+      f.tooltip(valueSuffix: " floors")
+      f.legend(enabled: false)
+      f.series(name: "Daily Floors Climbed", data: daily_floors)
+      f.series(name: "Floor Goal", data: daily_floor_goal, type: "line",
+               marker: { enabled: false }, color: "#30ee00")
     end
   end
 
