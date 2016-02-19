@@ -9,7 +9,7 @@
   <div class="row">
     <!-- FRIEND LEADERBOARD -->
     <div class="col-sm-12 col-md-3">
-      <div class="panel friends">
+      <div class="panel friends-panel">
         <h4>Friends Leaderboard</h4>
         <% @user_data.friends.each do |friend| %>
           <% if friend.active? %>
@@ -20,7 +20,7 @@
     </div>
     <!-- SLEEP PATTERNS -->
     <div class="col-sm-12 col-md-3">
-      <div class="panel sleep-panel">
+      <div class="panel sleep-patterns-panel">
         <h4>Recent Sleep Patterns</h4>
         <% @user_data.sleep.each do |day| %>
           <% if day.logged? %>
@@ -34,7 +34,7 @@
       <!-- HEART RATE CHART -->
       <div class="row">
         <div class="col-sm-12">
-          <div class="panel text-center">
+          <div class="panel text-center heart-rate-panel">
             <h4>Resting Heart Rate</h4>
             <div>
               <%= high_chart("heart-rate-chart", @user_data.heartrate_chart)  %>
@@ -46,7 +46,7 @@
       <!-- SLEEP CHART -->
       <div class="row">
         <div class="col-sm-12">
-          <div class="panel text-center">
+          <div class="panel text-center sleep-panel">
             <div class="row">
               <div class="col-sm-12">
                 <h4>Last Night's Sleep</h4>
@@ -107,7 +107,7 @@
     </div>
     <!-- THIS WEEK'S ACTIVITY -->
     <div class="col-sm-12 col-md-8">
-      <div class="panel">
+      <div class="panel activity-panel">
         <div class="row">
           <div class="col-sm-6">
             <h4>This Week's Activity</h4>
