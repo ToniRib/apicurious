@@ -4,7 +4,6 @@ class FitbitService
   def initialize(user)
     @user = user
     @connection = Faraday.new(:url => "https://api.fitbit.com/1/user/#{user.uid}/") do |faraday|
-      faraday.response :logger
       faraday.adapter  Faraday.default_adapter
     end
   end
