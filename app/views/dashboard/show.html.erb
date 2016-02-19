@@ -22,7 +22,7 @@
     <div class="col-sm-12 col-md-3">
       <div class="panel sleep-patterns-panel">
         <h4>Recent Sleep Patterns</h4>
-        <% @user_data.sleep.each do |day| %>
+        <% @user_data.sleep.reverse.each do |day| %>
           <% if day.logged? %>
             <%= render partial: "sleep", locals: { sleep: day } %>
           <% end %>
