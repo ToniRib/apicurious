@@ -36,18 +36,21 @@ class UserData
   end
 
   def weekly_step_goal_progress
-    progress = (daily_steps.reduce(:+) / weekly_goals.steps) * 100
+    progress = (daily_steps.reduce(:+) / weekly_goals.steps.to_f) * 100
     progress = 100 if progress > 100
+    "#{progress.round(0)}%"
   end
 
   def weekly_calorie_goal_progress
-    progress = (daily_calories.reduce(:+) / weekly_goals.calories) * 100
+    progress = (daily_calories.reduce(:+) / weekly_goals.calories.to_f) * 100
     progress = 100 if progress > 100
+    "#{progress.round(0)}%"
   end
 
   def weekly_floor_goal_progress
-    progress = (daily_floors.reduce(:+) / weekly_goals.floors) * 100
+    progress = (daily_floors.reduce(:+) / weekly_goals.floors.to_f) * 100
     progress = 100 if progress > 100
+    "#{progress.round(0)}%"
   end
 
   def step_chart

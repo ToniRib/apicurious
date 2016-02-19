@@ -131,7 +131,7 @@
           <div class="col-sm-12">
             <h5>Weekly Goal Progress</h5>
             <div class="meter">
-              <span id="progress" style="width: 25%"></span>
+              <span id="progress"></span>
             </div>
           </div>
         </div>
@@ -143,12 +143,18 @@
 
 <%= javascript_tag do %>
   $(document).ready(function() {
-    if ($("#daily-steps-chart").is(":visible")) {
-      $("#progress").width(<%= @user_data.weekly_step_goal_progress %>%);
-    } elsif ($("#daily-floors-chart").is(":visible")) {
-      $("#progress").width(<%= @user_data.weekly_floor_goal_progress %>%);
-    } elsif ($("#daily-calories-chart").is(":visible")) {
-      $("#progress").width(<%= @user_data.weekly_calorie_goal_progress %>%);
-    }
+    $("#progress").width("<%= @user_data.weekly_step_goal_progress %>");
+
+    $("#steps-icon").click(function() {
+      $("#progress").width("<%= @user_data.weekly_step_goal_progress %>");
+    });
+
+    $("#stairs-icon").click(function() {
+      $("#progress").width("<%= @user_data.weekly_floor_goal_progress %>");
+    });
+
+    $("#calories-icon").click(function() {
+      $("#progress").width("<%= @user_data.weekly_calorie_goal_progress %>");
+    });
   });
 <% end %>
