@@ -10,7 +10,7 @@
     <!-- FRIEND LEADERBOARD -->
     <div class="col-sm-6 col-md-3">
       <div class="panel friends-panel">
-        <h4>Friends Leaderboard</h4>
+        <h4 class="title">Friends Leaderboard</h4>
         <% @user_data.friends.each do |friend| %>
           <% if friend.active? %>
             <%= render partial: "friend", locals: { friend: friend } %>
@@ -21,7 +21,7 @@
     <!-- SLEEP PATTERNS -->
     <div class="col-sm-6 col-md-3">
       <div class="panel sleep-patterns-panel">
-        <h4>Recent Sleep Patterns</h4>
+        <h4 class="title">Recent Sleep Patterns</h4>
         <% @user_data.sleep.reverse.each do |day| %>
           <% if day.logged? %>
             <%= render partial: "sleep", locals: { sleep: day } %>
