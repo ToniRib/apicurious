@@ -11,5 +11,6 @@ RSpec.describe "User Logs In", type: :feature do
 
     expect(current_path).to eq(dashboard_path)
     expect(User.last.full_name).to eq("Toni Rib")
+    expect(page).to have_content("Log Out")
   end
 end

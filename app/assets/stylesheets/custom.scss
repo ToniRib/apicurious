@@ -62,6 +62,19 @@ h4.title {
   margin-bottom: 20px;
 }
 
+.logout-link {
+  color: $link;
+  float: right;
+  font-size: 18px;
+  margin-top: 30px;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+}
+
 // -----DASHBOARD: FRIENDS-----
 
 .friend {
