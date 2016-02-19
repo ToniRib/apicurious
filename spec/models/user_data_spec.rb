@@ -7,12 +7,18 @@ RSpec.describe UserData, type: :model do
     heartrate = build_list(:heartrate, 2)
     last_nights_sleep = build(:last_nights_sleep)
     badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = build(:daily_activity)
 
     user_data = UserData.new(friends:           friends,
                              sleep:             sleep,
                              heartrate:         heartrate,
                              last_nights_sleep: last_nights_sleep,
-                             badges:            badge)
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
 
     expect(user_data.friends).to eq(friends)
     expect(user_data.sleep).to eq(sleep)
@@ -27,12 +33,18 @@ RSpec.describe UserData, type: :model do
     heartrates = [build(:heartrate, rate: 84), build(:heartrate, rate: 88)]
     last_nights_sleep = build(:last_nights_sleep)
     badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = build(:daily_activity)
 
     user_data = UserData.new(friends:           friends,
                              sleep:             sleep,
                              heartrate:         heartrates,
                              last_nights_sleep: last_nights_sleep,
-                             badges:            badge)
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
 
     expect(user_data.all_heartrates).to eq([84, 88])
   end
@@ -44,12 +56,18 @@ RSpec.describe UserData, type: :model do
                   build(:heartrate, rate: 88, date: "2016-02-17")]
     last_nights_sleep = build(:last_nights_sleep)
     badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = build(:daily_activity)
 
     user_data = UserData.new(friends:           friends,
                              sleep:             sleep,
                              heartrate:         heartrates,
                              last_nights_sleep: last_nights_sleep,
-                             badges:            badge)
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
 
     points = [
       { name: "2016-02-16", y: 84 },
@@ -65,12 +83,18 @@ RSpec.describe UserData, type: :model do
     heartrates = [build(:heartrate, rate: 84), build(:heartrate, rate: 88)]
     last_nights_sleep = build(:last_nights_sleep)
     badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = build(:daily_activity)
 
     user_data = UserData.new(friends:           friends,
                              sleep:             sleep,
                              heartrate:         heartrates,
                              last_nights_sleep: last_nights_sleep,
-                             badges:            badge)
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
 
     expect(user_data.minimum_heartrate).to eq(84)
   end
@@ -81,12 +105,18 @@ RSpec.describe UserData, type: :model do
     heartrates = [build(:heartrate, rate: 84), build(:heartrate, rate: 88)]
     last_nights_sleep = build(:last_nights_sleep)
     badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = build(:daily_activity)
 
     user_data = UserData.new(friends:           friends,
                              sleep:             sleep,
                              heartrate:         heartrates,
                              last_nights_sleep: last_nights_sleep,
-                             badges:            badge)
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
 
     expect(user_data.todays_heartrate).to eq(88)
   end

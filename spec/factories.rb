@@ -64,4 +64,35 @@ FactoryGirl.define do
 
     initialize_with { new(attributes) }
   end
+
+  factory :daily_goals do
+    skip_create
+
+    steps "10000"
+    calories "2600"
+    floors "18"
+
+    initialize_with { new(attributes) }
+  end
+
+  factory :weekly_goals do
+    skip_create
+
+    steps "70000"
+    calories "18200"
+    floors "126"
+
+    initialize_with { new(attributes) }
+  end
+
+  factory :daily_activity do
+    skip_create
+
+    date "02-16-2016"
+    steps 7500
+    floors 11
+    calories 2300
+
+    initialize_with { new(attributes) }
+  end
 end

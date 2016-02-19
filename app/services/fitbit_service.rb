@@ -26,6 +26,8 @@ class FitbitService
     data
   end
 
+  private
+
   def get(path)
     response = @connection.get do |request|
       request.url(path)
@@ -34,8 +36,6 @@ class FitbitService
 
     JSON.parse(response.body)
   end
-
-  private
 
   def update_weekly_calorie_goal!(data)
     data.weekly_goals.set_calorie_goal(data.daily_goals.calories * 7)
