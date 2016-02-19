@@ -19,7 +19,11 @@ class UserData
   end
 
   def heartrate_points
-    heartrate.map { |h| { name: h.date.to_s, y: h.rate } }
+    if heartrate.is_a?(Array)
+      heartrate.map { |h| { name: h.date.to_s, y: h.rate } }
+    else
+      [{ name: heartrate.date.to_s, y: heartrate.rate }]
+    end
   end
 
   def minimum_heartrate
@@ -36,19 +40,19 @@ class UserData
   end
 
   def weekly_step_goal_progress
-    progress = (daily_steps.reduce(:+) / weekly_goals.steps.to_f) * 100
-    progress = 100 if progress > 100
-    "#{progress.round(0)}%"
+    calculate_progress(daily_steps, weekly_goals.steps.to_f)
   end
 
   def weekly_calorie_goal_progress
-    progress = (daily_calories.reduce(:+) / weekly_goals.calories.to_f) * 100
-    progress = 100 if progress > 100
-    "#{progress.round(0)}%"
+    calculate_progress(daily_calories, weekly_goals.calories.to_f)
   end
 
   def weekly_floor_goal_progress
-    progress = (daily_floors.reduce(:+) / weekly_goals.floors.to_f) * 100
+    calculate_progress(daily_floors, weekly_goals.floors.to_f)
+  end
+
+  def calculate_progress(daily_measure, weekly_measure)
+    progress = (daily_measure.reduce(:+) / weekly_measure) * 100
     progress = 100 if progress > 100
     "#{progress.round(0)}%"
   end

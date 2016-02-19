@@ -102,6 +102,30 @@ RSpec.describe UserData, type: :model do
     expect(user_data.heartrate_points).to eq(points)
   end
 
+  it "#heartrate_points returns single point in array if only one heartrate" do
+    friends = build_list(:friend, 2)
+    sleep = build_list(:sleep, 2)
+    heartrate = build(:heartrate)
+    last_nights_sleep = build(:last_nights_sleep)
+    badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = build(:daily_activity)
+
+    user_data = UserData.new(friends:           friends,
+                             sleep:             sleep,
+                             heartrate:         heartrate,
+                             last_nights_sleep: last_nights_sleep,
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
+
+    point = [{ name: "2016-02-16", y: 84 }]
+
+    expect(user_data.heartrate_points).to eq(point)
+  end
+
   it "#minimum_heartrate returns minimum rate" do
     friends = build_list(:friend, 2)
     sleep = build_list(:sleep, 2)
@@ -237,5 +261,28 @@ RSpec.describe UserData, type: :model do
                              daily_activity:    daily_activity)
 
     expect(user_data.weekly_floor_goal_progress).to eq("25%")
+  end
+
+  it "#calculate_progress returns 100 if over 100% complete" do
+    friends = build_list(:friend, 2)
+    sleep = build_list(:sleep, 2)
+    heartrate = build_list(:heartrate, 2)
+    last_nights_sleep = build(:last_nights_sleep)
+    badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = [build(:daily_activity, floors: 1000),
+                      build(:daily_activity, floors: 20, date: "02-17-2016")]
+
+    user_data = UserData.new(friends:           friends,
+                             sleep:             sleep,
+                             heartrate:         heartrate,
+                             last_nights_sleep: last_nights_sleep,
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
+
+    expect(user_data.weekly_floor_goal_progress).to eq("100%")
   end
 end
