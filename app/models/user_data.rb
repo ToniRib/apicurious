@@ -15,7 +15,7 @@ class UserData
   end
 
   def all_heartrates
-    heartrate.map { |h| h.rate }
+    heartrate.is_a?(Array) ? heartrate.map { |h| h.rate } : [heartrate.rate]
   end
 
   def heartrate_points

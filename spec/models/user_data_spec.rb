@@ -52,6 +52,28 @@ RSpec.describe UserData, type: :model do
     expect(user_data.all_heartrates).to eq([84, 88])
   end
 
+  it "#all_heartrates returns array of single heartrate if only one data point" do
+    friends = build_list(:friend, 2)
+    sleep = build_list(:sleep, 2)
+    heartrate = build(:heartrate, rate: 84)
+    last_nights_sleep = build(:last_nights_sleep)
+    badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = build(:daily_activity)
+
+    user_data = UserData.new(friends:           friends,
+                             sleep:             sleep,
+                             heartrate:         heartrate,
+                             last_nights_sleep: last_nights_sleep,
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
+
+    expect(user_data.all_heartrates).to eq([84])
+  end
+
   it "#heartrate_points returns array of heartrate date and rate hashes" do
     friends = build_list(:friend, 2)
     sleep = build_list(:sleep, 2)
