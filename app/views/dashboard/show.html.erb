@@ -109,7 +109,14 @@
     <div class="col-sm-12 col-md-8">
       <div class="panel">
         <div class="row">
-          <h4>This Week's Activity</h4>
+          <div class="col-sm-12">
+            <h4>This Week's Activity</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <%= high_chart("daily-steps-chart", @user_data.step_chart)  %>
+          </div>
         </div>
       </div>
     </div>

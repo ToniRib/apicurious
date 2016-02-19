@@ -4,8 +4,6 @@ class FitbitService
   def initialize(user)
     @user = user
     @connection = Faraday.new(:url => "https://api.fitbit.com/1/user/#{user.uid}/") do |faraday|
-      faraday.request :url_encoded
-      faraday.response :logger
       faraday.adapter  Faraday.default_adapter
     end
   end
@@ -17,7 +15,8 @@ class FitbitService
                  sleep:     create_sleep(asleep, awake, awakenings),
                  heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
                  last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json")),
-                 badges:    create_badges(get("badges.json"))
+                 badges:    create_badges(get("badges.json")),
+                 daily_activity:  create_daily_activities
     )
   end
 
@@ -31,6 +30,22 @@ class FitbitService
   end
 
   private
+
+  def create_daily_activities
+    dates_from_sunday_until_now.map do |day|
+      activity = get("activities/date/#{day.to_s}.json")
+      DailyActivity.new(date:     day,
+                        steps:    activity["summary"]["steps"],
+                        floors:   activity["summary"]["floors"],
+                        calories: activity["summary"]["caloriesOut"])
+    end
+  end
+
+  def dates_from_sunday_until_now
+    dates = [*0..6].map { |i| Date.today - i }
+    sunday = dates.index { |d| d.sunday? }
+    dates[0..sunday]
+  end
 
   def get_sleep
     minutes_asleep = get("sleep/minutesAsleep/date/#{Date.today.to_s}/7d.json")
