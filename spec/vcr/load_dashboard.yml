@@ -1,0 +1,1312 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/minutesAsleep/date/2016-02-18/7d.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:27 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '92'
+      Fitbit-Rate-Limit-Reset:
+      - '573'
+      Etag:
+      - '39872989'
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f01f7faa71ee9-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sleep-minutesAsleep":[{"dateTime":"2016-02-12","value":"260"},{"dateTime":"2016-02-13","value":"244"},{"dateTime":"2016-02-14","value":"243"},{"dateTime":"2016-02-15","value":"280"},{"dateTime":"2016-02-16","value":"224"},{"dateTime":"2016-02-17","value":"209"},{"dateTime":"2016-02-18","value":"219"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:27 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/minutesAwake/date/2016-02-18/7d.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:28 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '91'
+      Fitbit-Rate-Limit-Reset:
+      - '572'
+      Etag:
+      - 65ecea70
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f01f9eaee1e9b-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sleep-minutesAwake":[{"dateTime":"2016-02-12","value":"190"},{"dateTime":"2016-02-13","value":"181"},{"dateTime":"2016-02-14","value":"213"},{"dateTime":"2016-02-15","value":"276"},{"dateTime":"2016-02-16","value":"234"},{"dateTime":"2016-02-17","value":"200"},{"dateTime":"2016-02-18","value":"59"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:28 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/awakeningsCount/date/2016-02-18/7d.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:28 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '90'
+      Fitbit-Rate-Limit-Reset:
+      - '572'
+      Etag:
+      - b596cdcb
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f01fbf6961ec5-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sleep-awakeningsCount":[{"dateTime":"2016-02-12","value":"20"},{"dateTime":"2016-02-13","value":"15"},{"dateTime":"2016-02-14","value":"20"},{"dateTime":"2016-02-15","value":"21"},{"dateTime":"2016-02-16","value":"18"},{"dateTime":"2016-02-17","value":"20"},{"dateTime":"2016-02-18","value":"7"}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:28 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/friends/leaderboard.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:29 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '89'
+      Fitbit-Rate-Limit-Reset:
+      - '571'
+      Etag:
+      - bd3ad53e
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f02008d561ecb-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"friends":[{"average":{"steps":18029},"lastUpdateTime":"2016-02-18T11:46:33","lifetime":{"steps":1024432},"rank":{"steps":1},"summary":{"steps":120032},"user":{"age":29,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/A0B4000B-B1F9-C8DF-5766-2B0E1FDAD5E8_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/A0B4000B-B1F9-C8DF-5766-2B0E1FDAD5E8_profile_150_square.jpg","averageDailySteps":18029,"city":"","country":"","dateOfBirth":"","displayName":"Carlos
+        N.","encodedId":"3W492N","features":{},"friend":true,"fullName":"","gender":"MALE","height":175,"locale":"en_US","memberSince":"2015-11-29","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2016-02-14","description":"70,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Spring Loaders badge!","encodedId":"229845","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps70k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps70k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps70k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps70k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps70k.png","marketingDescription":"You''ve
+        walked 70,000 steps  And earned the Spring Loaders badge!","mobileDescription":"Unbelievable!
+        You''ve propelled yourself to a whole new level of stepping.","name":"Spring
+        Loaders (70,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps70k.png","shareText":"I
+        took 70,000 steps and earned the Spring Loaders badge! #Fitbit","shortDescription":"70,000
+        steps","shortName":"Spring Loaders","timesAchieved":1,"value":70000},{"badgeGradientEndColor":"00A0E5","badgeGradientStartColor":"0056A3","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2016-01-12","description":"250 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the London Underground badge!","encodedId":"22B8M8","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles250.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles250.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles250.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles250.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles250.png","marketingDescription":"By
+        reaching 250 lifetime miles, you''ve earned the Tube badge!","mobileDescription":"You''ve
+        walked the length of the world''s first underground railway and are laying
+        the tracks for some big things in the future.","name":"London Underground
+        (250 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles250.png","shareText":"I
+        covered 250 miles with my #Fitbit and earned the London Underground badge.","shortDescription":"250
+        miles","shortName":"London Underground","timesAchieved":1,"unit":"MILES","value":250},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2016-02-14","description":"200 floors in a
+        day","earnedMessage":"Congrats on earning your first Castle badge!","encodedId":"228TC9","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors200.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors200.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors200.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors200.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors200.png","marketingDescription":"You''ve
+        climbed 200 floors to earn the Castle badge!","mobileDescription":"With this
+        kind of stronghold on the stairs, we proclaim you to be a knight in shining
+        steppage!","name":"Castle (200 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors200.png","shareText":"I
+        climbed 200 flights of stairs and earned the Castle badge! #Fitbit","shortDescription":"200
+        floors","shortName":"Castle","timesAchieved":1,"value":200},{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2016-01-18","description":"1,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the Skydiver badge!","encodedId":"228T9C","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors1k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors1k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors1k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors1k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors1k.png","marketingDescription":"By
+        climbing 1000 lifetime floors, you''ve earned the Skydiver badge!","mobileDescription":"That''s
+        as high as you''d go to skydive! Cross another one off the ol'' fitness bucket
+        list.","name":"Skydiver (1,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors1k.png","shareText":"I
+        climbed 1,000 floors with my #Fitbit and earned the Skydiver badge.","shortDescription":"1,000
+        floors","shortName":"Skydiver","timesAchieved":1,"value":1000}],"weight":0}},{"average":{"steps":14367},"lastUpdateTime":"2016-02-18T20:11:07","lifetime":{"steps":2962910},"rank":{"steps":2},"summary":{"steps":104747},"user":{"age":58,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/62A2112C-2E8E-757E-504E-6989DB9B44C8_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/62A2112C-2E8E-757E-504E-6989DB9B44C8_profile_150_square.jpg","averageDailySteps":14367,"city":"","country":"","dateOfBirth":"","displayName":"Sharon
+        R.","encodedId":"3H5SBQ","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":168,"locale":"en_US","memberSince":"2015-05-31","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"A489E8","badgeGradientStartColor":"38216E","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2016-02-13","description":"20,000 steps in
+        a day","earnedMessage":"Congrats on earning your first High Tops badge!","encodedId":"228TPP","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps20k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps20k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps20k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps20k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps20k.png","marketingDescription":"You''ve
+        walked 20,000 steps  And earned the High Tops badge!","mobileDescription":"When
+        it comes to steps, it looks like you''re not playing around. This achievement
+        was a slam dunk.","name":"High Tops (20,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps20k.png","shareText":"I
+        took 20,000 steps and earned the High Tops badge! #Fitbit","shortDescription":"20,000
+        steps","shortName":"High Tops","timesAchieved":16,"value":20000},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-12-17","description":"990 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the New Zealand badge!","encodedId":"22B8MD","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles990.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles990.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles990.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles990.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles990.png","marketingDescription":"By
+        reaching 990 lifetime miles, you''ve earned the New Zealand badge!","mobileDescription":"You''ve
+        walked the entire length of New Zealand.","name":"New Zealand (990 lifetime
+        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles990.png","shareText":"I
+        covered 990 miles with my #Fitbit and earned the New Zealand badge.","shortDescription":"990
+        miles","shortName":"New Zealand","timesAchieved":1,"unit":"MILES","value":990},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-06-06","description":"125 floors in a
+        day","earnedMessage":"Congrats on earning your first Rollercoaster badge!","encodedId":"229844","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors125.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors125.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors125.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors125.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors125.png","marketingDescription":"You''ve
+        climbed 125 floors to earn the Rollercoaster badge!","mobileDescription":"That''s
+        hair-raising, jaw-dropping, mind-blowing floor count!","name":"Rollercoaster
+        (125 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors125.png","shareText":"I
+        climbed 125 flights of stairs and earned the Rollercoaster badge! #Fitbit","shortDescription":"125
+        floors","shortName":"Rollercoaster","timesAchieved":1,"value":125},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-12-05","description":"4,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
+        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
+        lifetime badges are really taking flight, because you just jetsetted your
+        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
+        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":15035},"lastUpdateTime":"2016-02-18T05:57:59","lifetime":{"steps":5624528},"rank":{"steps":3},"summary":{"steps":96080},"user":{"age":27,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/99B584FA-F8CE-A17E-A909-E845D110973B_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/99B584FA-F8CE-A17E-A909-E845D110973B_profile_150_square.jpg","averageDailySteps":15034,"city":"","country":"","dateOfBirth":"","displayName":"selby
+        s.","encodedId":"364SGR","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":165,"locale":"en_US","memberSince":"2015-01-26","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-09-12","description":"60,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Blue Suede Shoes badge!","encodedId":"22983X","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps60k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps60k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps60k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps60k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps60k.png","marketingDescription":"You''ve
+        walked 60,000 steps  And earned the Blue Suede Shoes badge!","mobileDescription":"Looks
+        like someone is doing the hustle! The bass may be dropping, but you''re step
+        count is dancing off the charts.","name":"Blue Suede Shoes (60,000 steps in
+        a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps60k.png","shareText":"I
+        took 60,000 steps and earned the Blue Suede Shoes badge! #Fitbit","shortDescription":"60,000
+        steps","shortName":"Blue Suede Shoes","timesAchieved":2,"value":60000},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2016-02-14","description":"2,500 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Monarch Migration badge!","encodedId":"22B8MJ","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles2500.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles2500.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles2500.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles2500.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles2500.png","marketingDescription":"By
+        reaching 2,500 lifetime miles, you''ve earned the Monarch Migration badge!","mobileDescription":"Every
+        year the monarch butterfly migrates that same number of miles to warmer climates.","name":"Monarch
+        Migration (2,500 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles2500.png","shareText":"I
+        covered 2,500 miles with my #Fitbit and earned the Monarch Migration badge.","shortDescription":"2,500
+        miles","shortName":"Monarch Migration","timesAchieved":1,"unit":"MILES","value":2500},{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-12-12","description":"600 floors in a
+        day","earnedMessage":"Congrats on earning your first Mountain badge!","encodedId":"228TBV","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors600.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors600.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors600.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors600.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors600.png","marketingDescription":"You''ve
+        climbed 600 floors to earn the Mountain badge!","mobileDescription":"Ain''t
+        no mountain high, ain''t no valley low, ain''t no river wide enough to keep
+        you from climbing more floors!","name":"Mountain (600 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors600.png","shareText":"I
+        climbed 600 flights of stairs and earned the Mountain badge! #Fitbit","shortDescription":"600
+        floors","shortName":"Mountain","timesAchieved":1,"value":600},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2016-01-03","description":"14,000 lifetime
+        floors","earnedMessage":"Yipee! You''ve earned the Spaceship badge!","encodedId":"228TKC","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors14k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors14k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors14k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors14k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors14k.png","marketingDescription":"By
+        climbing 14000 lifetime floors, you''ve earned the Spaceship badge!","mobileDescription":"U.F.OOOH!
+        With that many floors, it''s clear you''re no alien to fitness. You little
+        climbing phenomenon, you.","name":"Spaceship (14,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors14k.png","shareText":"I
+        climbed 14,000 floors with my #Fitbit and earned the Spaceship badge.","shortDescription":"14,000
+        floors","shortName":"Spaceship","timesAchieved":1,"value":14000}],"weight":0}},{"average":{"steps":8093},"lastUpdateTime":"2016-02-18T20:34:24","lifetime":{"steps":6956746},"rank":{"steps":4},"summary":{"steps":58187},"user":{"age":28,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/4039B9C0-F009-F721-B485-A445593A249D_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/4039B9C0-F009-F721-B485-A445593A249D_profile_150_square.jpg","averageDailySteps":8093,"city":"","country":"","dateOfBirth":"","displayName":"Natasha","encodedId":"2942RK","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":162.5,"locale":"en_US","memberSince":"2013-12-22","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-04-26","description":"25,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Classics badge!","encodedId":"228TLX","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps25k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps25k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps25k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps25k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps25k.png","marketingDescription":"You''ve
+        walked 25,000 steps  And earned the Classics badge!","mobileDescription":"With
+        this impressive fitness feat, you''ve added a badge to your growing collection.
+        Nice job, you stepping all-star!","name":"Classics (25,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps25k.png","shareText":"I
+        took 25,000 steps and earned the Classics badge! #Fitbit","shortDescription":"25,000
+        steps","shortName":"Classics","timesAchieved":1,"value":25000},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-09-24","description":"2,500 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Monarch Migration badge!","encodedId":"22B8MJ","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles2500.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles2500.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles2500.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles2500.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles2500.png","marketingDescription":"By
+        reaching 2,500 lifetime miles, you''ve earned the Monarch Migration badge!","mobileDescription":"Every
+        year the monarch butterfly migrates that same number of miles to warmer climates.","name":"Monarch
+        Migration (2,500 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles2500.png","shareText":"I
+        covered 2,500 miles with my #Fitbit and earned the Monarch Migration badge.","shortDescription":"2,500
+        miles","shortName":"Monarch Migration","timesAchieved":1,"unit":"MILES","value":2500}],"weight":0}},{"average":{"steps":9309},"lastUpdateTime":"2016-02-18T20:00:25","lifetime":{"steps":2005465},"rank":{"steps":5},"summary":{"steps":54737},"user":{"age":32,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/5B7AD8B3-3AA7-9E8A-DBC0-670457DF515B_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/5B7AD8B3-3AA7-9E8A-DBC0-670457DF515B_profile_150_square.jpg","averageDailySteps":9309,"city":"","country":"","dateOfBirth":"","displayName":"Emma
+        W.","encodedId":"3CMMPD","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":172.70000000000002,"locale":"en_US","memberSince":"2015-04-20","nickname":"","offsetFromUTCMillis":-25200000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Denver","topBadges":[{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-09-26","description":"30,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Trail Shoe badge!","encodedId":"228TM5","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps30k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps30k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps30k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps30k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps30k.png","marketingDescription":"You''ve
+        walked 30,000 steps  And earned the Trail Shoe badge!","mobileDescription":"On
+        the path to fitness, you''re gaining some serious ground!","name":"Trail Shoe
+        (30,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps30k.png","shareText":"I
+        took 30,000 steps and earned the Trail Shoe badge! #Fitbit","shortDescription":"30,000
+        steps","shortName":"Trail Shoe","timesAchieved":2,"value":30000},{"badgeGradientEndColor":"42C401","badgeGradientStartColor":"007D3C","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-12-20","description":"736 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Italy badge!","encodedId":"22B8MC","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles736.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles736.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles736.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles736.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles736.png","marketingDescription":"By
+        reaching 736 lifetime miles, you''ve earned the Italy badge!","mobileDescription":"By
+        walking the entire length of Italy, you''ve stepped your way to another colossal
+        achievement!","name":"Italy (736 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles736.png","shareText":"I
+        covered 736 miles with my #Fitbit and earned the Italy badge.","shortDescription":"736
+        miles","shortName":"Italy","timesAchieved":1,"unit":"MILES","value":736},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-10-24","description":"200 floors in a
+        day","earnedMessage":"Congrats on earning your first Castle badge!","encodedId":"228TC9","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors200.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors200.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors200.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors200.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors200.png","marketingDescription":"You''ve
+        climbed 200 floors to earn the Castle badge!","mobileDescription":"With this
+        kind of stronghold on the stairs, we proclaim you to be a knight in shining
+        steppage!","name":"Castle (200 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors200.png","shareText":"I
+        climbed 200 flights of stairs and earned the Castle badge! #Fitbit","shortDescription":"200
+        floors","shortName":"Castle","timesAchieved":3,"value":200},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-12-13","description":"4,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
+        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
+        lifetime badges are really taking flight, because you just jetsetted your
+        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
+        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":7548},"lastUpdateTime":"2016-02-18T20:08:00","lifetime":{"steps":3514290},"rank":{"steps":6},"summary":{"steps":45802},"user":{"age":27,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/38056F54-AF8E-F890-D53A-C7EAC631101A_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/38056F54-AF8E-F890-D53A-C7EAC631101A_profile_150_square.jpg","averageDailySteps":7547,"dateOfBirth":"1989-01-10","displayName":"Toni","distanceUnit":"en_US","encodedId":"35FPZ5","features":{"exerciseGoal":true},"fullName":"Toni
+        Rib","gender":"FEMALE","glucoseUnit":"en_US","height":177,"heightUnit":"en_US","locale":"en_US","memberSince":"2015-01-16","offsetFromUTCMillis":-25200000,"startDayOfWeek":"SUNDAY","strideLengthRunning":94.30000000000001,"strideLengthRunningType":"default","strideLengthWalking":73.10000000000001,"strideLengthWalkingType":"default","timezone":"America/Denver","topBadges":[{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-07-11","description":"30,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Trail Shoe badge!","encodedId":"228TM5","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps30k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps30k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps30k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps30k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps30k.png","marketingDescription":"You''ve
+        walked 30,000 steps  And earned the Trail Shoe badge!","mobileDescription":"On
+        the path to fitness, you''re gaining some serious ground!","name":"Trail Shoe
+        (30,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps30k.png","shareText":"I
+        took 30,000 steps and earned the Trail Shoe badge! #Fitbit","shortDescription":"30,000
+        steps","shortName":"Trail Shoe","timesAchieved":2,"value":30000},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2016-01-27","description":"1,600 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Great Barrier Reef badge!","encodedId":"22B8MK","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles1600.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles1600.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles1600.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles1600.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles1600.png","marketingDescription":"By
+        reaching 1,600 lifetime miles, you''ve earned the Great Barrier Reef badge!","mobileDescription":"The
+        Great Barrier Reef is the world''s largest coral reef system\u2014and you
+        just walked that! Take a minute to swim in your success.","name":"Great Barrier
+        Reef (1,600 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles1600.png","shareText":"I
+        covered 1,600 miles with my #Fitbit and earned the Great Barrier Reef badge.","shortDescription":"1,600
+        miles","shortName":"Great Barrier Reef","timesAchieved":1,"unit":"MILES","value":1600},{"badgeGradientEndColor":"00A0E5","badgeGradientStartColor":"0056A3","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-08-06","description":"150 floors in a
+        day","earnedMessage":"Congrats on earning your first Stadium badge!","encodedId":"228TC3","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors150.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors150.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors150.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors150.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors150.png","marketingDescription":"You''ve
+        climbed 150 floors to earn the Stadium badge!","mobileDescription":"We need
+        some peanuts and cracker jacks, because you''re on a winning streak and the
+        crowd is going wild!","name":"Stadium (150 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors150.png","shareText":"I
+        climbed 150 flights of stairs and earned the Stadium badge! #Fitbit","shortDescription":"150
+        floors","shortName":"Stadium","timesAchieved":1,"value":150},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-06-24","description":"4,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
+        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
+        lifetime badges are really taking flight, because you just jetsetted your
+        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
+        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0,"weightUnit":"en_US"}},{"average":{"steps":4833},"lastUpdateTime":"2016-02-18T00:38:59","lifetime":{"steps":6160164},"rank":{"steps":7},"summary":{"steps":9665},"user":{"age":35,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/DF3F713A-593D-190C-2B2E-C393170E1E73_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/DF3F713A-593D-190C-2B2E-C393170E1E73_profile_150_square.jpg","averageDailySteps":4832,"city":"","country":"","dateOfBirth":"","displayName":"Monique","encodedId":"2DVGFP","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":157.5,"locale":"en_US","memberSince":"2014-03-05","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-11-07","description":"35,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Hiking Boot badge!","encodedId":"228TPW","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps35k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps35k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps35k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps35k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps35k.png","marketingDescription":"You''ve
+        walked 35,000 steps  And earned the Hiking Boot badge!","mobileDescription":"Woot,
+        woot! There''s no mountain you can''t climb and no goal you can''t get.","name":"Hiking
+        Boot (35,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps35k.png","shareText":"I
+        took 35,000 steps and earned the Hiking Boot badge! #Fitbit","shortDescription":"35,000
+        steps","shortName":"Hiking Boot","timesAchieved":1,"value":35000},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2016-02-17","description":"2,500 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Monarch Migration badge!","encodedId":"22B8MJ","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles2500.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles2500.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles2500.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles2500.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles2500.png","marketingDescription":"By
+        reaching 2,500 lifetime miles, you''ve earned the Monarch Migration badge!","mobileDescription":"Every
+        year the monarch butterfly migrates that same number of miles to warmer climates.","name":"Monarch
+        Migration (2,500 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles2500.png","shareText":"I
+        covered 2,500 miles with my #Fitbit and earned the Monarch Migration badge.","shortDescription":"2,500
+        miles","shortName":"Monarch Migration","timesAchieved":1,"unit":"MILES","value":2500},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-12-12","description":"75 floors in a day","earnedMessage":"Congrats
+        on earning your first Ferris Wheel badge!","encodedId":"229843","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors75.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors75.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors75.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors75.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors75.png","marketingDescription":"You''ve
+        climbed 75 floors to earn the Ferris Wheel badge!","mobileDescription":"Put
+        your hands up, celebrate, and enjoy the ride!","name":"Ferris Wheel (75 floors
+        in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors75.png","shareText":"I
+        climbed 75 flights of stairs and earned the Ferris Wheel badge! #Fitbit","shortDescription":"75
+        floors","shortName":"Ferris Wheel","timesAchieved":1,"value":75},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-12-08","description":"2,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the Hot Air Balloon badge!","encodedId":"228T9T","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors2k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors2k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors2k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors2k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors2k.png","marketingDescription":"By
+        climbing 2000 lifetime floors, you''ve earned the Hot Air Balloon badge!","mobileDescription":"That''s
+        as high as a hot air balloon! You are really blowing up the lifetime badges
+        list.","name":"Hot Air Balloon (2,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors2k.png","shareText":"I
+        climbed 2,000 floors with my #Fitbit and earned the Hot Air Balloon badge.","shortDescription":"2,000
+        floors","shortName":"Hot Air Balloon","timesAchieved":1,"value":2000}],"weight":0}},{"average":{"steps":0},"lastUpdateTime":"2015-10-06T14:11:07","lifetime":{"steps":2249935},"rank":{"steps":8},"summary":{"steps":0},"user":{"age":24,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/1A0CAF36-4839-97DC-A776-8CB1ABA1FDA9_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/1A0CAF36-4839-97DC-A776-8CB1ABA1FDA9_profile_150_square.jpg","averageDailySteps":0,"city":"","country":"","dateOfBirth":"","displayName":"Alexis
+        B.","encodedId":"3CNSYK","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":165,"locale":"en_US","memberSince":"2015-04-22","nickname":"","offsetFromUTCMillis":-25200000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Denver","topBadges":[{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-09-18","description":"35,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Hiking Boot badge!","encodedId":"228TPW","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps35k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps35k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps35k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps35k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps35k.png","marketingDescription":"You''ve
+        walked 35,000 steps  And earned the Hiking Boot badge!","mobileDescription":"Woot,
+        woot! There''s no mountain you can''t climb and no goal you can''t get.","name":"Hiking
+        Boot (35,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps35k.png","shareText":"I
+        took 35,000 steps and earned the Hiking Boot badge! #Fitbit","shortDescription":"35,000
+        steps","shortName":"Hiking Boot","timesAchieved":1,"value":35000},{"badgeGradientEndColor":"42C401","badgeGradientStartColor":"007D3C","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-08-20","description":"736 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Italy badge!","encodedId":"22B8MC","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles736.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles736.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles736.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles736.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles736.png","marketingDescription":"By
+        reaching 736 lifetime miles, you''ve earned the Italy badge!","mobileDescription":"By
+        walking the entire length of Italy, you''ve stepped your way to another colossal
+        achievement!","name":"Italy (736 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles736.png","shareText":"I
+        covered 736 miles with my #Fitbit and earned the Italy badge.","shortDescription":"736
+        miles","shortName":"Italy","timesAchieved":1,"unit":"MILES","value":736},{"badgeGradientEndColor":"00A0E5","badgeGradientStartColor":"0056A3","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-06-30","description":"150 floors in a
+        day","earnedMessage":"Congrats on earning your first Stadium badge!","encodedId":"228TC3","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors150.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors150.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors150.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors150.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors150.png","marketingDescription":"You''ve
+        climbed 150 floors to earn the Stadium badge!","mobileDescription":"We need
+        some peanuts and cracker jacks, because you''re on a winning streak and the
+        crowd is going wild!","name":"Stadium (150 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors150.png","shareText":"I
+        climbed 150 flights of stairs and earned the Stadium badge! #Fitbit","shortDescription":"150
+        floors","shortName":"Stadium","timesAchieved":3,"value":150},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-08-24","description":"4,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
+        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
+        lifetime badges are really taking flight, because you just jetsetted your
+        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
+        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":0},"lastUpdateTime":"2016-01-10T16:22:41","lifetime":{"steps":4136195},"rank":{"steps":8},"summary":{"steps":0},"user":{"age":46,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/3455F32F-F3DB-9D4E-D043-6651A38277E8_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/3455F32F-F3DB-9D4E-D043-6651A38277E8_profile_150_square.jpg","averageDailySteps":0,"city":"","country":"","dateOfBirth":"","displayName":"malone","encodedId":"23B893","features":{},"friend":true,"fullName":"","gender":"MALE","height":175.3,"locale":"en_US","memberSince":"2012-08-24","nickname":"","offsetFromUTCMillis":-21600000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Chicago","topBadges":[{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-06-20","description":"35,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Hiking Boot badge!","encodedId":"228TPW","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps35k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps35k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps35k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps35k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps35k.png","marketingDescription":"You''ve
+        walked 35,000 steps  And earned the Hiking Boot badge!","mobileDescription":"Woot,
+        woot! There''s no mountain you can''t climb and no goal you can''t get.","name":"Hiking
+        Boot (35,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps35k.png","shareText":"I
+        took 35,000 steps and earned the Hiking Boot badge! #Fitbit","shortDescription":"35,000
+        steps","shortName":"Hiking Boot","timesAchieved":1,"value":35000},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-09-26","description":"1,600 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Great Barrier Reef badge!","encodedId":"22B8MK","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles1600.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles1600.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles1600.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles1600.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles1600.png","marketingDescription":"By
+        reaching 1,600 lifetime miles, you''ve earned the Great Barrier Reef badge!","mobileDescription":"The
+        Great Barrier Reef is the world''s largest coral reef system\u2014and you
+        just walked that! Take a minute to swim in your success.","name":"Great Barrier
+        Reef (1,600 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles1600.png","shareText":"I
+        covered 1,600 miles with my #Fitbit and earned the Great Barrier Reef badge.","shortDescription":"1,600
+        miles","shortName":"Great Barrier Reef","timesAchieved":1,"unit":"MILES","value":1600},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-07-23","description":"175 floors in a
+        day","earnedMessage":"Congrats on earning your first Bridge badge!","encodedId":"229849","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors175.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors175.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors175.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors175.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors175.png","marketingDescription":"You''ve
+        climbed 175 floors to earn the Bridge badge!","mobileDescription":"A number
+        this tremendous means no obstacle could get in the way of your floor count!","name":"Bridge
+        (175 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors175.png","shareText":"I
+        climbed 175 flights of stairs and earned the Bridge badge! #Fitbit","shortDescription":"175
+        floors","shortName":"Bridge","timesAchieved":1,"value":175},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-08-11","description":"4,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
+        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
+        lifetime badges are really taking flight, because you just jetsetted your
+        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
+        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":0},"lastUpdateTime":"2016-02-09T09:25:15","lifetime":{"steps":3358021},"rank":{"steps":8},"summary":{"steps":0},"user":{"age":27,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/DD780E2D-C888-DFBC-5877-7D70949CEE26_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/DD780E2D-C888-DFBC-5877-7D70949CEE26_profile_150_square.jpg","averageDailySteps":0,"city":"","country":"","dateOfBirth":"","displayName":"Hollie","encodedId":"38XNQC","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":172.8,"locale":"en_US","memberSince":"2015-03-01","nickname":"","offsetFromUTCMillis":-28800000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Los_Angeles","topBadges":[{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-09-06","description":"30,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Trail Shoe badge!","encodedId":"228TM5","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps30k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps30k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps30k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps30k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps30k.png","marketingDescription":"You''ve
+        walked 30,000 steps  And earned the Trail Shoe badge!","mobileDescription":"On
+        the path to fitness, you''re gaining some serious ground!","name":"Trail Shoe
+        (30,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps30k.png","shareText":"I
+        took 30,000 steps and earned the Trail Shoe badge! #Fitbit","shortDescription":"30,000
+        steps","shortName":"Trail Shoe","timesAchieved":4,"value":30000},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-10-28","description":"990 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the New Zealand badge!","encodedId":"22B8MD","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles990.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles990.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles990.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles990.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles990.png","marketingDescription":"By
+        reaching 990 lifetime miles, you''ve earned the New Zealand badge!","mobileDescription":"You''ve
+        walked the entire length of New Zealand.","name":"New Zealand (990 lifetime
+        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles990.png","shareText":"I
+        covered 990 miles with my #Fitbit and earned the New Zealand badge.","shortDescription":"990
+        miles","shortName":"New Zealand","timesAchieved":1,"unit":"MILES","value":990}],"weight":0}},{"average":{"steps":0},"lastUpdateTime":"2016-01-16T07:10:29","lifetime":{"steps":3111653},"rank":{"steps":8},"summary":{"steps":0},"user":{"age":27,"avatar":"https://static0.fitbit.com/images/profile/defaultProfile_100_female.gif","avatar150":"https://static0.fitbit.com/images/profile/defaultProfile_150_female.gif","averageDailySteps":0,"city":"","country":"","dateOfBirth":"","displayName":"Jessica","encodedId":"294GVG","features":{},"friend":true,"fullName":"","gender":"FEMALE","height":162.5,"locale":"en_US","memberSince":"2013-12-23","nickname":"","offsetFromUTCMillis":-21600000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Chicago","topBadges":[{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-06-19","description":"25,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Classics badge!","encodedId":"228TLX","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps25k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps25k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps25k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps25k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps25k.png","marketingDescription":"You''ve
+        walked 25,000 steps  And earned the Classics badge!","mobileDescription":"With
+        this impressive fitness feat, you''ve added a badge to your growing collection.
+        Nice job, you stepping all-star!","name":"Classics (25,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps25k.png","shareText":"I
+        took 25,000 steps and earned the Classics badge! #Fitbit","shortDescription":"25,000
+        steps","shortName":"Classics","timesAchieved":2,"value":25000},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-08-25","description":"990 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the New Zealand badge!","encodedId":"22B8MD","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles990.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles990.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles990.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles990.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles990.png","marketingDescription":"By
+        reaching 990 lifetime miles, you''ve earned the New Zealand badge!","mobileDescription":"You''ve
+        walked the entire length of New Zealand.","name":"New Zealand (990 lifetime
+        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles990.png","shareText":"I
+        covered 990 miles with my #Fitbit and earned the New Zealand badge.","shortDescription":"990
+        miles","shortName":"New Zealand","timesAchieved":1,"unit":"MILES","value":990},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-06-17","description":"400 floors in a
+        day","earnedMessage":"Congrats on earning your first Canyon badge!","encodedId":"228TBN","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors400.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors400.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors400.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors400.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors400.png","marketingDescription":"You''ve
+        climbed 400 floors to earn the Canyon badge!","mobileDescription":"By climbing
+        this much with no sign of stopping, you''re exceeding our highest expectations!","name":"Canyon
+        (400 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors400.png","shareText":"I
+        climbed 400 flights of stairs and earned the Canyon badge! #Fitbit","shortDescription":"400
+        floors","shortName":"Canyon","timesAchieved":1,"value":400},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-06-22","description":"4,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
+        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
+        lifetime badges are really taking flight, because you just jetsetted your
+        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
+        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
+        floors","shortName":"747","timesAchieved":1,"value":4000}],"weight":0}},{"average":{"steps":0},"lastUpdateTime":"2016-02-10T00:13:01","lifetime":{"steps":2608516},"rank":{"steps":8},"summary":{"steps":0},"user":{"age":36,"avatar":"https://d6y8zfzc2qfsl.cloudfront.net/A7F538AC-2724-D3AB-F39A-EF6184C71C45_profile_100_square.jpg","avatar150":"https://d6y8zfzc2qfsl.cloudfront.net/A7F538AC-2724-D3AB-F39A-EF6184C71C45_profile_150_square.jpg","averageDailySteps":0,"city":"","country":"","dateOfBirth":"","displayName":"Todd
+        P.","encodedId":"32KVJC","features":{},"friend":true,"fullName":"","gender":"MALE","height":180,"locale":"en_US","memberSince":"2014-12-25","nickname":"","offsetFromUTCMillis":-18000000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/New_York","topBadges":[{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2016-02-07","description":"15,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Urban Boot badge!","encodedId":"228TMK","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps15k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps15k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps15k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps15k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps15k.png","marketingDescription":"You''ve
+        walked 15,000 steps  And earned the Urban Boot badge!","mobileDescription":"With
+        a number that''s almost three times more than the national average, your step
+        count is really heating up.","name":"Urban Boot (15,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps15k.png","shareText":"I
+        took 15,000 steps and earned the Urban Boot badge! #Fitbit","shortDescription":"15,000
+        steps","shortName":"Urban Boot","timesAchieved":7,"value":15000},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-09-30","description":"990 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the New Zealand badge!","encodedId":"22B8MD","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles990.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles990.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles990.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles990.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles990.png","marketingDescription":"By
+        reaching 990 lifetime miles, you''ve earned the New Zealand badge!","mobileDescription":"You''ve
+        walked the entire length of New Zealand.","name":"New Zealand (990 lifetime
+        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles990.png","shareText":"I
+        covered 990 miles with my #Fitbit and earned the New Zealand badge.","shortDescription":"990
+        miles","shortName":"New Zealand","timesAchieved":1,"unit":"MILES","value":990}],"weight":0}},{"average":{"steps":0},"lastUpdateTime":"2015-11-13T06:16:08","lifetime":{"steps":1469429},"rank":{"steps":8},"summary":{"steps":0},"user":{"age":31,"avatar":"https://static0.fitbit.com/images/profile/defaultProfile_100_male.gif","avatar150":"https://static0.fitbit.com/images/profile/defaultProfile_150_male.gif","averageDailySteps":0,"city":"","country":"","dateOfBirth":"","displayName":"Dan
+        R.","encodedId":"3FWHNJ","features":{},"friend":true,"fullName":"","gender":"MALE","height":185,"locale":"en_US","memberSince":"2015-05-20","nickname":"","offsetFromUTCMillis":-25200000,"state":"","strideLengthRunning":0,"strideLengthWalking":0,"timezone":"America/Denver","topBadges":[{"badgeGradientEndColor":"A489E8","badgeGradientStartColor":"38216E","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-09-17","description":"20,000 steps in
+        a day","earnedMessage":"Congrats on earning your first High Tops badge!","encodedId":"228TPP","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps20k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps20k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps20k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps20k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps20k.png","marketingDescription":"You''ve
+        walked 20,000 steps  And earned the High Tops badge!","mobileDescription":"When
+        it comes to steps, it looks like you''re not playing around. This achievement
+        was a slam dunk.","name":"High Tops (20,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps20k.png","shareText":"I
+        took 20,000 steps and earned the High Tops badge! #Fitbit","shortDescription":"20,000
+        steps","shortName":"High Tops","timesAchieved":5,"value":20000},{"badgeGradientEndColor":"42C401","badgeGradientStartColor":"007D3C","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-08-31","description":"500 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Serengeti badge!","encodedId":"22B8MG","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles500.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles500.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles500.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles500.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles500.png","marketingDescription":"By
+        reaching 500 lifetime miles, you''ve earned the Serengeti badge!","mobileDescription":"Impressive!
+        You''ve walked distance of the Serengeti\u2014one of the 7 Natural Wonders
+        of the World.","name":"Serengeti (500 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles500.png","shareText":"I
+        covered 500 miles with my #Fitbit and earned the Serengeti badge.","shortDescription":"500
+        miles","shortName":"Serengeti","timesAchieved":1,"unit":"MILES","value":500},{"badgeGradientEndColor":"B0DF2A","badgeGradientStartColor":"00A550","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-06-20","description":"100 floors in a
+        day","earnedMessage":"Congrats on earning your first Skyscraper badge!","encodedId":"228TSL","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors100.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors100.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors100.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors100.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors100.png","marketingDescription":"You''ve
+        climbed 100 floors to earn the Skyscraper badge!","mobileDescription":"You''ve
+        used some pretty slick stair-climbing to take yourself to new heights!","name":"Skyscraper
+        (100 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors100.png","shareText":"I
+        climbed 100 flights of stairs and earned the Skyscraper badge! #Fitbit","shortDescription":"100
+        floors","shortName":"Skyscraper","timesAchieved":1,"value":100},{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-07-25","description":"1,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the Skydiver badge!","encodedId":"228T9C","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors1k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors1k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors1k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors1k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors1k.png","marketingDescription":"By
+        climbing 1000 lifetime floors, you''ve earned the Skydiver badge!","mobileDescription":"That''s
+        as high as you''d go to skydive! Cross another one off the ol'' fitness bucket
+        list.","name":"Skydiver (1,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors1k.png","shareText":"I
+        climbed 1,000 floors with my #Fitbit and earned the Skydiver badge.","shortDescription":"1,000
+        floors","shortName":"Skydiver","timesAchieved":1,"value":1000}],"weight":0}}],"hideMeFromLeaderboard":"false"}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:29 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/heart/date/2016-02-18/30d.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:29 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '88'
+      Fitbit-Rate-Limit-Reset:
+      - '571'
+      Etag:
+      - 783caed1
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f0204493541c3-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activities-heart":[{"dateTime":"2016-01-20","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
+        of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-21","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
+        of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-22","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
+        of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-23","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
+        of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-24","value":{"customHeartRateZones":[],"heartRateZones":[{"max":96,"min":30,"name":"Out
+        of Range"},{"max":135,"min":96,"name":"Fat Burn"},{"max":164,"min":135,"name":"Cardio"},{"max":220,"min":164,"name":"Peak"}]}},{"dateTime":"2016-01-25","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":353.33321,"max":96,"min":30,"minutes":256,"name":"Out
+        of Range"},{"caloriesOut":726.33695,"max":135,"min":96,"minutes":274,"name":"Fat
+        Burn"},{"caloriesOut":93.72429,"max":164,"min":135,"minutes":11,"name":"Cardio"},{"caloriesOut":169.67147,"max":220,"min":164,"minutes":16,"name":"Peak"}],"restingHeartRate":81}},{"dateTime":"2016-01-26","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1388.01831,"max":96,"min":30,"minutes":1203,"name":"Out
+        of Range"},{"caloriesOut":550.46268,"max":135,"min":96,"minutes":192,"name":"Fat
+        Burn"},{"caloriesOut":157.76991,"max":164,"min":135,"minutes":18,"name":"Cardio"},{"caloriesOut":146.64309,"max":220,"min":164,"minutes":14,"name":"Peak"}],"restingHeartRate":82}},{"dateTime":"2016-01-27","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1326.57099,"max":96,"min":30,"minutes":1125,"name":"Out
+        of Range"},{"caloriesOut":821.55466,"max":135,"min":96,"minutes":291,"name":"Fat
+        Burn"},{"caloriesOut":5.65434,"max":164,"min":135,"minutes":1,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":84}},{"dateTime":"2016-01-28","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":939.12448,"max":96,"min":30,"minutes":831,"name":"Out
+        of Range"},{"caloriesOut":887.94888,"max":135,"min":96,"minutes":343,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":84}},{"dateTime":"2016-01-29","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":42.46872,"max":96,"min":30,"minutes":33,"name":"Out
+        of Range"},{"caloriesOut":2157.57752,"max":135,"min":96,"minutes":828,"name":"Fat
+        Burn"},{"caloriesOut":6.03722,"max":164,"min":135,"minutes":2,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":85}},{"dateTime":"2016-01-30","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1401.67594,"max":96,"min":30,"minutes":1259,"name":"Out
+        of Range"},{"caloriesOut":333.29618,"max":135,"min":96,"minutes":171,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":86}},{"dateTime":"2016-01-31","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1441.75059,"max":96,"min":30,"minutes":1286,"name":"Out
+        of Range"},{"caloriesOut":319.66039,"max":135,"min":96,"minutes":139,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":85}},{"dateTime":"2016-02-01","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1278.12111,"max":96,"min":30,"minutes":1049,"name":"Out
+        of Range"},{"caloriesOut":816.16969,"max":135,"min":96,"minutes":370,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":84}},{"dateTime":"2016-02-02","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1292.69371,"max":96,"min":30,"minutes":1112,"name":"Out
+        of Range"},{"caloriesOut":530.13037,"max":135,"min":96,"minutes":222,"name":"Fat
+        Burn"},{"caloriesOut":12.4908,"max":164,"min":135,"minutes":2,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":85}},{"dateTime":"2016-02-03","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":637.65534,"max":96,"min":30,"minutes":560,"name":"Out
+        of Range"},{"caloriesOut":1358.79086,"max":135,"min":96,"minutes":576,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":85}},{"dateTime":"2016-02-04","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":941.80632,"max":96,"min":30,"minutes":835,"name":"Out
+        of Range"},{"caloriesOut":1109.5994,"max":135,"min":96,"minutes":567,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":86}},{"dateTime":"2016-02-05","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1066.71432,"max":96,"min":30,"minutes":934,"name":"Out
+        of Range"},{"caloriesOut":1126.56607,"max":135,"min":96,"minutes":490,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":88}},{"dateTime":"2016-02-06","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1399.28187,"max":96,"min":30,"minutes":1207,"name":"Out
+        of Range"},{"caloriesOut":586.0267,"max":135,"min":96,"minutes":223,"name":"Fat
+        Burn"},{"caloriesOut":12.07444,"max":164,"min":135,"minutes":2,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":85}},{"dateTime":"2016-02-07","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":456.74692,"max":96,"min":30,"minutes":433,"name":"Out
+        of Range"},{"caloriesOut":4.89223,"max":135,"min":96,"minutes":3,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":84}},{"dateTime":"2016-02-08","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":998.32719,"max":96,"min":30,"minutes":865,"name":"Out
+        of Range"},{"caloriesOut":1000.82535,"max":135,"min":96,"minutes":513,"name":"Fat
+        Burn"},{"caloriesOut":12.17853,"max":164,"min":135,"minutes":3,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":87}},{"dateTime":"2016-02-09","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1188.08326,"max":96,"min":30,"minutes":1033,"name":"Out
+        of Range"},{"caloriesOut":920.46787,"max":135,"min":96,"minutes":372,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":87}},{"dateTime":"2016-02-10","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1142.28366,"max":96,"min":30,"minutes":987,"name":"Out
+        of Range"},{"caloriesOut":1019.0411,"max":135,"min":96,"minutes":434,"name":"Fat
+        Burn"},{"caloriesOut":13.11534,"max":164,"min":135,"minutes":2,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":88}},{"dateTime":"2016-02-11","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":805.34433,"max":96,"min":30,"minutes":709,"name":"Out
+        of Range"},{"caloriesOut":1754.12468,"max":135,"min":96,"minutes":688,"name":"Fat
+        Burn"},{"caloriesOut":13.73988,"max":164,"min":135,"minutes":2,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":87}},{"dateTime":"2016-02-12","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1121.0493,"max":96,"min":30,"minutes":992,"name":"Out
+        of Range"},{"caloriesOut":646.60708,"max":135,"min":96,"minutes":435,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":89}},{"dateTime":"2016-02-13","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":542.82935,"max":96,"min":30,"minutes":464,"name":"Out
+        of Range"},{"caloriesOut":418.54589,"max":135,"min":96,"minutes":169,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":87}},{"dateTime":"2016-02-14","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1314.76079,"max":96,"min":30,"minutes":1149,"name":"Out
+        of Range"},{"caloriesOut":703.33613,"max":135,"min":96,"minutes":263,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":88}},{"dateTime":"2016-02-15","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1354.83544,"max":96,"min":30,"minutes":1201,"name":"Out
+        of Range"},{"caloriesOut":583.9449,"max":135,"min":96,"minutes":237,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":86}},{"dateTime":"2016-02-16","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":1244.18777,"max":96,"min":30,"minutes":1068,"name":"Out
+        of Range"},{"caloriesOut":811.69382,"max":135,"min":96,"minutes":342,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":84}},{"dateTime":"2016-02-17","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":894.96582,"max":96,"min":30,"minutes":784,"name":"Out
+        of Range"},{"caloriesOut":1545.00787,"max":135,"min":96,"minutes":616,"name":"Fat
+        Burn"},{"caloriesOut":18.94438,"max":164,"min":135,"minutes":3,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":82}},{"dateTime":"2016-02-18","value":{"customHeartRateZones":[],"heartRateZones":[{"caloriesOut":873.41919,"max":96,"min":30,"minutes":767,"name":"Out
+        of Range"},{"caloriesOut":858.95068,"max":135,"min":96,"minutes":338,"name":"Fat
+        Burn"},{"caloriesOut":0,"max":164,"min":135,"minutes":0,"name":"Cardio"},{"caloriesOut":0,"max":220,"min":164,"minutes":0,"name":"Peak"}],"restingHeartRate":83}}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:29 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/sleep/date/2016-02-18.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:30 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '87'
+      Fitbit-Rate-Limit-Reset:
+      - '570'
+      Etag:
+      - 581c207e
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f0206173e1ea1-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"sleep":[{"awakeCount":0,"awakeDuration":0,"awakeningsCount":7,"dateOfSleep":"2016-02-18","duration":17640000,"efficiency":79,"isMainSleep":true,"logId":10914145207,"minuteData":[{"dateTime":"01:03:00","value":"2"},{"dateTime":"01:04:00","value":"2"},{"dateTime":"01:05:00","value":"2"},{"dateTime":"01:06:00","value":"2"},{"dateTime":"01:07:00","value":"2"},{"dateTime":"01:08:00","value":"2"},{"dateTime":"01:09:00","value":"2"},{"dateTime":"01:10:00","value":"2"},{"dateTime":"01:11:00","value":"2"},{"dateTime":"01:12:00","value":"2"},{"dateTime":"01:13:00","value":"2"},{"dateTime":"01:14:00","value":"1"},{"dateTime":"01:15:00","value":"1"},{"dateTime":"01:16:00","value":"1"},{"dateTime":"01:17:00","value":"1"},{"dateTime":"01:18:00","value":"1"},{"dateTime":"01:19:00","value":"1"},{"dateTime":"01:20:00","value":"1"},{"dateTime":"01:21:00","value":"1"},{"dateTime":"01:22:00","value":"1"},{"dateTime":"01:23:00","value":"1"},{"dateTime":"01:24:00","value":"1"},{"dateTime":"01:25:00","value":"1"},{"dateTime":"01:26:00","value":"1"},{"dateTime":"01:27:00","value":"1"},{"dateTime":"01:28:00","value":"1"},{"dateTime":"01:29:00","value":"1"},{"dateTime":"01:30:00","value":"1"},{"dateTime":"01:31:00","value":"1"},{"dateTime":"01:32:00","value":"1"},{"dateTime":"01:33:00","value":"1"},{"dateTime":"01:34:00","value":"1"},{"dateTime":"01:35:00","value":"1"},{"dateTime":"01:36:00","value":"1"},{"dateTime":"01:37:00","value":"1"},{"dateTime":"01:38:00","value":"1"},{"dateTime":"01:39:00","value":"1"},{"dateTime":"01:40:00","value":"1"},{"dateTime":"01:41:00","value":"1"},{"dateTime":"01:42:00","value":"1"},{"dateTime":"01:43:00","value":"1"},{"dateTime":"01:44:00","value":"1"},{"dateTime":"01:45:00","value":"1"},{"dateTime":"01:46:00","value":"1"},{"dateTime":"01:47:00","value":"1"},{"dateTime":"01:48:00","value":"1"},{"dateTime":"01:49:00","value":"1"},{"dateTime":"01:50:00","value":"1"},{"dateTime":"01:51:00","value":"1"},{"dateTime":"01:52:00","value":"1"},{"dateTime":"01:53:00","value":"1"},{"dateTime":"01:54:00","value":"1"},{"dateTime":"01:55:00","value":"1"},{"dateTime":"01:56:00","value":"1"},{"dateTime":"01:57:00","value":"1"},{"dateTime":"01:58:00","value":"1"},{"dateTime":"01:59:00","value":"1"},{"dateTime":"02:00:00","value":"1"},{"dateTime":"02:01:00","value":"1"},{"dateTime":"02:02:00","value":"1"},{"dateTime":"02:03:00","value":"1"},{"dateTime":"02:04:00","value":"1"},{"dateTime":"02:05:00","value":"1"},{"dateTime":"02:06:00","value":"1"},{"dateTime":"02:07:00","value":"1"},{"dateTime":"02:08:00","value":"1"},{"dateTime":"02:09:00","value":"1"},{"dateTime":"02:10:00","value":"1"},{"dateTime":"02:11:00","value":"1"},{"dateTime":"02:12:00","value":"1"},{"dateTime":"02:13:00","value":"1"},{"dateTime":"02:14:00","value":"1"},{"dateTime":"02:15:00","value":"1"},{"dateTime":"02:16:00","value":"1"},{"dateTime":"02:17:00","value":"1"},{"dateTime":"02:18:00","value":"1"},{"dateTime":"02:19:00","value":"1"},{"dateTime":"02:20:00","value":"1"},{"dateTime":"02:21:00","value":"1"},{"dateTime":"02:22:00","value":"1"},{"dateTime":"02:23:00","value":"1"},{"dateTime":"02:24:00","value":"1"},{"dateTime":"02:25:00","value":"1"},{"dateTime":"02:26:00","value":"1"},{"dateTime":"02:27:00","value":"1"},{"dateTime":"02:28:00","value":"1"},{"dateTime":"02:29:00","value":"1"},{"dateTime":"02:30:00","value":"1"},{"dateTime":"02:31:00","value":"1"},{"dateTime":"02:32:00","value":"1"},{"dateTime":"02:33:00","value":"1"},{"dateTime":"02:34:00","value":"1"},{"dateTime":"02:35:00","value":"1"},{"dateTime":"02:36:00","value":"1"},{"dateTime":"02:37:00","value":"1"},{"dateTime":"02:38:00","value":"1"},{"dateTime":"02:39:00","value":"1"},{"dateTime":"02:40:00","value":"1"},{"dateTime":"02:41:00","value":"2"},{"dateTime":"02:42:00","value":"1"},{"dateTime":"02:43:00","value":"1"},{"dateTime":"02:44:00","value":"1"},{"dateTime":"02:45:00","value":"1"},{"dateTime":"02:46:00","value":"2"},{"dateTime":"02:47:00","value":"2"},{"dateTime":"02:48:00","value":"2"},{"dateTime":"02:49:00","value":"2"},{"dateTime":"02:50:00","value":"2"},{"dateTime":"02:51:00","value":"2"},{"dateTime":"02:52:00","value":"1"},{"dateTime":"02:53:00","value":"2"},{"dateTime":"02:54:00","value":"2"},{"dateTime":"02:55:00","value":"2"},{"dateTime":"02:56:00","value":"2"},{"dateTime":"02:57:00","value":"1"},{"dateTime":"02:58:00","value":"1"},{"dateTime":"02:59:00","value":"1"},{"dateTime":"03:00:00","value":"1"},{"dateTime":"03:01:00","value":"1"},{"dateTime":"03:02:00","value":"1"},{"dateTime":"03:03:00","value":"1"},{"dateTime":"03:04:00","value":"1"},{"dateTime":"03:05:00","value":"1"},{"dateTime":"03:06:00","value":"1"},{"dateTime":"03:07:00","value":"1"},{"dateTime":"03:08:00","value":"1"},{"dateTime":"03:09:00","value":"1"},{"dateTime":"03:10:00","value":"1"},{"dateTime":"03:11:00","value":"1"},{"dateTime":"03:12:00","value":"1"},{"dateTime":"03:13:00","value":"1"},{"dateTime":"03:14:00","value":"1"},{"dateTime":"03:15:00","value":"1"},{"dateTime":"03:16:00","value":"1"},{"dateTime":"03:17:00","value":"1"},{"dateTime":"03:18:00","value":"2"},{"dateTime":"03:19:00","value":"2"},{"dateTime":"03:20:00","value":"2"},{"dateTime":"03:21:00","value":"2"},{"dateTime":"03:22:00","value":"2"},{"dateTime":"03:23:00","value":"2"},{"dateTime":"03:24:00","value":"2"},{"dateTime":"03:25:00","value":"2"},{"dateTime":"03:26:00","value":"2"},{"dateTime":"03:27:00","value":"2"},{"dateTime":"03:28:00","value":"2"},{"dateTime":"03:29:00","value":"2"},{"dateTime":"03:30:00","value":"2"},{"dateTime":"03:31:00","value":"2"},{"dateTime":"03:32:00","value":"2"},{"dateTime":"03:33:00","value":"1"},{"dateTime":"03:34:00","value":"1"},{"dateTime":"03:35:00","value":"1"},{"dateTime":"03:36:00","value":"1"},{"dateTime":"03:37:00","value":"1"},{"dateTime":"03:38:00","value":"1"},{"dateTime":"03:39:00","value":"1"},{"dateTime":"03:40:00","value":"1"},{"dateTime":"03:41:00","value":"1"},{"dateTime":"03:42:00","value":"1"},{"dateTime":"03:43:00","value":"1"},{"dateTime":"03:44:00","value":"1"},{"dateTime":"03:45:00","value":"1"},{"dateTime":"03:46:00","value":"1"},{"dateTime":"03:47:00","value":"1"},{"dateTime":"03:48:00","value":"1"},{"dateTime":"03:49:00","value":"1"},{"dateTime":"03:50:00","value":"1"},{"dateTime":"03:51:00","value":"1"},{"dateTime":"03:52:00","value":"1"},{"dateTime":"03:53:00","value":"1"},{"dateTime":"03:54:00","value":"1"},{"dateTime":"03:55:00","value":"1"},{"dateTime":"03:56:00","value":"1"},{"dateTime":"03:57:00","value":"1"},{"dateTime":"03:58:00","value":"1"},{"dateTime":"03:59:00","value":"1"},{"dateTime":"04:00:00","value":"1"},{"dateTime":"04:01:00","value":"1"},{"dateTime":"04:02:00","value":"1"},{"dateTime":"04:03:00","value":"1"},{"dateTime":"04:04:00","value":"1"},{"dateTime":"04:05:00","value":"1"},{"dateTime":"04:06:00","value":"1"},{"dateTime":"04:07:00","value":"1"},{"dateTime":"04:08:00","value":"1"},{"dateTime":"04:09:00","value":"1"},{"dateTime":"04:10:00","value":"1"},{"dateTime":"04:11:00","value":"1"},{"dateTime":"04:12:00","value":"1"},{"dateTime":"04:13:00","value":"1"},{"dateTime":"04:14:00","value":"1"},{"dateTime":"04:15:00","value":"1"},{"dateTime":"04:16:00","value":"1"},{"dateTime":"04:17:00","value":"1"},{"dateTime":"04:18:00","value":"1"},{"dateTime":"04:19:00","value":"1"},{"dateTime":"04:20:00","value":"1"},{"dateTime":"04:21:00","value":"2"},{"dateTime":"04:22:00","value":"2"},{"dateTime":"04:23:00","value":"2"},{"dateTime":"04:24:00","value":"2"},{"dateTime":"04:25:00","value":"2"},{"dateTime":"04:26:00","value":"2"},{"dateTime":"04:27:00","value":"2"},{"dateTime":"04:28:00","value":"2"},{"dateTime":"04:29:00","value":"2"},{"dateTime":"04:30:00","value":"2"},{"dateTime":"04:31:00","value":"2"},{"dateTime":"04:32:00","value":"2"},{"dateTime":"04:33:00","value":"2"},{"dateTime":"04:34:00","value":"2"},{"dateTime":"04:35:00","value":"2"},{"dateTime":"04:36:00","value":"2"},{"dateTime":"04:37:00","value":"2"},{"dateTime":"04:38:00","value":"2"},{"dateTime":"04:39:00","value":"2"},{"dateTime":"04:40:00","value":"2"},{"dateTime":"04:41:00","value":"2"},{"dateTime":"04:42:00","value":"2"},{"dateTime":"04:43:00","value":"1"},{"dateTime":"04:44:00","value":"1"},{"dateTime":"04:45:00","value":"1"},{"dateTime":"04:46:00","value":"1"},{"dateTime":"04:47:00","value":"1"},{"dateTime":"04:48:00","value":"1"},{"dateTime":"04:49:00","value":"1"},{"dateTime":"04:50:00","value":"1"},{"dateTime":"04:51:00","value":"1"},{"dateTime":"04:52:00","value":"1"},{"dateTime":"04:53:00","value":"1"},{"dateTime":"04:54:00","value":"1"},{"dateTime":"04:55:00","value":"1"},{"dateTime":"04:56:00","value":"1"},{"dateTime":"04:57:00","value":"1"},{"dateTime":"04:58:00","value":"1"},{"dateTime":"04:59:00","value":"1"},{"dateTime":"05:00:00","value":"1"},{"dateTime":"05:01:00","value":"1"},{"dateTime":"05:02:00","value":"1"},{"dateTime":"05:03:00","value":"1"},{"dateTime":"05:04:00","value":"1"},{"dateTime":"05:05:00","value":"1"},{"dateTime":"05:06:00","value":"1"},{"dateTime":"05:07:00","value":"1"},{"dateTime":"05:08:00","value":"1"},{"dateTime":"05:09:00","value":"1"},{"dateTime":"05:10:00","value":"1"},{"dateTime":"05:11:00","value":"1"},{"dateTime":"05:12:00","value":"1"},{"dateTime":"05:13:00","value":"1"},{"dateTime":"05:14:00","value":"1"},{"dateTime":"05:15:00","value":"1"},{"dateTime":"05:16:00","value":"1"},{"dateTime":"05:17:00","value":"1"},{"dateTime":"05:18:00","value":"1"},{"dateTime":"05:19:00","value":"1"},{"dateTime":"05:20:00","value":"1"},{"dateTime":"05:21:00","value":"1"},{"dateTime":"05:22:00","value":"1"},{"dateTime":"05:23:00","value":"1"},{"dateTime":"05:24:00","value":"1"},{"dateTime":"05:25:00","value":"1"},{"dateTime":"05:26:00","value":"1"},{"dateTime":"05:27:00","value":"1"},{"dateTime":"05:28:00","value":"1"},{"dateTime":"05:29:00","value":"1"},{"dateTime":"05:30:00","value":"1"},{"dateTime":"05:31:00","value":"1"},{"dateTime":"05:32:00","value":"1"},{"dateTime":"05:33:00","value":"1"},{"dateTime":"05:34:00","value":"1"},{"dateTime":"05:35:00","value":"1"},{"dateTime":"05:36:00","value":"1"},{"dateTime":"05:37:00","value":"1"},{"dateTime":"05:38:00","value":"1"},{"dateTime":"05:39:00","value":"1"},{"dateTime":"05:40:00","value":"1"},{"dateTime":"05:41:00","value":"2"},{"dateTime":"05:42:00","value":"2"},{"dateTime":"05:43:00","value":"2"},{"dateTime":"05:44:00","value":"2"},{"dateTime":"05:45:00","value":"2"},{"dateTime":"05:46:00","value":"2"},{"dateTime":"05:47:00","value":"2"},{"dateTime":"05:48:00","value":"2"},{"dateTime":"05:49:00","value":"2"},{"dateTime":"05:50:00","value":"2"},{"dateTime":"05:51:00","value":"2"},{"dateTime":"05:52:00","value":"2"},{"dateTime":"05:53:00","value":"2"},{"dateTime":"05:54:00","value":"2"},{"dateTime":"05:55:00","value":"2"},{"dateTime":"05:56:00","value":"2"}],"minutesAfterWakeup":16,"minutesAsleep":219,"minutesAwake":59,"minutesToFallAsleep":0,"restlessCount":7,"restlessDuration":75,"startTime":"2016-02-18T01:03:00.000","timeInBed":294},{"awakeCount":1,"awakeDuration":2,"awakeningsCount":10,"dateOfSleep":"2016-02-18","duration":11520000,"efficiency":47,"isMainSleep":false,"logId":10918394097,"minuteData":[{"dateTime":"12:53:00","value":"2"},{"dateTime":"12:54:00","value":"2"},{"dateTime":"12:55:00","value":"2"},{"dateTime":"12:56:00","value":"2"},{"dateTime":"12:57:00","value":"2"},{"dateTime":"12:58:00","value":"2"},{"dateTime":"12:59:00","value":"2"},{"dateTime":"13:00:00","value":"2"},{"dateTime":"13:01:00","value":"2"},{"dateTime":"13:02:00","value":"2"},{"dateTime":"13:03:00","value":"2"},{"dateTime":"13:04:00","value":"2"},{"dateTime":"13:05:00","value":"2"},{"dateTime":"13:06:00","value":"2"},{"dateTime":"13:07:00","value":"1"},{"dateTime":"13:08:00","value":"1"},{"dateTime":"13:09:00","value":"1"},{"dateTime":"13:10:00","value":"1"},{"dateTime":"13:11:00","value":"1"},{"dateTime":"13:12:00","value":"1"},{"dateTime":"13:13:00","value":"1"},{"dateTime":"13:14:00","value":"1"},{"dateTime":"13:15:00","value":"1"},{"dateTime":"13:16:00","value":"1"},{"dateTime":"13:17:00","value":"1"},{"dateTime":"13:18:00","value":"1"},{"dateTime":"13:19:00","value":"1"},{"dateTime":"13:20:00","value":"1"},{"dateTime":"13:21:00","value":"1"},{"dateTime":"13:22:00","value":"1"},{"dateTime":"13:23:00","value":"1"},{"dateTime":"13:24:00","value":"1"},{"dateTime":"13:25:00","value":"1"},{"dateTime":"13:26:00","value":"2"},{"dateTime":"13:27:00","value":"2"},{"dateTime":"13:28:00","value":"2"},{"dateTime":"13:29:00","value":"2"},{"dateTime":"13:30:00","value":"2"},{"dateTime":"13:31:00","value":"2"},{"dateTime":"13:32:00","value":"2"},{"dateTime":"13:33:00","value":"2"},{"dateTime":"13:34:00","value":"2"},{"dateTime":"13:35:00","value":"2"},{"dateTime":"13:36:00","value":"2"},{"dateTime":"13:37:00","value":"2"},{"dateTime":"13:38:00","value":"1"},{"dateTime":"13:39:00","value":"1"},{"dateTime":"13:40:00","value":"1"},{"dateTime":"13:41:00","value":"1"},{"dateTime":"13:42:00","value":"1"},{"dateTime":"13:43:00","value":"1"},{"dateTime":"13:44:00","value":"1"},{"dateTime":"13:45:00","value":"1"},{"dateTime":"13:46:00","value":"1"},{"dateTime":"13:47:00","value":"1"},{"dateTime":"13:48:00","value":"2"},{"dateTime":"13:49:00","value":"2"},{"dateTime":"13:50:00","value":"2"},{"dateTime":"13:51:00","value":"2"},{"dateTime":"13:52:00","value":"2"},{"dateTime":"13:53:00","value":"2"},{"dateTime":"13:54:00","value":"2"},{"dateTime":"13:55:00","value":"2"},{"dateTime":"13:56:00","value":"2"},{"dateTime":"13:57:00","value":"2"},{"dateTime":"13:58:00","value":"2"},{"dateTime":"13:59:00","value":"1"},{"dateTime":"14:00:00","value":"1"},{"dateTime":"14:01:00","value":"1"},{"dateTime":"14:02:00","value":"1"},{"dateTime":"14:03:00","value":"1"},{"dateTime":"14:04:00","value":"1"},{"dateTime":"14:05:00","value":"1"},{"dateTime":"14:06:00","value":"1"},{"dateTime":"14:07:00","value":"1"},{"dateTime":"14:08:00","value":"1"},{"dateTime":"14:09:00","value":"1"},{"dateTime":"14:10:00","value":"1"},{"dateTime":"14:11:00","value":"1"},{"dateTime":"14:12:00","value":"2"},{"dateTime":"14:13:00","value":"2"},{"dateTime":"14:14:00","value":"2"},{"dateTime":"14:15:00","value":"2"},{"dateTime":"14:16:00","value":"2"},{"dateTime":"14:17:00","value":"2"},{"dateTime":"14:18:00","value":"2"},{"dateTime":"14:19:00","value":"2"},{"dateTime":"14:20:00","value":"2"},{"dateTime":"14:21:00","value":"2"},{"dateTime":"14:22:00","value":"2"},{"dateTime":"14:23:00","value":"1"},{"dateTime":"14:24:00","value":"1"},{"dateTime":"14:25:00","value":"1"},{"dateTime":"14:26:00","value":"1"},{"dateTime":"14:27:00","value":"1"},{"dateTime":"14:28:00","value":"1"},{"dateTime":"14:29:00","value":"1"},{"dateTime":"14:30:00","value":"1"},{"dateTime":"14:31:00","value":"1"},{"dateTime":"14:32:00","value":"1"},{"dateTime":"14:33:00","value":"1"},{"dateTime":"14:34:00","value":"1"},{"dateTime":"14:35:00","value":"1"},{"dateTime":"14:36:00","value":"1"},{"dateTime":"14:37:00","value":"2"},{"dateTime":"14:38:00","value":"2"},{"dateTime":"14:39:00","value":"2"},{"dateTime":"14:40:00","value":"2"},{"dateTime":"14:41:00","value":"2"},{"dateTime":"14:42:00","value":"2"},{"dateTime":"14:43:00","value":"2"},{"dateTime":"14:44:00","value":"2"},{"dateTime":"14:45:00","value":"2"},{"dateTime":"14:46:00","value":"2"},{"dateTime":"14:47:00","value":"3"},{"dateTime":"14:48:00","value":"3"},{"dateTime":"14:49:00","value":"2"},{"dateTime":"14:50:00","value":"2"},{"dateTime":"14:51:00","value":"2"},{"dateTime":"14:52:00","value":"2"},{"dateTime":"14:53:00","value":"2"},{"dateTime":"14:54:00","value":"2"},{"dateTime":"14:55:00","value":"2"},{"dateTime":"14:56:00","value":"1"},{"dateTime":"14:57:00","value":"1"},{"dateTime":"14:58:00","value":"1"},{"dateTime":"14:59:00","value":"1"},{"dateTime":"15:00:00","value":"1"},{"dateTime":"15:01:00","value":"1"},{"dateTime":"15:02:00","value":"1"},{"dateTime":"15:03:00","value":"1"},{"dateTime":"15:04:00","value":"1"},{"dateTime":"15:05:00","value":"1"},{"dateTime":"15:06:00","value":"1"},{"dateTime":"15:07:00","value":"1"},{"dateTime":"15:08:00","value":"2"},{"dateTime":"15:09:00","value":"2"},{"dateTime":"15:10:00","value":"2"},{"dateTime":"15:11:00","value":"2"},{"dateTime":"15:12:00","value":"2"},{"dateTime":"15:13:00","value":"2"},{"dateTime":"15:14:00","value":"2"},{"dateTime":"15:15:00","value":"2"},{"dateTime":"15:16:00","value":"2"},{"dateTime":"15:17:00","value":"2"},{"dateTime":"15:18:00","value":"2"},{"dateTime":"15:19:00","value":"1"},{"dateTime":"15:20:00","value":"1"},{"dateTime":"15:21:00","value":"1"},{"dateTime":"15:22:00","value":"1"},{"dateTime":"15:23:00","value":"1"},{"dateTime":"15:24:00","value":"1"},{"dateTime":"15:25:00","value":"1"},{"dateTime":"15:26:00","value":"1"},{"dateTime":"15:27:00","value":"1"},{"dateTime":"15:28:00","value":"1"},{"dateTime":"15:29:00","value":"1"},{"dateTime":"15:30:00","value":"1"},{"dateTime":"15:31:00","value":"1"},{"dateTime":"15:32:00","value":"2"},{"dateTime":"15:33:00","value":"2"},{"dateTime":"15:34:00","value":"2"},{"dateTime":"15:35:00","value":"2"},{"dateTime":"15:36:00","value":"2"},{"dateTime":"15:37:00","value":"2"},{"dateTime":"15:38:00","value":"2"},{"dateTime":"15:39:00","value":"2"},{"dateTime":"15:40:00","value":"2"},{"dateTime":"15:41:00","value":"2"},{"dateTime":"15:42:00","value":"2"},{"dateTime":"15:43:00","value":"1"},{"dateTime":"15:44:00","value":"1"},{"dateTime":"15:45:00","value":"1"},{"dateTime":"15:46:00","value":"1"},{"dateTime":"15:47:00","value":"1"},{"dateTime":"15:48:00","value":"1"},{"dateTime":"15:49:00","value":"2"},{"dateTime":"15:50:00","value":"2"},{"dateTime":"15:51:00","value":"2"},{"dateTime":"15:52:00","value":"2"},{"dateTime":"15:53:00","value":"2"},{"dateTime":"15:54:00","value":"2"},{"dateTime":"15:55:00","value":"2"},{"dateTime":"15:56:00","value":"2"},{"dateTime":"15:57:00","value":"2"},{"dateTime":"15:58:00","value":"2"},{"dateTime":"15:59:00","value":"2"},{"dateTime":"16:00:00","value":"2"},{"dateTime":"16:01:00","value":"1"},{"dateTime":"16:02:00","value":"1"},{"dateTime":"16:03:00","value":"1"},{"dateTime":"16:04:00","value":"1"}],"minutesAfterWakeup":0,"minutesAsleep":91,"minutesAwake":101,"minutesToFallAsleep":0,"restlessCount":9,"restlessDuration":99,"startTime":"2016-02-18T12:53:00.000","timeInBed":192}],"summary":{"totalMinutesAsleep":310,"totalSleepRecords":2,"totalTimeInBed":486}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:30 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/badges.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:30 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '86'
+      Fitbit-Rate-Limit-Reset:
+      - '570'
+      Etag:
+      - a66d5167
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f020808db2834-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"badges":[{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-07-11","description":"30,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Trail Shoe badge!","encodedId":"228TM5","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps30k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps30k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps30k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps30k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps30k.png","marketingDescription":"You''ve
+        walked 30,000 steps  And earned the Trail Shoe badge!","mobileDescription":"On
+        the path to fitness, you''re gaining some serious ground!","name":"Trail Shoe
+        (30,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps30k.png","shareText":"I
+        took 30,000 steps and earned the Trail Shoe badge! #Fitbit","shortDescription":"30,000
+        steps","shortName":"Trail Shoe","timesAchieved":2,"value":30000},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-07-11","description":"25,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Classics badge!","encodedId":"228TLX","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps25k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps25k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps25k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps25k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps25k.png","marketingDescription":"You''ve
+        walked 25,000 steps  And earned the Classics badge!","mobileDescription":"With
+        this impressive fitness feat, you''ve added a badge to your growing collection.
+        Nice job, you stepping all-star!","name":"Classics (25,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps25k.png","shareText":"I
+        took 25,000 steps and earned the Classics badge! #Fitbit","shortDescription":"25,000
+        steps","shortName":"Classics","timesAchieved":6,"value":25000},{"badgeGradientEndColor":"A489E8","badgeGradientStartColor":"38216E","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-11-13","description":"20,000 steps in
+        a day","earnedMessage":"Congrats on earning your first High Tops badge!","encodedId":"228TPP","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps20k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps20k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps20k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps20k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps20k.png","marketingDescription":"You''ve
+        walked 20,000 steps  And earned the High Tops badge!","mobileDescription":"When
+        it comes to steps, it looks like you''re not playing around. This achievement
+        was a slam dunk.","name":"High Tops (20,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps20k.png","shareText":"I
+        took 20,000 steps and earned the High Tops badge! #Fitbit","shortDescription":"20,000
+        steps","shortName":"High Tops","timesAchieved":26,"value":20000},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2015-11-28","description":"15,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Urban Boot badge!","encodedId":"228TMK","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps15k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps15k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps15k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps15k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps15k.png","marketingDescription":"You''ve
+        walked 15,000 steps  And earned the Urban Boot badge!","mobileDescription":"With
+        a number that''s almost three times more than the national average, your step
+        count is really heating up.","name":"Urban Boot (15,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps15k.png","shareText":"I
+        took 15,000 steps and earned the Urban Boot badge! #Fitbit","shortDescription":"15,000
+        steps","shortName":"Urban Boot","timesAchieved":58,"value":15000},{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2016-02-17","description":"10,000 steps in
+        a day","earnedMessage":"Congrats on earning your first Sneakers badge!","encodedId":"228TQB","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps10k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps10k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps10k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps10k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps10k.png","marketingDescription":"You''ve
+        walked 10,000 steps  And earned the Sneaker badge!","mobileDescription":"You
+        stepped up your game and just reached the recommended number of steps per
+        day.","name":"Sneakers (10,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps10k.png","shareText":"I
+        took 10,000 steps and earned the Sneakers badge! #Fitbit","shortDescription":"10,000
+        steps","shortName":"Sneakers","timesAchieved":153,"value":10000},{"badgeGradientEndColor":"B0DF2A","badgeGradientStartColor":"00A550","badgeType":"DAILY_STEPS","category":"Daily
+        Steps","cheers":[],"dateTime":"2016-02-18","description":"5,000 steps in a
+        day","earnedMessage":"Congrats on earning your first Boat Shoe badge!","encodedId":"228TQ4","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_steps5k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_steps5k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_steps5k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_steps5k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_steps5k.png","marketingDescription":"You''ve
+        walked 5,000 steps And earned the Boat Shoe badge!","mobileDescription":"Congratulations
+        on cruising your way to the first Fitbit daily step badge.","name":"Boat Shoe
+        (5,000 steps in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_steps5k.png","shareText":"I
+        took 5,000 steps and earned the Boat Shoe badge! #Fitbit","shortDescription":"5,000
+        steps","shortName":"Boat Shoe","timesAchieved":291,"value":5000},{"badgeGradientEndColor":"00A0E5","badgeGradientStartColor":"0056A3","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-08-06","description":"150 floors in a
+        day","earnedMessage":"Congrats on earning your first Stadium badge!","encodedId":"228TC3","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors150.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors150.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors150.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors150.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors150.png","marketingDescription":"You''ve
+        climbed 150 floors to earn the Stadium badge!","mobileDescription":"We need
+        some peanuts and cracker jacks, because you''re on a winning streak and the
+        crowd is going wild!","name":"Stadium (150 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors150.png","shareText":"I
+        climbed 150 flights of stairs and earned the Stadium badge! #Fitbit","shortDescription":"150
+        floors","shortName":"Stadium","timesAchieved":1,"value":150},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-11-28","description":"125 floors in a
+        day","earnedMessage":"Congrats on earning your first Rollercoaster badge!","encodedId":"229844","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors125.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors125.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors125.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors125.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors125.png","marketingDescription":"You''ve
+        climbed 125 floors to earn the Rollercoaster badge!","mobileDescription":"That''s
+        hair-raising, jaw-dropping, mind-blowing floor count!","name":"Rollercoaster
+        (125 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors125.png","shareText":"I
+        climbed 125 flights of stairs and earned the Rollercoaster badge! #Fitbit","shortDescription":"125
+        floors","shortName":"Rollercoaster","timesAchieved":5,"value":125},{"badgeGradientEndColor":"B0DF2A","badgeGradientStartColor":"00A550","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-11-28","description":"100 floors in a
+        day","earnedMessage":"Congrats on earning your first Skyscraper badge!","encodedId":"228TSL","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors100.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors100.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors100.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors100.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors100.png","marketingDescription":"You''ve
+        climbed 100 floors to earn the Skyscraper badge!","mobileDescription":"You''ve
+        used some pretty slick stair-climbing to take yourself to new heights!","name":"Skyscraper
+        (100 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors100.png","shareText":"I
+        climbed 100 flights of stairs and earned the Skyscraper badge! #Fitbit","shortDescription":"100
+        floors","shortName":"Skyscraper","timesAchieved":8,"value":100},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-11-28","description":"75 floors in a day","earnedMessage":"Congrats
+        on earning your first Ferris Wheel badge!","encodedId":"229843","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors75.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors75.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors75.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors75.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors75.png","marketingDescription":"You''ve
+        climbed 75 floors to earn the Ferris Wheel badge!","mobileDescription":"Put
+        your hands up, celebrate, and enjoy the ride!","name":"Ferris Wheel (75 floors
+        in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors75.png","shareText":"I
+        climbed 75 flights of stairs and earned the Ferris Wheel badge! #Fitbit","shortDescription":"75
+        floors","shortName":"Ferris Wheel","timesAchieved":17,"value":75},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2015-11-28","description":"50 floors in a day","earnedMessage":"Congrats
+        on earning your first Lighthouse badge!","encodedId":"228TT7","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors50.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors50.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors50.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors50.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors50.png","marketingDescription":"You''ve
+        climbed 50 floors to earn the Lighthouse badge!","mobileDescription":"With
+        a floor count this high, you''re a beacon of inspiration to us all!","name":"Lighthouse
+        (50 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors50.png","shareText":"I
+        climbed 50 flights of stairs and earned the Lighthouse badge! #Fitbit","shortDescription":"50
+        floors","shortName":"Lighthouse","timesAchieved":38,"value":50},{"badgeGradientEndColor":"B0DF2A","badgeGradientStartColor":"00A550","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2016-02-13","description":"25 floors in a day","earnedMessage":"Congrats
+        on earning your first Redwood Forest badge!","encodedId":"228TSZ","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors25.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors25.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors25.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors25.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors25.png","marketingDescription":"You''ve
+        climbed 25 floors to earn the Redwood Forest badge!","mobileDescription":"The
+        tallest trees on Earth can''t top the heights you''ve been conquering.","name":"Redwood
+        Forest (25 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors25.png","shareText":"I
+        climbed 25 flights of stairs and earned the Redwood Forest badge! #Fitbit","shortDescription":"25
+        floors","shortName":"Redwood Forest","timesAchieved":111,"value":25},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"DAILY_FLOORS","category":"Daily
+        Climb","cheers":[],"dateTime":"2016-02-18","description":"10 floors in a day","earnedMessage":"Congrats
+        on earning your first Happy Hill badge!","encodedId":"228TTM","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_daily_floors10.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_daily_floors10.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_daily_floors10.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_daily_floors10.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_daily_floors10.png","marketingDescription":"You''ve
+        climbed 10 floors to earn the Happy Hill badge!","mobileDescription":"You''re
+        taking yourself to new heights and taking home the first badge!","name":"Happy
+        Hill (10 floors in a day)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_daily_floors10.png","shareText":"I
+        climbed 10 flights of stairs and earned the Happy Hill badge! #Fitbit","shortDescription":"10
+        floors","shortName":"Happy Hill","timesAchieved":231,"value":10},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2016-01-27","description":"1,600 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Great Barrier Reef badge!","encodedId":"22B8MK","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles1600.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles1600.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles1600.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles1600.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles1600.png","marketingDescription":"By
+        reaching 1,600 lifetime miles, you''ve earned the Great Barrier Reef badge!","mobileDescription":"The
+        Great Barrier Reef is the world''s largest coral reef system\u2014and you
+        just walked that! Take a minute to swim in your success.","name":"Great Barrier
+        Reef (1,600 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles1600.png","shareText":"I
+        covered 1,600 miles with my #Fitbit and earned the Great Barrier Reef badge.","shortDescription":"1,600
+        miles","shortName":"Great Barrier Reef","timesAchieved":1,"unit":"MILES","value":1600},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-07-11","description":"990 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the New Zealand badge!","encodedId":"22B8MD","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles990.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles990.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles990.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles990.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles990.png","marketingDescription":"By
+        reaching 990 lifetime miles, you''ve earned the New Zealand badge!","mobileDescription":"You''ve
+        walked the entire length of New Zealand.","name":"New Zealand (990 lifetime
+        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles990.png","shareText":"I
+        covered 990 miles with my #Fitbit and earned the New Zealand badge.","shortDescription":"990
+        miles","shortName":"New Zealand","timesAchieved":1,"unit":"MILES","value":990},{"badgeGradientEndColor":"42C401","badgeGradientStartColor":"007D3C","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-06-03","description":"736 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Italy badge!","encodedId":"22B8MC","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles736.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles736.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles736.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles736.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles736.png","marketingDescription":"By
+        reaching 736 lifetime miles, you''ve earned the Italy badge!","mobileDescription":"By
+        walking the entire length of Italy, you''ve stepped your way to another colossal
+        achievement!","name":"Italy (736 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles736.png","shareText":"I
+        covered 736 miles with my #Fitbit and earned the Italy badge.","shortDescription":"736
+        miles","shortName":"Italy","timesAchieved":1,"unit":"MILES","value":736},{"badgeGradientEndColor":"42C401","badgeGradientStartColor":"007D3C","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-04-30","description":"500 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the Serengeti badge!","encodedId":"22B8MG","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles500.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles500.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles500.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles500.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles500.png","marketingDescription":"By
+        reaching 500 lifetime miles, you''ve earned the Serengeti badge!","mobileDescription":"Impressive!
+        You''ve walked distance of the Serengeti\u2014one of the 7 Natural Wonders
+        of the World.","name":"Serengeti (500 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles500.png","shareText":"I
+        covered 500 miles with my #Fitbit and earned the Serengeti badge.","shortDescription":"500
+        miles","shortName":"Serengeti","timesAchieved":1,"unit":"MILES","value":500},{"badgeGradientEndColor":"00A0E5","badgeGradientStartColor":"0056A3","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-03-26","description":"250 lifetime
+        miles","earnedMessage":"Whoa! You''ve earned the London Underground badge!","encodedId":"22B8M8","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles250.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles250.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles250.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles250.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles250.png","marketingDescription":"By
+        reaching 250 lifetime miles, you''ve earned the Tube badge!","mobileDescription":"You''ve
+        walked the length of the world''s first underground railway and are laying
+        the tracks for some big things in the future.","name":"London Underground
+        (250 lifetime miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles250.png","shareText":"I
+        covered 250 miles with my #Fitbit and earned the London Underground badge.","shortDescription":"250
+        miles","shortName":"London Underground","timesAchieved":1,"unit":"MILES","value":250},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-01-30","description":"70 lifetime miles","earnedMessage":"Whoa!
+        You''ve earned the Penguin March badge!","encodedId":"22B8M7","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles70.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles70.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles70.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles70.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles70.png","marketingDescription":"By
+        reaching 70 lifetime miles, you''ve earned the Penguin March badge!","mobileDescription":"You
+        matched the distance of the March of the Penguins\u2014the annual trip emperor
+        penguins make to their breeding grounds.","name":"Penguin March (70 lifetime
+        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles70.png","shareText":"I
+        covered 70 miles with my #Fitbit and earned the Penguin March badge.","shortDescription":"70
+        miles","shortName":"Penguin March","timesAchieved":1,"unit":"MILES","value":70},{"badgeGradientEndColor":"38D7FF","badgeGradientStartColor":"2DB4D7","badgeType":"LIFETIME_DISTANCE","category":"Lifetime
+        Distance","cheers":[],"dateTime":"2015-01-20","description":"26 lifetime miles","earnedMessage":"Whoa!
+        You''ve earned the Marathon badge!","encodedId":"22B8MB","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles26_2.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles26_2.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles26_2.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_miles26_2.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles26_2.png","marketingDescription":"By
+        reaching 26 lifetime miles, you''ve earned the Marathon badge!","mobileDescription":"You''ve
+        walked your way to your first lifetime miles badge. If this is just the starting
+        line, we can''t wait to see where you finish!","name":"Marathon (26 lifetime
+        miles)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_miles26_2.png","shareText":"I
+        covered 26 miles with my #Fitbit and earned the Marathon badge.","shortDescription":"26
+        miles","shortName":"Marathon","timesAchieved":1,"unit":"MILES","value":26},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-06-24","description":"4,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the 747 badge!","encodedId":"228TKR","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors4k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors4k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors4k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors4k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors4k.png","marketingDescription":"By
+        climbing 4000 lifetime floors, you''ve earned the 747 badge!","mobileDescription":"Your
+        lifetime badges are really taking flight, because you just jetsetted your
+        way to another badge!","name":"747 (4,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors4k.png","shareText":"I
+        climbed 4,000 floors with my #Fitbit and earned the 747 badge.","shortDescription":"4,000
+        floors","shortName":"747","timesAchieved":1,"value":4000},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-05-11","description":"2,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the Hot Air Balloon badge!","encodedId":"228T9T","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors2k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors2k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors2k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors2k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors2k.png","marketingDescription":"By
+        climbing 2000 lifetime floors, you''ve earned the Hot Air Balloon badge!","mobileDescription":"That''s
+        as high as a hot air balloon! You are really blowing up the lifetime badges
+        list.","name":"Hot Air Balloon (2,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors2k.png","shareText":"I
+        climbed 2,000 floors with my #Fitbit and earned the Hot Air Balloon badge.","shortDescription":"2,000
+        floors","shortName":"Hot Air Balloon","timesAchieved":1,"value":2000},{"badgeGradientEndColor":"FF677C","badgeGradientStartColor":"D24958","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-03-31","description":"1,000 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the Skydiver badge!","encodedId":"228T9C","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors1k.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors1k.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors1k.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors1k.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors1k.png","marketingDescription":"By
+        climbing 1000 lifetime floors, you''ve earned the Skydiver badge!","mobileDescription":"That''s
+        as high as you''d go to skydive! Cross another one off the ol'' fitness bucket
+        list.","name":"Skydiver (1,000 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors1k.png","shareText":"I
+        climbed 1,000 floors with my #Fitbit and earned the Skydiver badge.","shortDescription":"1,000
+        floors","shortName":"Skydiver","timesAchieved":1,"value":1000},{"badgeGradientEndColor":"FFDB01","badgeGradientStartColor":"D99123","badgeType":"LIFETIME_FLOORS","category":"Lifetime
+        Climb","cheers":[],"dateTime":"2015-02-14","description":"500 lifetime floors","earnedMessage":"Yipee!
+        You''ve earned the Helicopter badge!","encodedId":"228TB8","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_lifetime_floors500.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_lifetime_floors500.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_lifetime_floors500.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_lifetime_floors500.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_lifetime_floors500.png","marketingDescription":"By
+        climbing 500 lifetime floors, you''ve earned the Helicopter badge!","mobileDescription":"That''s
+        the altitude of a helicopter. Heli-yes, you totally just did that!","name":"Helicopter
+        (500 lifetime floors)","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_lifetime_floors500.png","shareText":"I
+        climbed 500 floors with my #Fitbit and earned the Helicopter badge.","shortDescription":"500
+        floors","shortName":"Helicopter","timesAchieved":1,"value":500},{"badgeGradientEndColor":"00D3D6","badgeGradientStartColor":"007273","badgeType":"GOAL_BASED_WEIGHT_LOSS","category":"Weight
+        Goal","cheers":[],"dateTime":"2015-07-28","description":"-5 pounds","earnedMessage":"You''ve
+        lost 5 lbs! Congrats on progress towards your weight goal.","encodedId":"2297TY","image100px":"http://static0.fitbit.com/images/badges_new/100px/badge_goal_weight5.png","image125px":"http://static0.fitbit.com/images/badges_new/125px/badge_goal_weight5.png","image300px":"http://static0.fitbit.com/images/badges_new/300px/badge_goal_weight5.png","image50px":"http://static0.fitbit.com/images/badges_new/badge_goal_weight5.png","image75px":"http://static0.fitbit.com/images/badges_new/75px/badge_goal_weight5.png","marketingDescription":"Way
+        to go! You''ve lost 5 pounds.","mobileDescription":"All your hard work paid
+        off! Congratulations on reaching this milestone.","name":"-5 lb Weight Loss","shareImage640px":"http://static0.fitbit.com/images/badges_new/386px/shareLocalized/en_US/badge_goal_weight5_loss.png","shareText":"I
+        lost 5 pounds on #Fitbit.","shortDescription":"-5 pounds","shortName":"-5
+        lb Weight Loss","timesAchieved":1,"unit":"POUNDS","value":5}]}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:30 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-18.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:30 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '85'
+      Fitbit-Rate-Limit-Reset:
+      - '570'
+      Etag:
+      - 891efc98
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f0209d2800713-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":752,"caloriesBMR":1301,"caloriesOut":1885,"distances":[{"activity":"total","distance":4.72},{"activity":"tracker","distance":4.72},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0.42},{"activity":"moderatelyActive","distance":0.44},{"activity":"lightlyActive","distance":3.86},{"activity":"sedentaryActive","distance":0}],"elevation":42.67,"fairlyActiveMinutes":6,"floors":14,"lightlyActiveMinutes":202,"marginalCalories":376,"sedentaryMinutes":551,"steps":6459,"veryActiveMinutes":5}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:30 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-17.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:31 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '84'
+      Fitbit-Rate-Limit-Reset:
+      - '569'
+      Etag:
+      - fe420af3
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f020c01c30d91-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":1290,"caloriesBMR":1498,"caloriesOut":2515,"distances":[{"activity":"total","distance":8.03},{"activity":"tracker","distance":8.03},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0.36},{"activity":"moderatelyActive","distance":0.45},{"activity":"lightlyActive","distance":7.2},{"activity":"sedentaryActive","distance":0}],"elevation":57.91,"fairlyActiveMinutes":7,"floors":19,"lightlyActiveMinutes":346,"marginalCalories":659,"sedentaryMinutes":706,"steps":10988,"veryActiveMinutes":5}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:31 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-16.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:31 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '83'
+      Fitbit-Rate-Limit-Reset:
+      - '569'
+      Etag:
+      - 69c9b9a4
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f020fb56911e9-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":778,"caloriesBMR":1498,"caloriesOut":2097,"distances":[{"activity":"total","distance":4.52},{"activity":"tracker","distance":4.52},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0.25},{"activity":"moderatelyActive","distance":0.55},{"activity":"lightlyActive","distance":3.72},{"activity":"sedentaryActive","distance":0}],"elevation":27.43,"fairlyActiveMinutes":8,"floors":9,"lightlyActiveMinutes":230,"marginalCalories":352,"sedentaryMinutes":801,"steps":6186,"veryActiveMinutes":3}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:31 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-15.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:32 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '82'
+      Fitbit-Rate-Limit-Reset:
+      - '568'
+      Etag:
+      - 3fcf2b0f
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f02121a2227fe-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":607,"caloriesBMR":1498,"caloriesOut":1943,"distances":[{"activity":"total","distance":2.94},{"activity":"tracker","distance":2.94},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0},{"activity":"moderatelyActive","distance":0},{"activity":"lightlyActive","distance":2.94},{"activity":"sedentaryActive","distance":0}],"elevation":12.19,"fairlyActiveMinutes":0,"floors":4,"lightlyActiveMinutes":200,"marginalCalories":252,"sedentaryMinutes":600,"steps":4026,"veryActiveMinutes":0}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:32 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/date/2016-02-14.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:32 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '81'
+      Fitbit-Rate-Limit-Reset:
+      - '568'
+      Etag:
+      - 7d454e4c
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f0214a8602870-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"activities":[],"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000},"summary":{"activeScore":-1,"activityCalories":773,"caloriesBMR":1498,"caloriesOut":2051,"distances":[{"activity":"total","distance":3.99},{"activity":"tracker","distance":3.99},{"activity":"loggedActivities","distance":0},{"activity":"veryActive","distance":0},{"activity":"moderatelyActive","distance":0},{"activity":"lightlyActive","distance":3.99},{"activity":"sedentaryActive","distance":0}],"elevation":9.14,"fairlyActiveMinutes":0,"floors":3,"lightlyActiveMinutes":250,"marginalCalories":347,"sedentaryMinutes":708,"steps":5460,"veryActiveMinutes":0}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:32 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/goals/daily.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:32 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '80'
+      Fitbit-Rate-Limit-Reset:
+      - '568'
+      Etag:
+      - 3807a989
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f0216dd2741c3-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"goals":{"activeMinutes":35,"caloriesOut":2600,"distance":8.05,"floors":18,"steps":10000}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:32 GMT
+- request:
+    method: get
+    uri: https://api.fitbit.com/1/user/35FPZ5/activities/goals/weekly.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Authorization:
+      - Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTU4NTcxNTIsInNjb3BlcyI6Indwcm8gd3NsZSB3d2VpIHdociB3YWN0IHdzb2MiLCJzdWIiOiIzNUZQWjUiLCJhdWQiOiIyMjlXM0IiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTU4NTM1NTJ9.b-wxJjnAaWE8EVJW30LXOSMpWgjJ0ErmJCB3B5pxL08
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 19 Feb 2016 03:50:33 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache, private
+      Fitbit-Rate-Limit-Limit:
+      - '150'
+      Fitbit-Rate-Limit-Remaining:
+      - '79'
+      Fitbit-Rate-Limit-Reset:
+      - '567'
+      Etag:
+      - cc164653
+      Content-Language:
+      - en
+      Vary:
+      - Accept-Encoding
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cf-Ray:
+      - 276f0218a8c22870-SJC
+    body:
+      encoding: ASCII-8BIT
+      string: '{"goals":{"distance":56.33,"floors":105,"steps":84000}}'
+    http_version: 
+  recorded_at: Fri, 19 Feb 2016 03:50:32 GMT
+recorded_with: VCR 3.0.1
