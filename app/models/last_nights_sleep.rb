@@ -25,6 +25,14 @@ class LastNightsSleep
     Time.parse(start_time) + (time_in_bed * 60)
   end
 
+  def fell_asleep_at
+    Time.parse(start_time).strftime("%l:%M")
+  end
+
+  def woke_up_at
+    end_time.strftime("%l:%M")
+  end
+
   def chart
     LazyHighCharts::HighChart.new("pie") do |f|
       f.chart(type: "pie", height: 200)

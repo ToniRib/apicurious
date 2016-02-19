@@ -32,6 +32,18 @@ RSpec.describe LastNightsSleep, type: :model do
     expect(last.end_time).to eq(end_time)
   end
 
+  it "#fell_asleep_at shows hour and minute of start time" do
+    last = build(:last_nights_sleep)
+
+    expect(last.fell_asleep_at).to eq("11:21")
+  end
+
+  it "#woke_up_at shows hour and minute of end time" do
+    last = build(:last_nights_sleep)
+
+    expect(last.woke_up_at).to eq(" 8:01")
+  end
+
   def minute_data
     [
       {

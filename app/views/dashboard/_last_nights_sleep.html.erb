@@ -7,8 +7,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-12 sleep-row-column">
+        <div class="col-sm-4 sleep-row-column">
+          <h3 class="sleep-date push-down">Fell Asleep<br><span class="big-time"><%= @user_data.last_nights_sleep.fell_asleep_at %></span></h3>
+        </div>
+        <div class="col-sm-4 sleep-row-column">
           <%= high_chart("sleep-chart", @user_data.last_nights_sleep.chart)  %>
+        </div>
+        <div class="col-sm-4 sleep-row-column">
+          <h3 class="sleep-date push-down">Woke Up<br><span class="big-time"><%= @user_data.last_nights_sleep.woke_up_at %></span></h3>
         </div>
       </div>
       <div class="row">
