@@ -27,6 +27,8 @@ ActiveRecord::Migration.maintain_test_schema!
 RSpec.configure do |config|
   config.use_transactional_fixtures = false
 
+  config.include(OmniauthMacros)
+
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
   end
@@ -58,3 +60,6 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+OmniAuth.config.test_mode = true
+Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:fitbit]

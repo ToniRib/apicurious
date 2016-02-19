@@ -1,12 +1,12 @@
 require "rails_helper"
 
 RSpec.describe "User Logs In", type: :feature do
-  xit "creates a new user if this is their first time logging in" do
+  it "creates a new user if this is their first time logging in" do
     visit root_path
+    mock_auth_hash
     click_on "Log In With FitBit"
 
-    VCR.use_cassette "feature/user_login" do
-
-    end
+    expect(current_path).to eq(dashboard_path)
+    expect(User.last.full_name).to eq("Toni Rib")
   end
 end
