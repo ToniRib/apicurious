@@ -149,10 +149,6 @@ class UserData
   end
 
   def max_of(group)
-    if group.size > 1
-      group.max { |a, b| a.value <=> b.value }
-    else
-      group.first
-    end
+    group.size > 1 ? group.max { |a, b| a.value <=> b.value } : group.first
   end
 end
