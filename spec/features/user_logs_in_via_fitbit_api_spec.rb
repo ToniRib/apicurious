@@ -15,5 +15,9 @@ RSpec.describe "User Logs In", type: :feature do
 
     expect(current_path).to eq(dashboard_path)
     expect(page).to have_content("Log Out")
+
+    click_on "Log Out"
+
+    expect(current_path).to eq(root_path)
   end
 end
