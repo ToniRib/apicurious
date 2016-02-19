@@ -35,6 +35,21 @@ class UserData
     grouped.map { |name, group| max_of(group) }
   end
 
+  def weekly_step_goal_progress
+    progress = (daily_steps.reduce(:+) / weekly_goals.steps) * 100
+    progress = 100 if progress > 100
+  end
+
+  def weekly_calorie_goal_progress
+    progress = (daily_calories.reduce(:+) / weekly_goals.calories) * 100
+    progress = 100 if progress > 100
+  end
+
+  def weekly_floor_goal_progress
+    progress = (daily_floors.reduce(:+) / weekly_goals.floors) * 100
+    progress = 100 if progress > 100
+  end
+
   def step_chart
     LazyHighCharts::HighChart.new("column") do |f|
       f.chart(height: 200)

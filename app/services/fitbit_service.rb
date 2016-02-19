@@ -12,15 +12,18 @@ class FitbitService
   def get_user_data
     asleep, awake, awakenings = get_sleep
 
-    UserData.new(friends:   create_friends(get("friends/leaderboard.json")),
-                 sleep:     create_sleep(asleep, awake, awakenings),
-                 heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
-                 last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json")),
-                 badges:    create_badges(get("badges.json")),
-                 daily_activity:  create_daily_activities,
-                 daily_goals: create_daily_goals(get("activities/goals/daily.json")),
-                 weekly_goals: create_weekly_goals(get("activities/goals/weekly.json"))
-    )
+    data = UserData.new(friends:   create_friends(get("friends/leaderboard.json")),
+                         sleep:     create_sleep(asleep, awake, awakenings),
+                         heartrate: create_heartrate(get("activities/heart/date/#{Date.today.to_s}/30d.json")),
+                         last_nights_sleep: create_last_nights_sleep(get("sleep/date/#{Date.today.to_s}.json")),
+                         badges:    create_badges(get("badges.json")),
+                         daily_activity:  create_daily_activities,
+                         daily_goals: create_daily_goals(get("activities/goals/daily.json")),
+                         weekly_goals: create_weekly_goals(get("activities/goals/weekly.json"))
+            )
+    update_weekly_calorie_goal!(data)
+
+    data
   end
 
   def get(path)
@@ -33,6 +36,10 @@ class FitbitService
   end
 
   private
+
+  def update_weekly_calorie_goal!(data)
+    data.weekly_goals.set_calorie_goal(data.daily_goals.calories * 7)
+  end
 
   def create_daily_activities
     dates_from_sunday_until_now.map do |day|
@@ -53,7 +60,7 @@ class FitbitService
   def create_weekly_goals(response)
     WeeklyGoals.new(steps:    response["goals"]["steps"],
                    floors:    response["goals"]["floors"],
-                   calories:  response["goals"]["caloriesOut"])
+                   calories:  0)
   end
 
   def dates_from_sunday_until_now
