@@ -25,6 +25,9 @@ RSpec.describe UserData, type: :model do
     expect(user_data.heartrate).to eq(heartrate)
     expect(user_data.last_nights_sleep).to eq(last_nights_sleep)
     expect(user_data.badges).to eq(badge)
+    expect(user_data.daily_goals).to eq(daily_goals)
+    expect(user_data.weekly_goals).to eq(weekly_goals)
+    expect(user_data.daily_activity).to eq(daily_activity)
   end
 
   it "#all_heartrates returns array of heartrates" do
@@ -119,5 +122,21 @@ RSpec.describe UserData, type: :model do
                              daily_activity:    daily_activity)
 
     expect(user_data.todays_heartrate).to eq(88)
+  end
+
+  xit "#latest_badges returns list of latest badges" do
+
+  end
+
+  xit "#weekly_step_goal_progress returns percentage of goal complete" do
+
+  end
+
+  xit "#weekly_calorie_goal_progress returns percentage of goal complete" do
+
+  end
+
+  xit "#weekly_floor_goal_progress returns percentage of goal complete" do
+
   end
 end
