@@ -4,14 +4,14 @@ class UserData
 
   def initialize(friends:, sleep:, heartrate:, last_nights_sleep:,
                  badges:, daily_activity:, daily_goals:, weekly_goals:)
-    @friends = friends
-    @sleep = sleep
-    @heartrate = heartrate
+    @friends           = friends
+    @sleep             = sleep
+    @heartrate         = heartrate
     @last_nights_sleep = last_nights_sleep
-    @badges = badges
-    @daily_activity = daily_activity
-    @daily_goals = daily_goals
-    @weekly_goals = weekly_goals
+    @badges            = badges
+    @daily_activity    = daily_activity
+    @daily_goals       = daily_goals
+    @weekly_goals      = weekly_goals
   end
 
   def all_heartrates

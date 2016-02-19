@@ -5,12 +5,12 @@ class LastNightsSleep
   def initialize(restless_count:, awake_count:, minutes_asleep:,
                  start_time:, date:, time_in_bed:, minute_data:)
     @restless_count = restless_count
-    @awake_count = awake_count
+    @awake_count    = awake_count
     @minutes_asleep = minutes_asleep
-    @start_time = start_time
-    @date = date
-    @time_in_bed = time_in_bed
-    @minute_data = minute_data
+    @start_time     = start_time
+    @date           = date
+    @time_in_bed    = time_in_bed
+    @minute_data    = minute_data
   end
 
   def asleep_time_hours
@@ -19,6 +19,10 @@ class LastNightsSleep
 
   def asleep_time_minutes
     minutes_asleep - (asleep_time_hours * 60)
+  end
+
+  def end_time
+    Time.parse(start_time) + (time_in_bed * 60)
   end
 
   def chart

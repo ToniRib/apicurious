@@ -25,6 +25,13 @@ RSpec.describe LastNightsSleep, type: :model do
     expect(last.asleep_time_minutes).to eq(26)
   end
 
+  it "#end_time calculates wake up time" do
+    last = build(:last_nights_sleep)
+    end_time = Time.parse(last.start_time) + (last.time_in_bed * 60)
+
+    expect(last.end_time).to eq(end_time)
+  end
+
   def minute_data
     [
       {

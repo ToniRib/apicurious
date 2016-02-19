@@ -2,10 +2,10 @@ class Friend
   attr_reader :rank, :total_steps, :name, :avatar
 
   def initialize(rank:, total_steps:, name:, avatar:)
-    @rank = rank
+    @rank        = rank
     @total_steps = total_steps
-    @name = name
-    @avatar = avatar
+    @name        = name
+    @avatar      = avatar
   end
 
   def active?
