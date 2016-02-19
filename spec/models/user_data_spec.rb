@@ -124,19 +124,96 @@ RSpec.describe UserData, type: :model do
     expect(user_data.todays_heartrate).to eq(88)
   end
 
-  xit "#latest_badges returns list of latest badges" do
+  it "#latest_badges returns list of latest badges" do
+    friends = build_list(:friend, 2)
+    sleep = build_list(:sleep, 2)
+    heartrate = build_list(:heartrate, 2)
+    last_nights_sleep = build(:last_nights_sleep)
+    badges = [build(:badge, type: "DAILY_STEPS", value: 25000),
+              build(:badge, type: "DAILY_STEPS", value: 30000)]
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = build(:daily_activity)
 
+    user_data = UserData.new(friends:           friends,
+                             sleep:             sleep,
+                             heartrate:         heartrate,
+                             last_nights_sleep: last_nights_sleep,
+                             badges:            badges,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
+
+    expect(user_data.latest_badges).to eq([badges.last])
+    expect(user_data.latest_badges.first.value).to eq(30000)
   end
 
-  xit "#weekly_step_goal_progress returns percentage of goal complete" do
+  it "#weekly_step_goal_progress returns percentage of goal complete" do
+    friends = build_list(:friend, 2)
+    sleep = build_list(:sleep, 2)
+    heartrate = build_list(:heartrate, 2)
+    last_nights_sleep = build(:last_nights_sleep)
+    badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = [build(:daily_activity, steps: 7500),
+                      build(:daily_activity, steps: 8000, date: "02-17-2016")]
 
+    user_data = UserData.new(friends:           friends,
+                             sleep:             sleep,
+                             heartrate:         heartrate,
+                             last_nights_sleep: last_nights_sleep,
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
+
+    expect(user_data.weekly_step_goal_progress).to eq("22%")
   end
 
-  xit "#weekly_calorie_goal_progress returns percentage of goal complete" do
+  it "#weekly_calorie_goal_progress returns percentage of goal complete" do
+    friends = build_list(:friend, 2)
+    sleep = build_list(:sleep, 2)
+    heartrate = build_list(:heartrate, 2)
+    last_nights_sleep = build(:last_nights_sleep)
+    badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = [build(:daily_activity, calories: 2300),
+                      build(:daily_activity, calories: 2500, date: "02-17-2016")]
 
+    user_data = UserData.new(friends:           friends,
+                             sleep:             sleep,
+                             heartrate:         heartrate,
+                             last_nights_sleep: last_nights_sleep,
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
+
+    expect(user_data.weekly_calorie_goal_progress).to eq("26%")
   end
 
-  xit "#weekly_floor_goal_progress returns percentage of goal complete" do
+  it "#weekly_floor_goal_progress returns percentage of goal complete" do
+    friends = build_list(:friend, 2)
+    sleep = build_list(:sleep, 2)
+    heartrate = build_list(:heartrate, 2)
+    last_nights_sleep = build(:last_nights_sleep)
+    badge = build(:badge)
+    daily_goals = build(:daily_goals)
+    weekly_goals = build(:weekly_goals)
+    daily_activity = [build(:daily_activity, floors: 11),
+                      build(:daily_activity, floors: 20, date: "02-17-2016")]
 
+    user_data = UserData.new(friends:           friends,
+                             sleep:             sleep,
+                             heartrate:         heartrate,
+                             last_nights_sleep: last_nights_sleep,
+                             badges:            badge,
+                             daily_goals:       daily_goals,
+                             weekly_goals:      weekly_goals,
+                             daily_activity:    daily_activity)
+
+    expect(user_data.weekly_floor_goal_progress).to eq("25%")
   end
 end
